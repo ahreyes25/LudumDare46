@@ -27,20 +27,54 @@ switch (state) {
 		
 	case "float":
 		// Hit Land
-		if (!collision_point(x, y, obj_solid, false, false)) {
-			instance_destroy();
-			camera_set_focus_point(rod.camera_x, rod.camera_y, -1);
-			camera_reset_zoom_factor();
-		}
+		if (!collision_point(x, y, obj_solid, false, false))
+			state = "return";
 		
 		// Return
-		if (mouse_check_button_pressed(mb_left))
+		if (mouse_check_button_pressed(mb_left)) {
+			path_clear_points(path);
 			state = "return";
-			
-		//meter_create(id);
-		//instance_destroy();
+		}
 		break;
 		
 	case "return":
+		if (path_get_number(path) == 0) {
+			path_add_point(path, x, y, 100);
+		
+			var _len = point_distance(x, y, start_x, start_y) / 2;
+			var _dir = point_direction(x, y, start_x, start_y);
+			path_add_point(path, x + lengthdir_x(_len, _dir), y + lengthdir_y(_len, _dir) - random_range(50, 100), 100);
+		
+			path_add_point(path, start_x, start_y, 100);
+			path_start(path, 20, path_action_stop, false);
+		}
+		
+		if (path_position == 1) {
+			camera_set_focus_point(rod.camera_x, rod.camera_y, -1);
+			camera_reset_zoom_factor_soft();
+			instance_destroy();
+		}
 		break;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

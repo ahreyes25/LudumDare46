@@ -1,5 +1,5 @@
 surface_set_target(obj_game_controller.lure_surface);
-if (path_position < 1)
+if (path_position < 1 && state == "throw")
 	draw_circle(x, y, 3, false);
 //draw_sprite(spr_circle, 0, start_x, start_y);
 

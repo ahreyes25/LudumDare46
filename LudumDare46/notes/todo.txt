@@ -1,3 +1,4 @@
+- fishing cooldown
 - random fish occurances
 - fishing zones & "hot spots"
 - side bar UI
@@ -9,6 +10,7 @@
 - hit zones in different areas/multiple meter hit zones
 - more complex fish?
 - coins to collect
+- sounds
 
 - new regions
 - basic cutscenes

@@ -10,7 +10,7 @@ if (!exists(_camera)) return false;
 if (argument_count == 2) {
 	var _zoom	= argument[0];
 	var _time	= argument[1];
-	var _speed  = _camera.zoom_speed_base;
+	var _speed  = 0.05;
 }
 else if (argument_count == 3) {
 	var _zoom	= argument[0];
@@ -20,7 +20,7 @@ else if (argument_count == 3) {
 else {
 	var _zoom	= argument[0];
 	var _time	= -1;
-	var _speed	= _camera.zoom_speed_base;
+	var _speed	= 0.05;
 }
 #endregion
 
