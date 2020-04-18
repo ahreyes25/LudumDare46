@@ -1,0 +1,31 @@
+{
+    "id": "91f27bf2-99ea-4cbc-8a6c-77e36bf8dfbd",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "91f27bf2-99ea-4cbc-8a6c-77e36bf8dfbd",
+    "children": [
+        "e72c21b8-d3e3-4861-89ff-3f918f6e9bca",
+        "4d13c941-21f6-4870-bf60-812344e0b0a6",
+        "d7f2c020-7ad8-448d-b129-33777dd36881",
+        "5c9a4274-b1dd-4355-b0b5-0b4dedbdceb3",
+        "16cf8bc4-2f29-4e41-bd86-7386d74de2c9",
+        "86ed41d4-0104-4c54-a510-70975b1ec53a",
+        "564f3294-2e3d-4ecd-ad7f-803a9eddf2ad",
+        "48310ee1-937f-4753-8aab-889acbc046c5",
+        "02e13d7d-cde4-461f-af2e-2d242c0d1743",
+        "9c200a2a-c13a-4a4d-ac54-6ad51269232b",
+        "f4a195fb-4cfe-4b2c-b9c2-d46527944aa4",
+        "19c39473-38a8-40a0-afd5-7a78ef6ef061",
+        "ea4835f8-8be7-4b8e-ba1a-31894155d6ad",
+        "71cb2d8d-cb74-4b31-bcc7-867ff874c94f",
+        "e39e09db-05d2-4dab-be57-09a320185a2d",
+        "e7894652-2363-4616-bc30-6f650888e9cd",
+        "db58fa6d-60aa-4cc3-9ff8-941310c374f9",
+        "7f7970f0-8353-4a2b-9c8a-479284eac098",
+        "5526f9dd-04de-4aee-9494-eb882b2a1017"
+    ],
+    "filterType": "GMScript",
+    "folderName": "Animation Object Scripts",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
