@@ -927,6 +927,14 @@
             }
         },
         {
+            "Key": "492549cd-08fd-4851-b207-1eb1d9466bff",
+            "Value": {
+                "id": "782d8686-7a28-438a-93c5-7c54c1ad480d",
+                "resourcePath": "sprites\\spr_lure_water\\spr_lure_water.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a5198ed-eef2-430b-a472-d333d3ed8229",
             "Value": {
                 "id": "eeeebbec-1384-4321-8c2d-463ace8d9b48",

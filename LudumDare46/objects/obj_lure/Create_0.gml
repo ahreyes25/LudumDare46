@@ -18,3 +18,8 @@ target_image_index = 0;
 path = path_add();
 path_set_kind(path, true);
 path_set_closed(path, 0);
+
+bob_iter		= 0;
+bob_iter_speed	= 0.1;
+bob_image_index	= 0;
+bob_image_speed	= 0.05;

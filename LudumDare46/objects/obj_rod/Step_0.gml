@@ -15,7 +15,7 @@ if (mouse_check_button(mb_left) && defined(anchor_x) && defined(anchor_y) && !de
 }
 
 // Plant Rod
-if (mouse_check_button_pressed(mb_left) && !defined(lure)) {
+if (mouse_check_button_pressed(mb_left) && !defined(lure) && alarm[0] == -1) {
 	anchor_x = mouse_x;
 	anchor_y = mouse_y;
 	camera_x = obj_camera.x;
@@ -23,7 +23,7 @@ if (mouse_check_button_pressed(mb_left) && !defined(lure)) {
 }
 
 // Release Rod
-if (mouse_check_button_released(mb_left) && !defined(lure)) {
+if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1) {
 	if (defined(anchor_x) && defined(anchor_y)) {	
 		lure				= instance_create_layer(x, y, "Instances", obj_lure);
 		lure.rod			= id;	
@@ -40,6 +40,7 @@ if (mouse_check_button_released(mb_left) && !defined(lure)) {
 		cursor_x			= undefined;
 		cursor_y			= undefined;
 		
+		// Update Throw Stats
 		var _dir = point_direction(mouse_x, mouse_y, anchor_x, anchor_y);
 		var _len = point_distance(mouse_x, mouse_y, anchor_x, anchor_y);
 		obj_throw_stats.throw_angle		= string(floor(_dir));
@@ -52,6 +53,7 @@ if (mouse_check_button_released(mb_left) && !defined(lure)) {
 		var _innacuracy		= abs((_innacuracy_x + _innacuracy_y) / 2) * 10;
 		obj_throw_stats.innacuracy = string(_innacuracy) + "%";
 		
+		// Update Camera
 		camera_set_zoom_factor(1, -1);
 		camera_set_focus_target(lure, -1);
 		obj_camera.focus_point_x = undefined;

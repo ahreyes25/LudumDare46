@@ -1,4 +1,3 @@
-- fishing cooldown
 - random fish occurances
 - fishing zones & "hot spots"
 - side bar UI

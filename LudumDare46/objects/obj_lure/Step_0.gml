@@ -23,6 +23,13 @@ switch (state) {
 			state = "float";
 			obj_game_controller.need_to_clear_surface = true;
 		}
+		
+		// Return
+		if (mouse_check_button_pressed(mb_left)) {
+			path_clear_points(path);
+			state = "return";
+			obj_game_controller.need_to_clear_surface = true;
+		}
 		break;
 		
 	case "float":
