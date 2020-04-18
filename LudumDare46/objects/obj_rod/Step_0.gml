@@ -5,7 +5,7 @@ x = obj_camera.x;
 y = obj_camera.y + (obj_camera.height * obj_camera.zoom_factor) / 2 - _sh;
 
 // Cursor Coords
-if (mouse_check_button(mb_left) && defined(anchor_x) && defined(anchor_y) && !defined(lure)) {
+if (mouse_check_button(mb_left) && defined(anchor_x) && defined(anchor_y) && !defined(lure) && !mouse_touching_edges()) {
 	var _len	= point_distance(mouse_x, mouse_y, anchor_x, anchor_y);
 	var _dir	= point_direction(mouse_x, mouse_y, anchor_x, anchor_y);
 	var _len_x	= lengthdir_x(_len * 2, _dir);
@@ -15,7 +15,7 @@ if (mouse_check_button(mb_left) && defined(anchor_x) && defined(anchor_y) && !de
 }
 
 // Plant Rod
-if (mouse_check_button_pressed(mb_left) && !defined(lure) && alarm[0] == -1) {
+if (mouse_check_button_pressed(mb_left) && !defined(lure) && alarm[0] == -1 && !mouse_touching_edges()) {
 	anchor_x = mouse_x;
 	anchor_y = mouse_y;
 	camera_x = obj_camera.x;
@@ -23,7 +23,7 @@ if (mouse_check_button_pressed(mb_left) && !defined(lure) && alarm[0] == -1) {
 }
 
 // Release Rod
-if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1) {
+if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1 && !mouse_touching_edges()) {
 	if (defined(anchor_x) && defined(anchor_y)) {	
 		lure				= instance_create_layer(x, y, "Instances", obj_lure);
 		lure.rod			= id;	

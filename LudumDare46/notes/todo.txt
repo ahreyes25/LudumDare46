@@ -1,4 +1,5 @@
 - random fish occurances
+- put waves in water
 - fishing zones & "hot spots"
 - side bar UI
 - inventory

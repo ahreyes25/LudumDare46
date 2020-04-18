@@ -18,3 +18,7 @@ inner_edge_width	= 200;
 
 bg_surface			= surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
 #endregion
+centered = false;
+
+arrow_iter = irandom(100);
+arrow_iter_speed = 0.1;

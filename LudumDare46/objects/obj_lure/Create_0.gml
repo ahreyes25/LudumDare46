@@ -7,6 +7,7 @@ desired_x		= undefined;
 desired_y		= undefined;
 launch_speed	= undefined;
 rod				= undefined;
+bubbles			= undefined;
 start_x			= x;
 start_y			= y;
 player			= undefined;

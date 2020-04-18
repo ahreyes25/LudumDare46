@@ -17,9 +17,10 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 	// Draw Waves
 	surface_set_target(wave_surface);
 	draw_clear_alpha(c_black, 0);
+	var _wave_scale = 2;
 	var _ww = sprite_get_width(spr_wave_ui);
-	for (var i = 0; i < _sw; i += _ww)
-		draw_sprite_ext(spr_wave_ui, 0, i, 0, 1, 1, 0, c_white, 1);
+	for (var i = 0; i < _sw; i += _ww * _wave_scale)
+		draw_sprite_ext(spr_wave_ui, 0, i, 0, _wave_scale, _wave_scale, 0, c_white, 1);
 	
 	surface_reset_target();
 	
@@ -33,4 +34,18 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 	
 	// Draw Boat
 	draw_sprite_ext(spr_boat_side, 0, boat_x, boat_y, boat_scale, boat_scale, boat_r, c_white, 1);
+	draw_sprite_ext(spr_player_still, 0, boat_x - 30, boat_y - 10, boat_scale / 2, boat_scale / 2, boat_r, c_white, 1);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "08dcb14d-80e2-45d6-8eb7-02cf9fdd2a37",
+            "Value": {
+                "id": "99734d3a-9af2-4b57-9699-d85500a472e6",
+                "resourcePath": "sprites\\spr_arrow_right\\spr_arrow_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08e303d6-cd12-4aa6-9172-490f354a148a",
             "Value": {
                 "id": "6568fb98-dff9-497e-a512-e19515d0ba12",
@@ -1191,6 +1199,14 @@
             }
         },
         {
+            "Key": "581f63d6-8948-4b4e-a7a0-210643578ec6",
+            "Value": {
+                "id": "a95703c4-b657-4c9b-b6a4-fd10499ff508",
+                "resourcePath": "sprites\\spr_arrow_left\\spr_arrow_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58a3f079-3931-478c-b9c4-a54bc2c0678b",
             "Value": {
                 "id": "1e320daf-b128-4e62-b8b5-ae66f0f6208f",
@@ -1751,6 +1767,14 @@
             }
         },
         {
+            "Key": "82ea1f88-0b02-4f5e-b9e2-317ccd5213f7",
+            "Value": {
+                "id": "41ab792e-5b8b-4a31-8831-d46a53333de6",
+                "resourcePath": "scripts\\mouse_touching_edges\\mouse_touching_edges.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "83d83c0c-c212-4b14-9590-e29dbfc06c23",
             "Value": {
                 "id": "1fe0ffec-fd86-4144-a1ba-97d160f60352",
@@ -2231,6 +2255,14 @@
             }
         },
         {
+            "Key": "a6a61aac-5cdd-4ed1-8615-10500779980c",
+            "Value": {
+                "id": "f7da079d-893d-447f-ad7a-4b1feec3f0ad",
+                "resourcePath": "sprites\\spr_arrow_up\\spr_arrow_up.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7333e4a-635d-43ec-8513-9511686a52aa",
             "Value": {
                 "id": "242029d4-af28-4be3-b6ae-31715fd96536",
@@ -2268,6 +2300,14 @@
                 "id": "2343c0df-721c-4e6a-ba04-9722205778dc",
                 "resourcePath": "scripts\\timer_set_dir\\timer_set_dir.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a8d92f51-bd32-418f-ad10-36fb40e1aa75",
+            "Value": {
+                "id": "1b4a99cd-c502-4e8e-a857-40ca54f24844",
+                "resourcePath": "sprites\\spr_arrow_down\\spr_arrow_down.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3738,6 +3778,7 @@
         "d99de280-6f6e-4eb3-8ef0-4ee3bdbf9a6b",
         "f5c5f8f0-9783-4d85-9216-8211982dba89",
         "6250a92b-6119-4fa9-99ed-99488ae24c26",
+        "82ea1f88-0b02-4f5e-b9e2-317ccd5213f7",
         "c4988130-9422-4120-a445-c03f19223cd0",
         "c8e397d7-682a-406c-a4fa-54acb960d80a",
         "de4bccd4-d372-49e9-814e-69d7018db4ce",

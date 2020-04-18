@@ -16,7 +16,10 @@ if (update_res) {
 	//surface_resize(bg_surface, surface_get_width(application_surface), surface_get_height(application_surface));
 	
 	// Center Window
-	alarm[0] = 1;
+	if (!centered) {
+		alarm[0] = 1;
+		centered = true;
+	}
 	
 	update_res = false;
 	init_load  = false;
@@ -24,3 +27,20 @@ if (update_res) {
 #endregion
 #endregion
 
+// Move To New Area
+if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
+	// Left
+	if (window_mouse_get_x() < surface_get_width(application_surface) / 2 && 
+		window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
+			camera_set_focus_point(obj_camera.x - obj_camera.width, obj_camera.y, -1);
+	// Right
+	else if (window_mouse_get_x() > surface_get_width(application_surface) / 2 && 
+		window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
+			camera_set_focus_point(obj_camera.x + obj_camera.width, obj_camera.y, -1);
+	// Up
+	else if (window_mouse_get_y() < surface_get_height(application_surface) / 2)
+		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height, -1);	
+	// Down
+	else
+		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height, -1);
+}

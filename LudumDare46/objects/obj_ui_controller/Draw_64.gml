@@ -30,7 +30,6 @@ if (debugging_res) {
 }
 #endregion
 
-
 // HUD Surface
 if (!surface_exists(bg_surface))
 	bg_surface = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
@@ -62,3 +61,37 @@ gpu_set_blendmode(bm_normal);
 surface_reset_target();
 
 draw_surface(bg_surface, 0, 0);
+
+// Edge Arrows
+if (!defined(obj_player.rod.lure)) {
+	var _aw = sprite_get_width(spr_arrow_down);
+	var _ah = sprite_get_height(spr_arrow_down);
+	draw_sprite(spr_arrow_up, 0, _ww / 2, _ah + sin(arrow_iter));
+	draw_sprite(spr_arrow_right, 0, _ww - outer_edge_width - inner_edge_width - _aw - sin(arrow_iter), _wh / 2);
+	draw_sprite(spr_arrow_left, 0, outer_edge_width + inner_edge_width + _aw + sin(arrow_iter), _wh / 2);
+	draw_sprite(spr_arrow_down, 0, _ww / 2, _wh - _ah - sin(arrow_iter));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
