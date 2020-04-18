@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "2d82ca57-b21b-47c5-99fc-894170a0277c",
+            "Value": {
+                "id": "555d2c81-6d92-4477-83dc-2567a3124db1",
+                "resourcePath": "sprites\\spr_background_scroll\\spr_background_scroll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2db02b98-1c21-42e8-a8a9-e4b18b5ac3a5",
             "Value": {
                 "id": "30dc6168-4dbc-4311-ab3e-3cd9ed16d878",
