@@ -2,7 +2,8 @@ randomize();
 
 #region Data Files
 global_game_data();
-global_item_data();
+global_rod_data();
+global_lure_data();
 global_fish_data();
 global_region_data();
 global_movement_data();

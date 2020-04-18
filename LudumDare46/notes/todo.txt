@@ -1,11 +1,16 @@
-- random fish generation and occurances
-- catch fish
-- ping pong mini game
+- random fish occurances
+- setup dock and fishing zones
 - inventory
 - shop system
+- create "hotspots" 
+
 - new regions
 - basic cutscenes
 	- everytime you travel to new region for the first time
 	
+JUICE!!
 - add a TON of juice to meter bouncing
 	- draw sprites to surface, transform surface
+	
+- proc gen ponds
+- shrinking ponds

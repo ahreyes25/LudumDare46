@@ -3,11 +3,13 @@ sprite			= global.lure_data[type, LP.SPRITE];
 sprite_index	= sprite;
 target_x		= undefined;
 target_y		= undefined;
+desired_x		= undefined;
+desired_y		= undefined;
 launch_speed	= undefined;
 rod				= undefined;
 start_x			= x;
 start_y			= y;
-owner			= undefined;
+player			= undefined;
 state			= "throw";
 
 target_image_speed = 0.1;

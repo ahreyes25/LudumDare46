@@ -18,16 +18,23 @@ for (var i = 0; i < _n_fish; i++) {
 
 // Get Fish With Rarest Chance, Return That One
 var _min_chance = 10000;
-var _min_fish	= ds_list_create();
 for (var i = 0; i < ds_list_size(_won); i++) {
 	var _won_data	= _won[| i];
 	var _fish		= _won_data[0];
 	var _chance		= _won_data[1];
 	
-	if (_chance <= _min_chance) {
-		ds_list_add(_min_fish, _fish);
+	if (_chance <= _min_chance)
 		_min_chance = _chance;
-	}
+}
+
+// Randomly Pick From All Fishes With Same Min Chance
+var _min_fish	= ds_list_create();
+for (var i = 0; i < ds_list_size(_won); i++) {
+	var _won_data	= _won[| i];
+	var _chance		= _won_data[1];
+	
+	if (_chance == _min_chance)
+		ds_list_add(_min_fish, _fish);
 }
 
 var _n_min_fish = ds_list_size(_min_fish);

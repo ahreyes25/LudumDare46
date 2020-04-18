@@ -4,6 +4,7 @@ scale			= 2;
 width			= (sprite_get_width(spr_meter_fill) + 16) * scale;
 height			= ticks * pixel_per_tick;
 
+player			= undefined;
 meter_speed		= undefined;
 goal_ticks		= undefined;
 max_bounces		= undefined;
