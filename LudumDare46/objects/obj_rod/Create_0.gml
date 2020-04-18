@@ -1,0 +1,17 @@
+type			= ROD.ROD_BASIC_1;
+accuracy		= global.rod_data[type, RP.ACCURACY];
+shake			= global.rod_data[type, RP.SHAKE];
+shake_interval	= global.rod_data[type, RP.SHAKE_INTERVAL];
+sprite			= global.rod_data[type, RP.SPRITE];
+launch_speed	= global.rod_data[type, RP.LAUNCH_SPEED];
+miss_aim		= false;
+outer_rot		= random(360);
+inner_rot		= random(360);
+anchor_x		= undefined;
+anchor_y		= undefined;
+launched_x		= undefined;
+launched_y		= undefined;
+lure			= undefined;
+_len			= undefined;
+_dir			= undefined;
+owner			= undefined;

@@ -2,6 +2,10 @@
 instance_destroy(debug_controller);
 instance_destroy(particle_controller);
 instance_destroy(ui_controller);
+instance_destroy(camera);
+instance_destroy(player);
+instance_destroy(rod);
+instance_destroy(lure);
 
 // Particles
 

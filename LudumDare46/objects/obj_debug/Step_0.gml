@@ -4,7 +4,7 @@ show_debug_overlay(debug);
 
 // Debug/ Pause Menu
 if (debug) {
-	if (keyboard_check_pressed(ord("R")))									room_restart();
+	if (keyboard_check_pressed(ord("R")))									level_restart();
 	if (keyboard_check_pressed(vk_right) && !keyboard_check(ord("H")))		room_goto_next();
 	if (keyboard_check_pressed(vk_left)  && !keyboard_check(ord("H")))		room_goto_previous();
 	if (keyboard_check_pressed(ord("G")))									global.god_mode = !global.god_mode;

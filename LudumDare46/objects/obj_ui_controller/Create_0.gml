@@ -1,4 +1,4 @@
-// Debug Menu
+#region Resolution & HUD
 menu_index	= 0;
 resolutions	= [
 	[1440, 810],
@@ -17,3 +17,4 @@ outer_edge_width	= 200;
 inner_edge_width	= 200;
 
 bg_surface			= surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+#endregion

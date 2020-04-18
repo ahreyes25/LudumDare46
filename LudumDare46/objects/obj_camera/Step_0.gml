@@ -13,15 +13,16 @@ if (defined(lock_time_x))								_camera_start_lock_timer_x();
 if (defined(lock_time_y))								_camera_start_lock_timer_y();
 if (restrict_to_room)									_camera_restrict_to_room();
 
-// Move Camera
-if (timer_stopped(timer_lock_x))
-	x += (x_to - x) * move_to_factor * slow_factor;
-if (timer_stopped(timer_lock_y))
-	y += (y_to - y) * move_to_factor * slow_factor;
-
-// Cursor Influence
-// ...
-// Use scr_camere_set_cursor_influence(bool) wherever you want to update the cursor influence.
+#region Move Camera
+if (dragging) {
+	x += drag_x - mouse_x;
+	y += drag_y - mouse_y;
+}
+else {
+	x += (x_to - x) * move_to_factor;
+	y += (y_to - y) * move_to_factor;
+}
+#endregion
 
 // Update Camera
 viewmat = matrix_build_lookat(x, y, z_from, x, y, 0, 0, 1, 0);
@@ -30,3 +31,30 @@ projmat = matrix_build_projection_ortho(width * zoom_factor, height * zoom_facto
 camera_set_proj_mat(camera, projmat);
 camera_apply(camera);
 view_camera[0] = camera;
+
+#region Pan Camera
+if (mouse_check_button(mb_middle))
+	dragging = true;
+else if (mouse_check_button_released(mb_middle)) {
+	dragging = false;
+	camera_reset_focus();
+}
+
+if (dragging) {
+	drag_x	= mouse_x;
+	drag_y	= mouse_y;
+	x_to	= drag_x;
+	y_to	= drag_y;
+}
+else {
+	dragging = false;
+	x_to	 = x;
+	y_to	 = y;
+}
+#endregion
+#region Zoom Camera
+if (mouse_wheel_down())
+	camera_set_zoom_factor(camera_get_zoom_factor() * 0.9);
+if (mouse_wheel_up())
+	camera_set_zoom_factor(camera_get_zoom_factor() * 1.1);
+#endregion

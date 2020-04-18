@@ -1,3 +1,8 @@
 /// @param n
 
-return (argument0 == 0 || irandom(argument0) == 0);
+var _n = argument0;
+
+while (_n > 1)
+	_n /= 10;
+
+return (irandom(1) <= _n);

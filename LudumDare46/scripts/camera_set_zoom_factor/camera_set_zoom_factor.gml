@@ -24,6 +24,9 @@ else {
 }
 #endregion
 
+// Round Zoom to Tens Place
+_zoom = round((_zoom * 100) / 10) / 10;
+
 _camera.zoom_factor_target	= _zoom;
 _camera.zoom_time			= _time;
 _camera.zoom_speed			= (defined(_speed)) ? _speed : _camera.zoom_speed_base;

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_fish_hidden",
     "eventList": [
-        
+        {
+            "id": "8aed1819-3d5a-4deb-bc8e-2a461d4fa920",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "b5344f59-5685-4f67-b9d1-c6b32ba092df"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

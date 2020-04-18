@@ -1,3 +1,4 @@
+#region Resolution & HUD
 debugging_res	= obj_debug.debug && keyboard_check(ord("C"));
 debugging_hud	= obj_debug.debug && keyboard_check(ord("H"));
 depth			= obj_debug.depth - 1;
@@ -21,3 +22,5 @@ if (update_res) {
 	init_load  = false;
 }
 #endregion
+#endregion
+

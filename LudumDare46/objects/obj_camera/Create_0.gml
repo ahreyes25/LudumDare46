@@ -1,6 +1,6 @@
 #region Camera Properties
 // Focus
-focus_target_base	= obj_player;
+focus_target_base	= undefined;
 focus_target		= focus_target_base;
 focus_point_x		= undefined;
 focus_point_y		= undefined;
@@ -52,10 +52,11 @@ width_base			= 960;
 width				= width_base;
 height_base			= 540;
 height				= height_base;
-x_to				= focus_target.x;
-y_to				= focus_target.y;
+x_to				= obj_pond.x + obj_pond.sprite_width  / 2;
+y_to				= obj_pond.y + obj_pond.sprite_height / 2;
 slow_factor_base	= 1;
 slow_factor			= slow_factor_base;
+dragging			= false;
 
 // Create Camera Object
 z_from	= -(room_height * 10) - 100;
