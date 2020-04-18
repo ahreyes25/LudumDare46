@@ -23,7 +23,7 @@ if (mouse_check_button_pressed(mb_left) && !defined(lure) && alarm[0] == -1 && !
 }
 
 // Release Rod
-if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1 && !mouse_touching_edges()) {
+if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1 && defined(camera_x) && defined(camera_y)) {
 	if (defined(anchor_x) && defined(anchor_y)) {	
 		lure				= instance_create_layer(x, y, "Instances", obj_lure);
 		lure.rod			= id;	

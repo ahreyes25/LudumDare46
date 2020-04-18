@@ -1,11 +1,10 @@
 - random fish occurances
+- easter egg on edge of map
 - put waves in water
 - fishing zones & "hot spots"
 - side bar UI
 - inventory
 - shop system
-- create "hotspots" 
-- pan pond zone using arrows
 - right click to cancel throw
 - hit zones in different areas/multiple meter hit zones
 - more complex fish?

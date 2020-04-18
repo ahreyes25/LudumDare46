@@ -1,5 +1,5 @@
-var _aw = sprite_get_width(spr_arrow_down) * 2;
-var _ah = sprite_get_height(spr_arrow_down) * 2;
+var _aw = sprite_get_width(spr_arrow_down);
+var _ah = sprite_get_height(spr_arrow_down);
 var _mx = window_mouse_get_x();
 var _my = window_mouse_get_y();
 return (
