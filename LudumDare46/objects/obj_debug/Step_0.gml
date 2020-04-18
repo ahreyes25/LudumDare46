@@ -1,6 +1,7 @@
 // Pause Game
 if (keyboard_check_pressed(vk_escape)) {
 	debug = !debug;
+	show_debug_overlay(debug);
 }
 
 // Debug/ Pause Menu

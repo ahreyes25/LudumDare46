@@ -1,0 +1,13 @@
+- fishing game
+- ponds procedurally generated
+- ponds shrink after each time visiting the region
+- multiple regions:
+	- forest
+	- oasis
+	- desert
+	- ???
+
+- catch fish using mario style ping-pong mechanic
+- give fish to preserve for money
+- use money to buy new lures and rods from shop
+- FISH FISH FISH FISH FISH!

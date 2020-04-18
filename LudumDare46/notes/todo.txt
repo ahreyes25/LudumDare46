@@ -1,0 +1,10 @@
+- setup test room
+- random fish generation and occurances
+- cast fishing line
+- catch fish
+- ping pong mini game
+- inventory
+- shop system
+- new regions
+- basic cutscenes
+	- everytime you travel to new region for the first time

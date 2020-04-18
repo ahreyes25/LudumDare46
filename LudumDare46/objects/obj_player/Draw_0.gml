@@ -1,4 +1,7 @@
 event_inherited();
+
+mask_index = spr_player_mask;
+
 // Draw Player
 //switch (state) {
 //}

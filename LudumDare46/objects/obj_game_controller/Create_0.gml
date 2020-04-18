@@ -9,6 +9,7 @@ global_player_data();
 #region Controllers
 debug_controller	= instance_create_layer(0, 0, "Controllers", obj_debug);
 particle_controller	= instance_create_layer(0, 0, "Controllers", obj_particle_controller);
+ui_controller		= instance_create_layer(0, 0, "Controllers", obj_ui_controller);
 camera				= undefined;
 #endregion
 

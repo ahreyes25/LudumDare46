@@ -18,8 +18,8 @@ enum LAND
 #region Inanimate Objects
 global.move_stats_human[STAT.ROLL_SPEED,	LAND.DIRT]		= 6;
 global.move_stats_human[STAT.ROLL_DIST,		LAND.DIRT]		= 400;
-global.move_stats_human[STAT.WALK_SPEED,	LAND.DIRT]		= 1;
-global.move_stats_human[STAT.RUN_SPEED,		LAND.DIRT]		= 4;
+global.move_stats_human[STAT.WALK_SPEED,	LAND.DIRT]		= 3;
+global.move_stats_human[STAT.RUN_SPEED,		LAND.DIRT]		= 6;
 global.move_stats_human[STAT.ACCEL,			LAND.DIRT]		= 1.0;
 global.move_stats_human[STAT.FRIC,			LAND.DIRT]		= 0.6;
 #endregion

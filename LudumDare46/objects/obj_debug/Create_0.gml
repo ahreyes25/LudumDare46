@@ -1,4 +1,3 @@
-show_debug_overlay(true);
 debug				= false;
 show_hitbox_hurtbox	= false;
 show_solids			= false;
