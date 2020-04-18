@@ -7,7 +7,8 @@
         "1b177236-db83-4ccc-82ca-16919f27e9fc",
         "b8094cc5-c674-497c-b7fd-e8b6d8b70aa6",
         "5478f6a9-8912-4045-ade7-20b0f88beac2",
-        "103320f6-6112-40be-a318-49df34bbf3d5"
+        "103320f6-6112-40be-a318-49df34bbf3d5",
+        "cf7053e0-8a7a-46e1-bf6e-ce9a2bbd431f"
     ],
     "filterType": "GMScript",
     "folderName": "Path",

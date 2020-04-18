@@ -1,4 +1,3 @@
-- setup test room
 - random fish generation and occurances
 - cast fishing line
 - catch fish
