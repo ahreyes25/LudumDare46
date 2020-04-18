@@ -6,6 +6,7 @@ instance_destroy(camera);
 instance_destroy(player);
 instance_destroy(rod);
 instance_destroy(lure);
+instance_destroy(throw_stats);
 
 surface_free(lure_surface);
 

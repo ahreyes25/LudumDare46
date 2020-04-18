@@ -18,4 +18,5 @@ with (argument0) {
 	player.meter.camera_y	= rod.camera_y;
 	player.meter.fish		= _fish;
 	player.meter.player		= player;
+	player.meter.lure		= id;
 }

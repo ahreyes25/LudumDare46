@@ -13,8 +13,8 @@ inner_rot		= random(360);
 
 anchor_x		= x;
 anchor_y		= y;
-launched_x		= x;
-launched_y		= y;
+launched_x		= undefined;
+launched_y		= undefined;
 cursor_x		= undefined;
 cursor_y		= undefined;
 camera_x		= undefined;

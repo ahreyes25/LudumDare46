@@ -9,6 +9,7 @@ meter_speed		= undefined;
 goal_ticks		= undefined;
 max_bounces		= undefined;
 fish			= undefined;
+lure			= undefined;
 
 arrow_tick_pos	= 0;
 move_dir		= DIR.UP;

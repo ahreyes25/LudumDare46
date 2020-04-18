@@ -15,9 +15,14 @@ switch (state) {
 			}
 		}
 		
+		var _throw_dist = obj_throw_stats.throw_distance != "" ? real(obj_throw_stats.throw_distance) : 0;
+		obj_throw_stats.throw_distance = string(_throw_dist + 1);
+		
 		// Check For Landing On Water
-		if (path_position == 1)
+		if (path_position == 1) {
 			state = "float";
+			obj_game_controller.need_to_clear_surface = true;
+		}
 		break;
 		
 	case "float":
@@ -32,8 +37,8 @@ switch (state) {
 		if (mouse_check_button_pressed(mb_left))
 			state = "return";
 			
-		meter_create(id);
-		instance_destroy();
+		//meter_create(id);
+		//instance_destroy();
 		break;
 		
 	case "return":

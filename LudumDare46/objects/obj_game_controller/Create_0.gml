@@ -18,6 +18,7 @@ camera				= undefined;
 player				= undefined;
 rod					= undefined;
 lure				= undefined;
+throw_stats			= instance_create_layer(0, 0, "Controllers", obj_throw_stats);
 #endregion
 
 #region Sound & Music

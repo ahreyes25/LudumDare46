@@ -22,10 +22,12 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 		draw_sprite_ext(spr_wave_ui, 0, i, 0, 1, 1, 0, c_white, 1);
 	
 	surface_reset_target();
-	wave_sprite = sprite_create_from_surface(wave_surface, 0, 0, _sw, surface_get_height(wave_surface), 0, 0, _sw / 2, surface_get_height(wave_surface));
+	
+	if (!defined(wave_sprite))
+		wave_sprite = sprite_create_from_surface(wave_surface, 0, 0, _sw, surface_get_height(wave_surface), 0, 0, _sw / 2, surface_get_height(wave_surface));
 	
 	draw_set_color(c_black);
-	draw_rectangle(0, wave_y - sprite_get_height(wave_sprite), _sw, _sh, false);
+	draw_rectangle(0, wave_y - sprite_get_height(wave_sprite) * boat_scale, _sw, _sh, false);
 	draw_set_color(c_white);
 	draw_sprite_ext(wave_sprite, _sw / 2, 0, wave_y, boat_scale, boat_scale, wave_r, c_white, 1);
 	

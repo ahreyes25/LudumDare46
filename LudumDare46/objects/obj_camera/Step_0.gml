@@ -32,6 +32,7 @@ camera_set_proj_mat(camera, projmat);
 camera_apply(camera);
 view_camera[0] = camera;
 
+/*
 #region Pan Camera
 if (mouse_check_button(mb_middle))
 	dragging = true;

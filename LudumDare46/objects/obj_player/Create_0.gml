@@ -7,8 +7,6 @@ rod.lure_type	= lure;
 meter			= undefined;
 
 boat_scale		= 2;
-boat_x			= x;
-boat_y			= y;
 boat_bob_iter	= 0;
 boat_bob_speed	= 0.1;
 
