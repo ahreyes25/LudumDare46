@@ -1,11 +1,41 @@
-if (defined(target_x) && defined(target_y)) {
-	if (path_get_number(path) == 0) {
-		var _x1		= x + lengthdir_x(rod._len, rod._dir);
-		var _y1		= y + lengthdir_y(rod._len, rod._dir);
-		var _x2		= target_x;
-		var _y2		= target_y;
-		path_add_point(path, _x1, _y1, 100);
-		path_add_point(path, _x2, _y2, 100);
-		path_start(path, launch_speed, path_action_stop, false);
-	}
+switch (state) {
+	
+	case "throw":
+		// Create Launch Path
+		if (defined(target_x) && defined(target_y)) {
+			if (path_get_number(path) == 0) {
+				path_add_point(path, x, y, 100);
+		
+				var _len = point_distance(x, y, target_x, target_y) / 2;
+				var _dir = point_direction(x, y, target_x, target_y);
+				path_add_point(path, x + lengthdir_x(_len, _dir), y + lengthdir_y(_len, _dir) - random_range(100, 200), 100);
+		
+				path_add_point(path, target_x, target_y, 100);
+				path_start(path, launch_speed, path_action_stop, false);
+			}
+		}
+		
+		// Check For Landing On Water
+		if (path_position == 1)
+			state = "float";
+		break;
+		
+	case "float":
+		// Hit Land
+		if (!collision_point(x, y, obj_solid, false, false)) {
+			instance_destroy();
+			camera_set_focus_point(rod.camera_x, rod.camera_y, -1);
+			camera_reset_zoom_factor();
+		}
+		
+		// Return
+		if (mouse_check_button_pressed(mb_left))
+			state = "return";
+			
+		meter_create(id);
+		instance_destroy();
+		break;
+		
+	case "return":
+		break;
 }

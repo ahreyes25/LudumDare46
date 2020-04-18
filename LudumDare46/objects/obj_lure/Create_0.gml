@@ -5,6 +5,13 @@ target_x		= undefined;
 target_y		= undefined;
 launch_speed	= undefined;
 rod				= undefined;
+start_x			= x;
+start_y			= y;
+owner			= undefined;
+state			= "throw";
+
+target_image_speed = 0.1;
+target_image_index = 0;
 
 path = path_add();
 path_set_kind(path, true);

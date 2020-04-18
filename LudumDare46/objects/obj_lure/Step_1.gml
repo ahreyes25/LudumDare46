@@ -1,0 +1,1 @@
+target_image_index += target_image_speed;

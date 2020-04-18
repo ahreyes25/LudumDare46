@@ -1,5 +1,4 @@
 - random fish generation and occurances
-- cast fishing line
 - catch fish
 - ping pong mini game
 - inventory
@@ -7,3 +6,6 @@
 - new regions
 - basic cutscenes
 	- everytime you travel to new region for the first time
+	
+- add a TON of juice to meter bouncing
+	- draw sprites to surface, transform surface

@@ -7,6 +7,8 @@ instance_destroy(player);
 instance_destroy(rod);
 instance_destroy(lure);
 
+surface_free(lure_surface);
+
 // Particles
 
 // Sounds

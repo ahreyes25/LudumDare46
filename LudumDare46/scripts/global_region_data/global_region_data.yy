@@ -1,8 +1,8 @@
 {
-    "id": "6bba7c08-a9a6-4337-bf11-7ffbe0176038",
+    "id": "7ebf7c6a-7eca-4279-8eb0-500509462807",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "rod_random",
+    "name": "global_region_data",
     "IsCompatibility": false,
     "IsDnD": false
 }

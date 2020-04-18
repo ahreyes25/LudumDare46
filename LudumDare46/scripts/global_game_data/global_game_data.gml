@@ -25,6 +25,8 @@ global.music_mult			= 0.0;
 global.font					= -1;
 global.font_size			= 12;
 
+global.region				= REGION.FOREST;
+
 // Audio
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_master_gain(global.sound_mult);

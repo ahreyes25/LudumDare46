@@ -11,7 +11,7 @@ if (defined(lock_x))									_camera_apply_lock_x();
 if (defined(lock_y))									_camera_apply_lock_y();
 if (defined(lock_time_x))								_camera_start_lock_timer_x();
 if (defined(lock_time_y))								_camera_start_lock_timer_y();
-if (restrict_to_room)									_camera_restrict_to_room();
+//if (restrict_to_room)									_camera_restrict_to_room();
 
 #region Move Camera
 if (dragging) {

@@ -68,19 +68,12 @@ camera_set_proj_mat(camera, projmat);
 view_camera[0] = camera;
 
 // Timers
-timer_object_create();
 timer_focus_time		= 0;
 timer_screen_shake_time	= 1;
 timer_zoom_time			= 2;
 timer_lock_x			= 3;
 timer_lock_y			= 4;
 timer_cutscene_bars		= 5;
-timer_create(timer_focus_time,			_timer_camera0);
-timer_create(timer_screen_shake_time,	_timer_camera1);
-timer_create(timer_zoom_time,			_timer_camera2);
-timer_create(timer_lock_x,				_timer_camera3);
-timer_create(timer_lock_y,				_timer_camera4);
-timer_create(timer_cutscene_bars,		_timer_camera5);
 
 // Other
 cutscene			= false;

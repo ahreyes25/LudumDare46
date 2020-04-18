@@ -5,7 +5,7 @@ if (exists(_camera)) {
 	_camera.focus_point_y			= undefined;
 	_camera.move_to_factor			= _camera.move_to_factor_base;
 	_camera.focus_time				= undefined;
-	timer_stop(_camera, _camera.timer_focus_time);
+	alarm[_camera.timer_focus_time] = -1;
 	return true;
 }
 return false;

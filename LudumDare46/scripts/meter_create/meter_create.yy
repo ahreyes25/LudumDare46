@@ -1,8 +1,8 @@
 {
-    "id": "4d19cb98-1fe0-4e60-9f96-bd1ccb416f9a",
+    "id": "9c10495f-482e-42e3-8274-a27c90adafba",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "lure_name",
+    "name": "meter_create",
     "IsCompatibility": false,
     "IsDnD": false
 }
