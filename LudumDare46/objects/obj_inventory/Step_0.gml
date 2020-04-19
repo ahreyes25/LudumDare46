@@ -4,15 +4,15 @@ if (!show_mini) {
 		scroll_index += cell_height;
 	if (mouse_wheel_up())
 		scroll_index -= cell_height;
-	index = clamp(((window_mouse_get_y() - start_y) div cell_height), 0, ds_list_size(inventory) - 1);
+	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(inventory) - 1);
 }
 // Show Mini
 else if (!show_mini_mini) {
 	var _start_y = index * cell_height;
-	index_mini = clamp(((window_mouse_get_y() - _start_y) div 64), 0, 3);
+	index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 3);
 }
 
-index_mini_mini = window_mouse_get_x() >= obj_merchant.xcurr;
+index_mini_mini = device_mouse_y_to_gui(0) >= obj_merchant.xcurr;
 
 // Select Inventory Item
 if (show && mouse_check_button_pressed(mb_left)) {	

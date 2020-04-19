@@ -2,8 +2,8 @@ var _x1 = obj_ui_controller.outer_edge_width + 30;
 var _x2 = _x1 + sprite_get_width(spr_coin_ui) * 4;
 var _y1 = sprite_get_height(spr_coin_ui) + 140;
 var _y2 = _y1 + sprite_get_height(spr_coin_ui) * 4;
-var _mx = window_mouse_get_x();
-var _my = window_mouse_get_y();
+var _mx = device_mouse_x_to_gui(0);
+var _my = device_mouse_y_to_gui(0);
 
 in_left = _mx < _x2 + 10;
 
