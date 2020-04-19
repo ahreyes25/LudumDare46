@@ -11,9 +11,7 @@ start_x			= obj_merchant.xcurr - sprite_get_width(spr_merchant) * obj_merchant.s
 start_y			= 10;
 surface			= surface_create(cell_width, 1);
 
-repeat(2)
-	ds_list_add(shop, ["rod", ROD.ROD_BASIC_1]);
-repeat(2)
-	ds_list_add(shop, ["lure", LURE.LURE_BASIC_1]);
-repeat(2)
-	ds_list_add(shop, ["fish", FISH.FISH]);
+ds_list_add(shop, ["rod", ROD.ROD_BASIC_1]);
+ds_list_add(shop, ["lure", LURE.LURE_BASIC_1]);
+for (var i = 1; i < global.fish_total; i++)
+	ds_list_add(shop, ["fish", i]);

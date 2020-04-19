@@ -23,15 +23,25 @@ if (show) {
 		for (var i = 1; i <= _n_items; i++) {
 			var _item_sprite = global.fish_data[i, FP.SPRITE];
 			
-			if (obj_player.fish_caught[| i]) {
+			if (obj_player.fish_caught[| i] > 0) {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
 					_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
 					scale / 2, scale / 2, 0, c_white, 1);
 			}
 			else {
-				var _ys = _y + cell_height / 2;
-				draw_text(_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index, "?");
+				if (obj_player.fish_data[| i]) {
+					var _ys = _y + cell_height / 2;
+					draw_sprite_ext(spr_exclamation_mark, 0, 
+						_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
+						scale / 2, scale / 2, 0, c_white, 1);
+				}
+				else {
+					var _ys = _y + cell_height / 2;
+					draw_sprite_ext(spr_question_mark, 0, 
+						_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
+						scale / 2, scale / 2, 0, c_white, 1);
+				}
 			}
 		}
 	
@@ -57,11 +67,11 @@ if (show) {
 			if (obj_player.fish_data[| _index]) {
 				// Info Panel Frame
 				draw_set_color(c_black);
-				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.7, false);
+				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, false);
 				draw_set_color(c_white);
-				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.7, true);
+				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, true);
 			
-				if (obj_player.fish_caught[| _index]) 
+				if (obj_player.fish_caught[| _index] > 0) 
 					draw_text(_mini_x + 10, _mini_y + 10, global.fish_data[_index, FP.NAME]);
 				else
 					draw_text(_mini_x + 10, _mini_y + 10, "???");
@@ -92,12 +102,13 @@ if (show) {
 				var _lure_avg			= fish_get_lure_avg(_index);
 				var _lure_avg_chance	= _lure_avg * 100;
 				
-				draw_text(_mini_x + 10, _mini_y + 30, "Rarity: " + string(global.fish_data[_index, FP.RARITY]));
-				draw_text(_mini_x + 10, _mini_y + 50, "Region(s):" + _string);
-				draw_text(_mini_x + 10, _mini_y + 70, "Best Lure: " + string(_lure_best_name));
-				draw_text(_mini_x + 10, _mini_y + 90, "Encounter Chance With Best Lure: " + string(_lure_best_chance) + "%");
-				draw_text(_mini_x + 10, _mini_y + 110, "Worst Encounter Chance: " + string(_lure_worst_chance) + "%");
-				draw_text(_mini_x + 10, _mini_y + 130, "Average Encounter Chance: " + string(_lure_avg_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 30, "Caught: " + string(obj_player.fish_caught[| _index]));
+				draw_text(_mini_x + 10, _mini_y + 50, "Rarity: " + string(global.fish_data[_index, FP.RARITY]));
+				draw_text(_mini_x + 10, _mini_y + 70, "Region(s):" + _string);
+				draw_text(_mini_x + 10, _mini_y + 90, "Best Lure: " + string(_lure_best_name));
+				draw_text(_mini_x + 10, _mini_y + 110, "Encounter Chance With Best Lure: " + string(_lure_best_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 130, "Worst Encounter Chance: " + string(_lure_worst_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 150, "Average Encounter Chance: " + string(_lure_avg_chance) + "%");
 			}
 			else {
 				// Info Panel Frame

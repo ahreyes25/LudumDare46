@@ -44,10 +44,14 @@ if (mouse_check_button_pressed(mb_left) && show) {
 					
 				// Have Enough Money
 				if (obj_sidebar_left.money >= _cost) {
+					if (_item[0] == "fish")  {
+						ds_list_replace(obj_player.fish_data, _item[1], true);	
+					}
+					else
+						ds_list_add(obj_inventory.inventory, _item);
 					obj_sidebar_left.money -= _cost;
 					obj_merchant.state = "shop_done";
 					ds_list_delete(shop, _index);
-					ds_list_add(obj_inventory.inventory, _item);
 					show_mini = false;
 				}
 				// Dont Have Enough Money

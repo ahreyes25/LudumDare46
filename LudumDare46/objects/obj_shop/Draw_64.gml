@@ -36,6 +36,12 @@ if (show) {
 				_x1 + cell_width / 2 - sprite_get_width(_item_sprite) / 2, _ys + cell_height * i + scroll_index,
 				scale / 2, scale / 2, 0, c_white, 1);
 		}
+		else if (_item_type == "fish") {
+			var _ys = _y1 + cell_height / 2;
+			draw_sprite_ext(spr_exclamation_mark, 0, 
+				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index,
+				scale / 2, scale / 2, 0, c_white, 1);
+		}
 		else {
 			var _ys = _y1 + cell_height / 2;
 			draw_sprite_ext(_item_sprite, 0, 
@@ -104,9 +110,18 @@ if (show) {
 			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
 		}
 		if (_item_type == "fish") {
-			var _item_name = global.fish_data[_item_enum, FP.NAME];	
-			var _item_desc = global.fish_data[_item_enum, FP.DESC];
+			// Info Panel Frame
+			draw_set_color(c_black);
+			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, false);
+			draw_set_color(c_white);
+			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, true);
+			
 			var _item_cost = global.fish_data[_item_enum, FP.COST_BUY];
+			
+			// Info Text
+			draw_text(_mini_x + 10, _mini_y + 10, "Random Fish Data");
+			draw_text(_mini_x + 10, _mini_y + 30, "Adds Information About 1 Fish To Your Library");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
 		}
 	}
 	#endregion
