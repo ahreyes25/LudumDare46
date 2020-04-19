@@ -1,1 +1,1 @@
-camera_cull();
+visible = false;

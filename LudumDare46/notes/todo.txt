@@ -1,9 +1,8 @@
 // Core
-- inventory
 - shop system
-- side bar UI
 - sounds & music
 - basic cutscenes
+- respawn fish randomly
 
 // Extra
 - better fish behavior
@@ -12,7 +11,6 @@
 - hit zones in different areas/multiple meter hit zones
 - coins to collect
 - new regions
-- proc gen ponds
 - shrinking ponds
 
 // Polish
@@ -20,8 +18,10 @@
 - catch reward juice
 - arrows sink when navigating areas
 - secret rod for donating a ton
+- fisherman emojis
 
 // Extra Extra
+- proc gen ponds
 - easter egg on edge of map?
 	- secret rod => "holy shit you just broke the game"
 - achievements

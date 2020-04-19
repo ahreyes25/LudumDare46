@@ -1,5 +1,4 @@
 // Controllers
-instance_destroy(debug_controller);
 instance_destroy(particle_controller);
 instance_destroy(ui_controller);
 instance_destroy(camera);

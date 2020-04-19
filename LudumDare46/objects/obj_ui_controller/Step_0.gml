@@ -1,8 +1,4 @@
 #region Resolution & HUD
-debugging_res	= obj_debug.debug && keyboard_check(ord("C"));
-debugging_hud	= obj_debug.debug && keyboard_check(ord("H"));
-depth			= obj_debug.depth - 1;
-
 #region New Screen Resolution
 if (update_res) {
 	window_set_size(width, height);
@@ -28,7 +24,7 @@ if (update_res) {
 #endregion
 
 // Move To New Area
-if (!obj_inventory.show) {
+if (!obj_inventory.show && !obj_game_controller.paused) {
 	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
 		// Left
 		if (window_mouse_get_x() < surface_get_width(application_surface) / 2 && 

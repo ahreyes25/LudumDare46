@@ -11,7 +11,6 @@ global_player_data();
 #endregion
 
 #region Controllers
-debug_controller	= instance_create_layer(0, 0, "Controllers", obj_debug);
 particle_controller	= instance_create_layer(0, 0, "Controllers", obj_particle_controller);
 ui_controller		= instance_create_layer(0, 0, "Controllers", obj_ui_controller);
 camera				= undefined;
@@ -31,3 +30,4 @@ room_goto_next();
 
 need_to_clear_surface = false;
 lure_surface = surface_create(room_width, room_height);
+paused = false;

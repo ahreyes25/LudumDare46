@@ -13,3 +13,8 @@ draw_set_valign(fa_top);
 
 // Inventory
 draw_sprite_ext(spr_chest, 0, _x, _y + sprite_get_height(spr_coin_ui) + 30 + 70, _scale, _scale, 0, c_white, 1);
+
+// Pause
+var _scale = 1;
+draw_sprite_ext(spr_home, 0, _x + obj_ui_controller.inner_edge_width - sprite_get_width(spr_home) - 45,
+	surface_get_height(application_surface) - sprite_get_height(spr_home) * _scale - 10, _scale, _scale, 0, c_white, 1);
