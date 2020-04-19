@@ -1,7 +1,14 @@
 // Core
-- shop system
+- buying system
 - sounds & music
-- respawn fish randomly
+- unlock new items
+
+// Polish
+- meter bouncing juice
+- catch reward juice
+- arrows sink when navigating areas
+- secret rod for donating a ton
+- fisherman emojis
 
 // Extra
 - better fish behavior
@@ -12,20 +19,9 @@
 - new regions
 - shrinking ponds
 
-// Polish
-- meter bouncing juice
-- catch reward juice
-- arrows sink when navigating areas
-- secret rod for donating a ton
-- fisherman emojis
-
 // Extra Extra
 - proc gen ponds
 - easter egg on edge of map?
 	- secret rod => "holy shit you just broke the game"
 - achievements
 - save file
-	
-// Other
-- remove space to spawn card
-- remove console and debug objects
