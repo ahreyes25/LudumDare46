@@ -1,7 +1,6 @@
 // Core
 - shop system
 - sounds & music
-- basic cutscenes
 - respawn fish randomly
 
 // Extra
