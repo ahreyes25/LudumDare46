@@ -18,8 +18,10 @@ camera				= undefined;
 player				= undefined;
 rod					= undefined;
 lure				= undefined;
-throw_stats			= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+sidebar_right		= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+sidebar_left		= instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
 inventory			= instance_create_layer(0, 0, "Controllers", obj_inventory);
+merchant			= instance_create_layer(0, 0, "Controllers", obj_merchant);
 #endregion
 
 #region Sound & Music

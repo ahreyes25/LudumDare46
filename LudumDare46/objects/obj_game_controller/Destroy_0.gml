@@ -6,8 +6,10 @@ instance_destroy(camera);
 instance_destroy(player);
 instance_destroy(rod);
 instance_destroy(lure);
-instance_destroy(throw_stats);
+instance_destroy(sidebar_right);
+instance_destroy(sidebar_left);
 instance_destroy(inventory);
+instance_destroy(merchant);
 
 surface_free(lure_surface);
 

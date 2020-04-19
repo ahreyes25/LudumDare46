@@ -1,0 +1,1 @@
+coin_image_index += coin_image_speed;

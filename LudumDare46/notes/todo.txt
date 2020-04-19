@@ -18,6 +18,7 @@
 // Polish
 - meter bouncing juice
 - catch reward juice
+- arrows sink when navigating areas
 
 // Extra Extra
 - easter egg on edge of map?
