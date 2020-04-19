@@ -1,19 +1,18 @@
 // Core
+- fish guide
+	- lure, region, rarity
+	
 - title page -- 30 min
 - setup other regions -- 1 hour
-- sounds & music -- 2 hour
+- sounds & music -- 1 hour
 - fish need to have unique size and color/weight properties -- 30 min
 - be able to change regions -- 1 hour
-- content creation -- 2 hours
-- toggle sound options -- 30 min
 - add lure and rod to inventory 
 - be able to equip items
 - fix meter threshold
 - fix throw cooldown 
 - rod durability
-
-- fish guide
-	- lure, region, rarity
+- content creation
 
 // Polish
 - meter bouncing juice

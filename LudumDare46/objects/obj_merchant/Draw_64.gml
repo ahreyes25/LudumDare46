@@ -9,7 +9,7 @@ var _x = 30;
 #region Sell Wait
 if (state == "sell_wait") {	
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
-		"Oh! I could take that " + string(item_name) + "\noff your hands for a \nmeasly $" + string(item_cost_sell) + ".00?", 2, 2, 0);
+		"Oh! I could take that " + string(item_name) + "\noff your hands for a \nlofty $" + string(item_cost_sell) + ".00?", 2, 2, 0);
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, 
 		"What do ya say?", 2, 2, 0);	
 		
