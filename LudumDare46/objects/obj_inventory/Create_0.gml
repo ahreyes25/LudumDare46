@@ -11,6 +11,8 @@ cell_width		= 64 * scale;
 vert_space		= 0  * scale;
 start_x			= obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width + 10;
 start_y			= 10;
+target_x		= start_x;
+target_y		= start_y;
 scroll_index	= 0;
 
 surface			= surface_create(cell_width, 1);

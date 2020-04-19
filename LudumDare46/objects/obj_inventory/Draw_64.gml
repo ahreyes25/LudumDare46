@@ -1,5 +1,5 @@
 if (show) {
-	depth		 = obj_ui_controller.depth - 1;
+	depth		 = obj_ui_controller.depth - 10;
 	var _n_items = ds_list_size(inventory);
 	var _x		 = 0;
 	var _y		 = 0;
@@ -67,23 +67,5 @@ if (show) {
 			draw_rectangle(_mini_x, _mini_y + (_mini_h * index_mini), _mini_x + _mini_w, _mini_y + (_mini_h * index_mini) + _mini_h, false);	
 			draw_set_alpha(1.0);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

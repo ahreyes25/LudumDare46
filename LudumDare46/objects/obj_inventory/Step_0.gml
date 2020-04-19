@@ -15,7 +15,8 @@ else if (!show_mini_mini) {
 index_mini_mini = window_mouse_get_x() >= obj_merchant.xcurr;
 
 // Select Inventory Item
-if (mouse_check_button_pressed(mb_left)) {	
+if (show && mouse_check_button_pressed(mb_left)) {	
+	
 	// Select Mini
 	if (show_mini && !show_mini_mini) {
 		var _index = index - (scroll_index div cell_height);
@@ -33,7 +34,8 @@ if (mouse_check_button_pressed(mb_left)) {
 		}
 	}
 	// Select Mini Mini
-	else if (show_mini_mini) {
+	else if (show_mini_mini && show_mini) {
+		
 		// No
 		if (index_mini_mini) {
 			merchant_hide();
@@ -63,26 +65,10 @@ if (mouse_check_button_pressed(mb_left)) {
 		}	
 	}
 	// Select Normal
-	else
+	else {
 		show_mini = true;
+		show_mini_mini = false;	
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
