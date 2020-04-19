@@ -15,4 +15,4 @@ draw_rectangle(_x1, _y1, _x2, _y2, false);
 gpu_set_blendenable(true);
 gpu_set_colorwriteenable(true, true, true, true);
 draw_set_alpha(1);
-draw_set_color(c_white);
+draw_set_color(global.tint_color);

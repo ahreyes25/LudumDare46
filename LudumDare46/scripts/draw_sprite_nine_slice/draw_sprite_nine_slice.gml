@@ -25,28 +25,28 @@ var _width  = abs(_x2 - _x1);
 var _height = abs(_y2 - _y1);
 
 // Top Left
-draw_sprite_part_ext(_sprite, _image_index, 0, 0, _slice_width, _slice_height, _x1, _y1, 1, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, 0, 0, _slice_width, _slice_height, _x1, _y1, 1, 1, global.tint_color, _alpha);
 
 // Top Middle
-draw_sprite_part_ext(_sprite, _image_index, _slice_width, 0, _slice_width, _slice_height, _x1 + _slice_width, _y1, (_width - _slice_width * 2) / _slice_width, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width, 0, _slice_width, _slice_height, _x1 + _slice_width, _y1, (_width - _slice_width * 2) / _slice_width, 1, global.tint_color, _alpha);
 
 // Top Right
-draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, 0, _slice_width, _slice_height, _x2 - _slice_width, _y1, 1, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, 0, _slice_width, _slice_height, _x2 - _slice_width, _y1, 1, 1, global.tint_color, _alpha);
 
 // Middle Left
-draw_sprite_part_ext(_sprite, _image_index, 0, _slice_height, _slice_width, _slice_height, _x1, _y1 + _slice_height, 1, (_height - _slice_height * 2) / _slice_height, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, 0, _slice_height, _slice_width, _slice_height, _x1, _y1 + _slice_height, 1, (_height - _slice_height * 2) / _slice_height, global.tint_color, _alpha);
 
 // Middle Middle
-draw_sprite_part_ext(_sprite, _image_index, _slice_width, _slice_height, _slice_width, _slice_height, _x1 + _slice_width, _y1 + _slice_height, (_width - _slice_width * 2) / _slice_width, (_height - _slice_height * 2) / _slice_height, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width, _slice_height, _slice_width, _slice_height, _x1 + _slice_width, _y1 + _slice_height, (_width - _slice_width * 2) / _slice_width, (_height - _slice_height * 2) / _slice_height, global.tint_color, _alpha);
 
 // Middle Right
-draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, _slice_height, _slice_width, _slice_height, _x2 - _slice_width, _y1 + _slice_height, 1, (_height - _slice_height * 2) / _slice_height, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, _slice_height, _slice_width, _slice_height, _x2 - _slice_width, _y1 + _slice_height, 1, (_height - _slice_height * 2) / _slice_height, global.tint_color, _alpha);
 
 // Bottom Left
-draw_sprite_part_ext(_sprite, _image_index, 0, _slice_height * 2, _slice_width, _slice_height * 2, _x1, _y2 - _slice_height, 1, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, 0, _slice_height * 2, _slice_width, _slice_height * 2, _x1, _y2 - _slice_height, 1, 1, global.tint_color, _alpha);
 
 // Bottom Middle
-draw_sprite_part_ext(_sprite, _image_index, _slice_width, _slice_height * 2, _slice_width, _slice_height, _x1 + _slice_width, _y2 - _slice_height, (_width - _slice_width * 2) / _slice_width, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width, _slice_height * 2, _slice_width, _slice_height, _x1 + _slice_width, _y2 - _slice_height, (_width - _slice_width * 2) / _slice_width, 1, global.tint_color, _alpha);
 
 // Bottom Right
-draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, _slice_height * 2, _slice_width, _slice_height, _x2 - _slice_width, _y2 - _slice_height, 1, 1, c_white, _alpha);
+draw_sprite_part_ext(_sprite, _image_index, _slice_width * 2, _slice_height * 2, _slice_width, _slice_height, _x2 - _slice_width, _y2 - _slice_height, 1, 1, global.tint_color, _alpha);

@@ -37,7 +37,7 @@ screen_flash_alpha_base	= 0.25;
 screen_flash_alpha		= undefined;
 screen_flash_decay_base	= 0.1;
 screen_flash_decay		= undefined;
-screen_flash_color_base = c_white;
+screen_flash_color_base = global.tint_color;
 screen_flash_color		= undefined;
 
 // Other

@@ -19,3 +19,9 @@ if (room != _rm_init) {
 		alarm[0] = 60;
 	}
 }
+
+switch (room) {
+	case rm_forest:
+		global.tint_color = global.color_green;
+		break;
+}

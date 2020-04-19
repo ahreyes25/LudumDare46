@@ -14,5 +14,5 @@ draw_set_alpha(_alpha);
 var _radius = min(sprite_get_true_width(_obj.mask_index), sprite_get_true_height(_obj.mask_index)) / 2;
 
 draw_circle(_obj.x, _obj.y, _radius, _outline); 
-draw_set_color(c_white);
+draw_set_color(global.tint_color);
 draw_set_alpha(1.0);

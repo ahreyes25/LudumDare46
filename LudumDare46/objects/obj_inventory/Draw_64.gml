@@ -15,7 +15,7 @@ if (show) {
 		// Draw Background
 		draw_set_color(c_black);
 		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), false);
-		draw_set_color(c_white);
+		draw_set_color(global.tint_color);
 		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), true);
 	
 		// Draw Items
@@ -35,13 +35,13 @@ if (show) {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
 					_x + cell_width / 2 - sprite_get_width(_item_sprite) / 2, _ys + cell_height * i + scroll_index,
-					scale / 2, scale / 2, 0, c_white, 1);
+					scale / 2, scale / 2, 0, global.tint_color, 1);
 			}
 			else {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
 					_x + cell_width / 2, _ys + cell_height * i + scroll_index,
-					scale / 2, scale / 2, 0, c_white, 1);
+					scale / 2, scale / 2, 0, global.tint_color, 1);
 			}
 		}
 	
@@ -69,7 +69,7 @@ if (show) {
 			for (var i = 0; i < 4; i++) {
 				draw_set_color(c_black);
 				draw_rectangle(_mini_x, _mini_y + (_mini_h * i), _mini_x + _mini_w, _mini_y + (_mini_h * i) + _mini_h, false);	
-				draw_set_color(c_white);
+				draw_set_color(global.tint_color);
 				draw_rectangle(_mini_x, _mini_y + (_mini_h * i), _mini_x + _mini_w, _mini_y + (_mini_h * i) + _mini_h, true);		
 				draw_text(_mini_x + _mini_w / 2, _mini_y + (_mini_h * i) + _mini_h / 2, _text[i]);
 			}

@@ -1,8 +1,8 @@
 depth = obj_ui_controller.depth - 10;
 draw_set_color(c_black);
 draw_rectangle(xcurr - sprite_get_width(sprite_index) * scale / 2, 0, surface_get_width(application_surface), surface_get_height(application_surface), false);
-draw_set_color(c_white);
-draw_sprite_ext(sprite_index, 0, xcurr, ycurr, scale, scale, 0, c_white, 1);
+draw_set_color(global.tint_color);
+draw_sprite_ext(sprite_index, 0, xcurr, ycurr, scale, scale, 0, global.tint_color, 1);
 
 var _x = 30;
 

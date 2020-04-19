@@ -20,7 +20,7 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 	var _wave_scale = 2;
 	var _ww = sprite_get_width(spr_wave_ui);
 	for (var i = 0; i < _sw; i += _ww * _wave_scale)
-		draw_sprite_ext(spr_wave_ui, 0, i, 0, _wave_scale, _wave_scale, 0, c_white, 1);
+		draw_sprite_ext(spr_wave_ui, 0, i, 0, _wave_scale, _wave_scale, 0, global.tint_color, 1);
 	
 	surface_reset_target();
 	
@@ -29,12 +29,12 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 	
 	draw_set_color(c_black);
 	draw_rectangle(0, wave_y - sprite_get_height(wave_sprite) * boat_scale, _sw, _sh, false);
-	draw_set_color(c_white);
-	draw_sprite_ext(wave_sprite, _sw / 2, 0, wave_y, boat_scale, boat_scale, wave_r, c_white, 1);
+	draw_set_color(global.tint_color);
+	draw_sprite_ext(wave_sprite, _sw / 2, 0, wave_y, boat_scale, boat_scale, wave_r, global.tint_color, 1);
 	
 	// Draw Boat
-	draw_sprite_ext(spr_boat_side, 0, boat_x, boat_y, boat_scale, boat_scale, boat_r, c_white, 1);
-	draw_sprite_ext(spr_player_still, 0, boat_x - 30, boat_y - 10, boat_scale / 2, boat_scale / 2, boat_r, c_white, 1);
+	draw_sprite_ext(spr_boat_side, 0, boat_x, boat_y, boat_scale, boat_scale, boat_r, global.tint_color, 1);
+	draw_sprite_ext(spr_player_still, 0, boat_x - 30, boat_y - 10, boat_scale / 2, boat_scale / 2, boat_r, global.tint_color, 1);
 }
 
 

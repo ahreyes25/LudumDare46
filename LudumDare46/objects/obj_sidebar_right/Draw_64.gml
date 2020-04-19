@@ -19,7 +19,7 @@ var _scale = 2;
 var _r_sprite = global.rod_data[obj_player.rod_type, RP.SPRITE];
 var _rx = _x + sprite_get_width(_r_sprite) * _scale / 2;
 var _ry = _y + 100 + sprite_get_height(_r_sprite) * _scale / 2 + 80;
-draw_sprite_ext(_r_sprite, 0, _rx, _ry, _scale, _scale, 0, c_white, 1);
+draw_sprite_ext(_r_sprite, 0, _rx, _ry, _scale, _scale, 0, global.tint_color, 1);
 draw_text(_x, _y + 160, "Rod: " + string(global.rod_data[obj_player.rod_type, RP.NAME]));
 
 draw_line_width(_x - 10, _ry + sprite_get_height(_r_sprite), _x + obj_ui_controller.inner_edge_width - 10, _ry + sprite_get_height(_r_sprite), 3);
@@ -28,7 +28,7 @@ draw_line_width(_x - 10, _ry + sprite_get_height(_r_sprite), _x + obj_ui_control
 var _l_sprite = global.lure_data[obj_player.lure_type, LP.SPRITE];
 var _lx = _rx;
 var _ly = _ry + sprite_get_height(_r_sprite) * _scale / 2 + 30;
-draw_sprite_ext(_l_sprite, 0, _lx, _ly, _scale, _scale, 270, c_white, 1);
+draw_sprite_ext(_l_sprite, 0, _lx, _ly, _scale, _scale, 270, global.tint_color, 1);
 draw_text(_x, _ly - 20, "Lure: " + string(global.lure_data[obj_player.lure_type, LP.NAME]));
 
 draw_line_width(_x - 10, _ly + sprite_get_width(_l_sprite) * _scale, _x + obj_ui_controller.inner_edge_width - 10, _ly + sprite_get_width(_l_sprite) * _scale, 3);
@@ -44,7 +44,7 @@ while (!ds_queue_empty(_temp_queue)) {
 	var _fish			= ds_queue_dequeue(_temp_queue);
 	var _fish_sprite	= global.fish_data[_fish, FP.SPRITE];
 	var _i				= ds_queue_size(_temp_queue);
-	draw_sprite_ext(_fish_sprite, 0, _cx + 96 - 10, _cy + 64 + (sprite_get_height(_fish_sprite) + 10) * _i, 1, 1, 0, c_white, 1);
+	draw_sprite_ext(_fish_sprite, 0, _cx + 96 - 10, _cy + 64 + (sprite_get_height(_fish_sprite) + 10) * _i, 1, 1, 0, global.tint_color, 1);
 }
 ds_queue_destroy(_temp_queue);
 

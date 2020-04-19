@@ -14,7 +14,7 @@ if (show) {
 	// Draw Background
 	draw_set_color(c_black);
 	draw_rectangle(_x1, _y1, _x1 + cell_width, _y1 + (cell_height * _n_items), false);
-	draw_set_color(c_white);
+	draw_set_color(global.tint_color);
 	draw_rectangle(_x1, _y1, _x1 + cell_width, _y1 + (cell_height * _n_items), true);
 	
 	/// Draw Icons
@@ -34,19 +34,19 @@ if (show) {
 			var _ys = _y1 + cell_height / 2;
 			draw_sprite_ext(_item_sprite, 0, 
 				_x1 + cell_width / 2 - sprite_get_width(_item_sprite) / 2, _ys + cell_height * i + scroll_index,
-				scale / 2, scale / 2, 0, c_white, 1);
+				scale / 2, scale / 2, 0, global.tint_color, 1);
 		}
 		else if (_item_type == "fish") {
 			var _ys = _y1 + cell_height / 2;
 			draw_sprite_ext(spr_exclamation_mark, 0, 
 				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index,
-				scale / 2, scale / 2, 0, c_white, 1);
+				scale / 2, scale / 2, 0, global.tint_color, 1);
 		}
 		else {
 			var _ys = _y1 + cell_height / 2;
 			draw_sprite_ext(_item_sprite, 0, 
 				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index,
-				scale / 2, scale / 2, 0, c_white, 1);
+				scale / 2, scale / 2, 0, global.tint_color, 1);
 		}
 	}
 	
@@ -76,7 +76,7 @@ if (show) {
 			// Info Panel Frame
 			draw_set_color(c_black);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.5, false);
-			draw_set_color(c_white);
+			draw_set_color(global.tint_color);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.5, true);
 			
 			var _item_name = global.rod_data[_item_enum, RP.NAME];	
@@ -97,7 +97,7 @@ if (show) {
 			// Info Panel Frame
 			draw_set_color(c_black);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, false);
-			draw_set_color(c_white);
+			draw_set_color(global.tint_color);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, true);
 			
 			var _item_name = global.lure_data[_item_enum, LP.NAME];	
@@ -113,7 +113,7 @@ if (show) {
 			// Info Panel Frame
 			draw_set_color(c_black);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, false);
-			draw_set_color(c_white);
+			draw_set_color(global.tint_color);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, true);
 			
 			var _item_cost = global.fish_data[_item_enum, FP.COST_BUY];

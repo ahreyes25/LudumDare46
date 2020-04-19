@@ -15,12 +15,12 @@ draw_rectangle(_ww - outer_edge_width, 0, _ww, _wh, false);
 surface_set_target(bg_surface);
 
 image_speed = 0.1;
-draw_sprite_tiled_ext(spr_background_scroll, image_index, 0, 0, 1, 1, c_white, 0.5);
+draw_sprite_tiled_ext(spr_background_scroll, image_index, 0, 0, 1, 1, global.tint_color, 0.5);
 
 // Inner Edge
 draw_rectangle(outer_edge_width, 0, outer_edge_width + inner_edge_width, _wh, false);
 draw_rectangle(_ww - outer_edge_width - inner_edge_width, 0, _ww - outer_edge_width, _wh, false);
-draw_set_color(c_white);
+draw_set_color(global.tint_color);
 draw_rectangle(outer_edge_width, 0, outer_edge_width + inner_edge_width, _wh, true);
 draw_rectangle(_ww - outer_edge_width - inner_edge_width, 0, _ww - outer_edge_width, _wh, true);
 
@@ -36,10 +36,10 @@ draw_surface(bg_surface, 0, 0);
 if (exists(obj_player) && !defined(obj_player.rod.lure)) {
 	var _aw = sprite_get_width(spr_arrow_down) / 2;
 	var _ah = sprite_get_height(spr_arrow_down) / 2;
-	draw_sprite(spr_arrow_up, 0, _ww / 2, _ah + sin(arrow_iter));
-	draw_sprite(spr_arrow_right, 0, _ww - outer_edge_width - inner_edge_width - _aw - sin(arrow_iter), _wh / 2);
-	draw_sprite(spr_arrow_left, 0, outer_edge_width + inner_edge_width + _aw + sin(arrow_iter), _wh / 2);
-	draw_sprite(spr_arrow_down, 0, _ww / 2, _wh - _ah - sin(arrow_iter));
+	draw_sprite_ext(spr_arrow_up, 0, _ww / 2, _ah + sin(arrow_iter), image_xscale, image_yscale, image_angle, global.tint_color, image_alpha);
+	draw_sprite_ext(spr_arrow_right, 0, _ww - outer_edge_width - inner_edge_width - _aw - sin(arrow_iter), _wh / 2, image_xscale, image_yscale, image_angle, global.tint_color, image_alpha);
+	draw_sprite_ext(spr_arrow_left, 0, outer_edge_width + inner_edge_width + _aw + sin(arrow_iter), _wh / 2, image_xscale, image_yscale, image_angle, global.tint_color, image_alpha);
+	draw_sprite_ext(spr_arrow_down, 0, _ww / 2, _wh - _ah - sin(arrow_iter), image_xscale, image_yscale, image_angle, global.tint_color, image_alpha);
 }
 
 

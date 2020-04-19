@@ -33,3 +33,6 @@ room_goto_next();
 need_to_clear_surface = false;
 lure_surface = surface_create(room_width, room_height);
 paused = false;
+
+u_color = shader_get_uniform(shdr_solid_color, "u_color");
+u_alpha = shader_get_uniform(shdr_solid_color, "u_alpha");

@@ -6,7 +6,7 @@ if (paused) {
 	draw_set_color(c_black);
 	draw_set_alpha(0.9);
 	draw_rectangle(0, 0, _sw, _sh, false);	
-	draw_set_color(c_white);
+	draw_set_color(global.tint_color);
 	draw_set_alpha(1.0);
 	
 	draw_set_halign(fa_center);

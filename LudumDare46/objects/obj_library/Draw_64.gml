@@ -16,7 +16,7 @@ if (show) {
 		// Draw Background
 		draw_set_color(c_black);
 		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), false);
-		draw_set_color(c_white);
+		draw_set_color(global.tint_color);
 		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), true);
 	
 		// Draw Items
@@ -27,20 +27,20 @@ if (show) {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
 					_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
-					scale / 2, scale / 2, 0, c_white, 1);
+					scale / 2, scale / 2, 0, global.tint_color, 1);
 			}
 			else {
 				if (obj_player.fish_data[| i]) {
 					var _ys = _y + cell_height / 2;
 					draw_sprite_ext(spr_exclamation_mark, 0, 
 						_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
-						scale / 2, scale / 2, 0, c_white, 1);
+						scale / 2, scale / 2, 0, global.tint_color, 1);
 				}
 				else {
 					var _ys = _y + cell_height / 2;
 					draw_sprite_ext(spr_question_mark, 0, 
 						_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
-						scale / 2, scale / 2, 0, c_white, 1);
+						scale / 2, scale / 2, 0, global.tint_color, 1);
 				}
 			}
 		}
@@ -68,7 +68,7 @@ if (show) {
 				// Info Panel Frame
 				draw_set_color(c_black);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, false);
-				draw_set_color(c_white);
+				draw_set_color(global.tint_color);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, true);
 			
 				if (obj_player.fish_caught[| _index] > 0) 
@@ -114,10 +114,10 @@ if (show) {
 				// Info Panel Frame
 				draw_set_color(c_black);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width, _mini_y + cell_height, false);
-				draw_set_color(c_white);
+				draw_set_color(global.tint_color);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width, _mini_y + cell_height, true);
 				
-				draw_sprite_ext(spr_question_mark, 0, _mini_x + cell_width / 2, _mini_y + cell_height / 2, 1, 1, 0, c_white, 1);
+				draw_sprite_ext(spr_question_mark, 0, _mini_x + cell_width / 2, _mini_y + cell_height / 2, 1, 1, 0, global.tint_color, 1);
 			}
 		}
 	}
