@@ -24,30 +24,42 @@ if (update_res) {
 #endregion
 
 // Move To New Area
-if (exists(obj_inventory) && !obj_inventory.show && !obj_game_controller.paused) {
-	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
-		// Left
-		if (window_mouse_get_x() < surface_get_width(application_surface) / 2 && 
-			window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
-				camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
-		// Right
-		else if (window_mouse_get_x() > surface_get_width(application_surface) / 2 && 
-			window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
-				camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
-		// Up
-		else if (window_mouse_get_y() < surface_get_height(application_surface) / 2)
-			camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
-		// Down
-		else
-			camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
-	}
+if (!obj_game_controller.paused) {
+	//if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
+	//	// Left
+	//	if (window_mouse_get_x() < surface_get_width(application_surface) / 2 && 
+	//		window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
+	//			camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
+	//	// Right
+	//	else if (window_mouse_get_x() > surface_get_width(application_surface) / 2 && 
+	//		window_mouse_get_y() > 100 && window_mouse_get_y() < surface_get_height(application_surface) - 100)
+	//			camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
+	//	// Up
+	//	else if (window_mouse_get_y() < surface_get_height(application_surface) / 2)
+	//		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
+	//	// Down
+	//	else
+	//		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
+	//}
 
-	if (keyboard_check_pressed(ord("A")))
+	if (keyboard_check_pressed(ord("A"))) {
 		camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
-	if (keyboard_check_pressed(ord("D")))
+		inventory_hide();
+		merchant_hide();
+	}
+	if (keyboard_check_pressed(ord("D"))) {
 		camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
-	if (keyboard_check_pressed(ord("W")))
+		inventory_hide();
+		merchant_hide();
+	}
+	if (keyboard_check_pressed(ord("W"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
-	if (keyboard_check_pressed(ord("S")))
+		inventory_hide();
+		merchant_hide();
+	}
+	if (keyboard_check_pressed(ord("S"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
+		inventory_hide();
+		merchant_hide();
+	}
 }

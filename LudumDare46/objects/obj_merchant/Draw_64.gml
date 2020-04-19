@@ -41,7 +41,7 @@ else if (state == "sell_done") {
 }
 else if (state == "release_wait") {	
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
-		"Are you sure you want to release \nyour " + string(item_name) + "? You will not be able \nto get it back.", 2, 2, 0);
+		"Are you sure you want to \ndonate your " + string(item_name) + "? \nYou cannot get it back.", 2, 2, 0);
 		
 	if (!obj_inventory.index_mini_mini) {
 		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, 

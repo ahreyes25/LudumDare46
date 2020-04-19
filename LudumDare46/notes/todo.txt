@@ -1,7 +1,16 @@
 // Core
-- buying system
-- sounds & music
-- unlock new items
+- toggle sound options -- 30 min
+- buying system -- 3 hour
+- title page -- 30 min
+- setup other regions -- 1 hour
+- sounds & music -- 2 hour
+- fish need to have unique size and color/weight properties -- 30 min
+- be able to change regions -- 1 hour
+- content creation -- 2 hours
+- fullscreen clicking bugs
+
+- fish guide
+	- lure, region, rarity
 
 // Polish
 - meter bouncing juice
