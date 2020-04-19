@@ -1,7 +1,4 @@
-// Core
-- fish guide
-	- lure, region, rarity
-	
+// Core	
 - title page -- 30 min
 - setup other regions -- 1 hour
 - sounds & music -- 1 hour
