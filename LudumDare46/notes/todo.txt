@@ -7,7 +7,6 @@
 - fish need to have unique size and color/weight properties -- 30 min
 - be able to change regions -- 1 hour
 - content creation -- 2 hours
-- fullscreen clicking bugs
 
 - fish guide
 	- lure, region, rarity

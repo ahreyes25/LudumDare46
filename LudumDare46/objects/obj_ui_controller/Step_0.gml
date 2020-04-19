@@ -1,4 +1,3 @@
-#region Resolution & HUD
 #region New Screen Resolution
 if (update_res) {
 	window_set_size(width, height);
@@ -21,27 +20,36 @@ if (update_res) {
 	init_load  = false;
 }
 #endregion
-#endregion
 
-// Move To New Area
+// Move To New Area -- Clicking
+if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show) {
+	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
+		var _mx = device_mouse_x_to_gui(0);
+		var _my = device_mouse_y_to_gui(0);
+		var _sw = surface_get_width(application_surface);
+		var _sh = surface_get_height(application_surface); 
+		var _left_edge  = obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width;
+		var _right_edge = _sw - obj_ui_controller.outer_edge_width - obj_ui_controller.inner_edge_width;
+		
+		// Left
+		if (_mx > _left_edge && _mx < _right_edge) {
+			if (_mx < _sw / 2 && _my > 100 && _my < _sh - 100)
+				camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
+			// Right
+			else if (_mx > _sw / 2 && _my > 100 && _my < _sh - 100)
+				camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
+			// Up
+			else if (_my < _sh / 2)
+				camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
+			// Down
+			else
+				camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
+		}
+	}
+}
+
+// Move To New Area -- WASD
 if (!obj_game_controller.paused) {
-	//if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
-	//	// Left
-	//	if (device_mouse_y_to_gui(0) < surface_get_width(application_surface) / 2 && 
-	//		device_mouse_y_to_gui(0) > 100 && device_mouse_y_to_gui(0) < surface_get_height(application_surface) - 100)
-	//			camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
-	//	// Right
-	//	else if (device_mouse_y_to_gui(0) > surface_get_width(application_surface) / 2 && 
-	//		device_mouse_y_to_gui(0) > 100 && device_mouse_y_to_gui(0) < surface_get_height(application_surface) - 100)
-	//			camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
-	//	// Up
-	//	else if (device_mouse_y_to_gui(0) < surface_get_height(application_surface) / 2)
-	//		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
-	//	// Down
-	//	else
-	//		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
-	//}
-
 	if (keyboard_check_pressed(ord("A"))) {
 		camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
 		inventory_hide();
