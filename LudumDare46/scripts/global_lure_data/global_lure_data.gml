@@ -7,11 +7,13 @@ enum LP {
 	UNLOCK_CHANCE,
 	NAME,
 	SPRITE,
+	DESC,
 	CATCH_CHANCE
 }
 
 global.lure_data[LURE.LURE_BASIC_1, LP.UNLOCK_CHANCE]		= 1;				
 global.lure_data[LURE.LURE_BASIC_1, LP.NAME]				= "Basic Lure";		
+global.lure_data[LURE.LURE_BASIC_1, LP.DESC]				= "";		
 global.lure_data[LURE.LURE_BASIC_1, LP.SPRITE]				= spr_lure_basic_1;	
 global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
 	/* FISH.NONE	*/		undefined,

@@ -15,8 +15,8 @@ switch (state) {
 			}
 		}
 		
-		var _throw_dist = obj_throw_stats.throw_distance != "" ? real(obj_throw_stats.throw_distance) : 0;
-		obj_throw_stats.throw_distance = string(_throw_dist + 1);
+		var _throw_dist = obj_sidebar_right.throw_distance != "" ? real(obj_sidebar_right.throw_distance) : 0;
+		obj_sidebar_right.throw_distance = string(_throw_dist + 1);
 		
 		// Check For Landing On Water
 		if (path_position == 1) {

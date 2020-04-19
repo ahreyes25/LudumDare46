@@ -34,8 +34,10 @@ if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1 && 
 		lure.type			= lure_type;
 		lure.desired_x		= cursor_x;
 		lure.desired_y		= cursor_y;
-		lure.target_x		= cursor_x + (miss_aim * random(shake * percent(1 - accuracy)) * choose(-1, 1));
-		lure.target_y		= cursor_y + (miss_aim * random(shake * percent(1 - accuracy)) * choose(-1, 1));
+		var _cursor_shake_x = miss_aim * random(shake * percent(1 - accuracy)) * choose(-1, 1);
+		var _cursor_shake_y = miss_aim * random(shake * percent(1 - accuracy)) * choose(-1, 1);
+		lure.target_x		= cursor_x + (defined(_cursor_shake_x) ? _cursor_shake_x : 0);
+		lure.target_y		= cursor_y + (defined(_cursor_shake_y) ? _cursor_shake_y : 0);
 		lure.launch_speed	= launch_speed;
 		launched_x			= x;
 		launched_y			= y;
@@ -45,15 +47,15 @@ if (mouse_check_button_released(mb_left) && !defined(lure) && alarm[0] == -1 && 
 		// Update Throw Stats
 		var _dir = point_direction(mouse_x, mouse_y, anchor_x, anchor_y);
 		var _len = point_distance(mouse_x, mouse_y, anchor_x, anchor_y);
-		obj_throw_stats.throw_angle		= string(floor(_dir));
-		obj_throw_stats.throw_distance	= "";
-		obj_throw_stats.target_xy		= string(floor(lure.desired_x)) + ", " + string(floor(lure.desired_y));
-		obj_throw_stats.actual_xy		= string(floor(lure.target_x)) + ", " + string(floor(lure.target_y));
+		obj_sidebar_right.throw_angle		= string(floor(_dir));
+		obj_sidebar_right.throw_distance	= "";
+		obj_sidebar_right.target_xy		= string(floor(lure.desired_x)) + ", " + string(floor(lure.desired_y));
+		obj_sidebar_right.actual_xy		= string(floor(lure.target_x)) + ", " + string(floor(lure.target_y));
 		
 		var _innacuracy_x	= abs(lure.desired_x - lure.target_x) / lengthdir_x(_len, _dir);
 		var _innacuracy_y	= abs(lure.desired_y - lure.target_y) / lengthdir_y(_len, _dir);
 		var _innacuracy		= abs((_innacuracy_x + _innacuracy_y) / 2) * 10;
-		obj_throw_stats.innacuracy = string(_innacuracy) + "%";
+		obj_sidebar_right.innacuracy = string(_innacuracy) + "%";
 		
 		// Update Camera
 		camera_set_zoom_factor(1, -1);

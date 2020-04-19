@@ -21,6 +21,7 @@
 
 // Extra Extra
 - easter egg on edge of map?
+	- secret rod => "holy shit you just broke the game"
 - achievements
 	
 // Other
