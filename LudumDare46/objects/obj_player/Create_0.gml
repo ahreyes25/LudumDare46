@@ -1,6 +1,7 @@
 rod				= instance_create_layer(x, y, "Instances", obj_rod);
 rod_type		= ROD.ROD_BASIC_1;
-lure			= LURE.LURE_BASIC_1;
+lure_type		= LURE.LURE_BASIC_1;
+lure			= undefined;
 rod.player		= id;
 rod.type		= rod_type;
 rod.lure_type	= lure;

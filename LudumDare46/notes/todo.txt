@@ -1,8 +1,7 @@
-- random fish occurances
-- easter egg on edge of map
-- put waves in water
-- fishing zones & "hot spots"
 - side bar UI
+- better fish behavior
+- easter egg on edge of map?
+- fishing zones & "hot spots"
 - inventory
 - shop system
 - right click to cancel throw
@@ -10,6 +9,7 @@
 - more complex fish?
 - coins to collect
 - sounds
+- achievements
 
 - new regions
 - basic cutscenes
@@ -21,3 +21,5 @@ JUICE!!
 	
 - proc gen ponds
 - shrinking ponds
+
+- remove space to spawn card

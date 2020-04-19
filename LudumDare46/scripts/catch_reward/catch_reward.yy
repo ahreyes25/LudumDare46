@@ -1,8 +1,8 @@
 {
-    "id": "8e81e4cd-64a3-4567-9951-acfd2a12b691",
+    "id": "986c67e2-107d-466b-aa53-5a51f01e4e8d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "catch_fish",
+    "name": "catch_reward",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -23,6 +23,6 @@ if (mouse_check_button_pressed(mb_left)) {
 	
 	// Win
 	if (arrow_tick_pos <= goal_ticks)
-		catch_fish(fish);
+		catch_reward(fish);
 	instance_destroy();
 }
