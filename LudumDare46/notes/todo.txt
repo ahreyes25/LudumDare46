@@ -1,25 +1,27 @@
-- side bar UI
-- better fish behavior
-- easter egg on edge of map?
-- fishing zones & "hot spots"
+// Core
 - inventory
 - shop system
+- side bar UI
+- sounds & music
+- basic cutscenes
+
+// Extra
+- better fish behavior
+- fishing zones & "hot spots"
 - right click to cancel throw
 - hit zones in different areas/multiple meter hit zones
-- more complex fish?
 - coins to collect
-- sounds
-- achievements
-
 - new regions
-- basic cutscenes
-	- everytime you travel to new region for the first time
-	
-JUICE!!
-- add a TON of juice to meter bouncing
-	- draw sprites to surface, transform surface
-	
 - proc gen ponds
 - shrinking ponds
 
+// Polish
+- meter bouncing juice
+- catch reward juice
+
+// Extra Extra
+- easter egg on edge of map?
+- achievements
+	
+// Other
 - remove space to spawn card

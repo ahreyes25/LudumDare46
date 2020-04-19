@@ -4,7 +4,7 @@ lure_type		= LURE.LURE_BASIC_1;
 lure			= undefined;
 rod.player		= id;
 rod.type		= rod_type;
-rod.lure_type	= lure;
+rod.lure_type	= lure_type;
 meter			= undefined;
 
 boat_scale		= 2;
