@@ -46,7 +46,7 @@ if (show) {
 		
 		// Draw Mini Menu
 		if (show_mini) {
-			var _text	= ["Sell", "Release", "Info", "Cancel"];
+			var _text	= ["Sell", "Donate", "Info", "Cancel"];
 			var _mini_w = 128;
 			var _mini_h = 64;
 			var _mini_x = start_x + cell_width;

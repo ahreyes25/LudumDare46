@@ -19,6 +19,7 @@
 - meter bouncing juice
 - catch reward juice
 - arrows sink when navigating areas
+- secret rod for donating a ton
 
 // Extra Extra
 - easter egg on edge of map?
@@ -28,3 +29,4 @@
 	
 // Other
 - remove space to spawn card
+- remove console and debug objects

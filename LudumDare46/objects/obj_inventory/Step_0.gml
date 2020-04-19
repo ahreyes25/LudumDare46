@@ -4,7 +4,7 @@ if (!show_mini) {
 		scroll_index += cell_height;
 	if (mouse_wheel_up())
 		scroll_index -= cell_height;
-	index = ((window_mouse_get_y() - start_y) div cell_height);
+	index = clamp(((window_mouse_get_y() - start_y) div cell_height), 0, ds_list_size(inventory) - 1);
 }
 // Show Mini
 else if (!show_mini_mini) {
@@ -23,9 +23,9 @@ if (mouse_check_button_pressed(mb_left)) {
 		show_mini_mini = true;
 		
 		switch (index_mini) {
-			case 0:	merchant_show(_item[1], _item[0]);	break;
-			case 1:	break;
-			case 2: break;
+			case 0:	merchant_show(_item[1], _item[0], "sell");		break;
+			case 1:	merchant_show(_item[1], _item[0], "release");	break;
+			case 2: merchant_show(_item[1], _item[0], "info");		break;
 			case 3:	
 				show_mini = false;	
 				show_mini_mini = false;
@@ -46,10 +46,19 @@ if (mouse_check_button_pressed(mb_left)) {
 					fish_sell();
 					show_mini_mini = false;
 					show_mini = false;
-					merchant_hide();
 					break;	// sell
-				case 1:	break;	// release
-				case 2: break;	// get info
+					
+				case 1:	
+					fish_release();
+					show_mini_mini = false;
+					show_mini = false;
+					break;	// release
+					
+				case 2: 
+					fish_info();
+					show_mini_mini = false;
+					show_mini = false;
+					break;	// get info
 			}
 		}	
 	}

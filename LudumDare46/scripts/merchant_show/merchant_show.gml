@@ -1,10 +1,17 @@
 /// @param item
 /// @param item_type_string
+/// @param merchant_showing
 
 var _item		= argument0;
 var _item_type	= argument1;
+var _show		= argument2;
 
-obj_merchant.state = "show";
+if (_show == "sell")
+	obj_merchant.state = "show_sell";
+else if (_show == "release")
+	obj_merchant.state = "show_release";
+else if (_show == "info")
+	obj_merchant.state = "show_info";
 
 if (_item_type == "fish") {
 	obj_merchant.item_name = global.fish_data[_item, FP.NAME];

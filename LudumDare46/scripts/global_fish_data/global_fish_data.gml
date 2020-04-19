@@ -11,6 +11,7 @@ enum FP {
 	DESC,
 	REGION,
 	RARITY,
+	INFO,
 	COST,
 	
 	// Rod Props
@@ -24,6 +25,7 @@ global.fish_data[FISH.FISH, FP.DESC]						= "The Fishiest of Fish";
 global.fish_data[FISH.FISH, FP.REGION]						= REGION.FOREST;
 global.fish_data[FISH.FISH, FP.RARITY]						= "Common";
 global.fish_data[FISH.FISH, FP.COST]						= 10;
+global.fish_data[FISH.FISH, FP.INFO]						= "This fish is the fishiest \nof all fish, quite fishy \nin all ways. Indeed!";
 global.fish_data[FISH.FISH, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
 global.fish_data[FISH.FISH, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
 
@@ -33,6 +35,7 @@ global.fish_data[FISH.OCTUPUS, FP.DESC]						= "";
 global.fish_data[FISH.OCTUPUS, FP.REGION]					= REGION.FOREST;
 global.fish_data[FISH.OCTUPUS, FP.RARITY]					= "Rare";
 global.fish_data[FISH.OCTUPUS, FP.COST]						= 1000;
+global.fish_data[FISH.OCTUPUS, FP.INFO]						= "";
 global.fish_data[FISH.OCTUPUS, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
 global.fish_data[FISH.OCTUPUS, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
 
@@ -42,5 +45,6 @@ global.fish_data[FISH.CRAB, FP.DESC]						= "";
 global.fish_data[FISH.CRAB, FP.REGION]						= REGION.FOREST;
 global.fish_data[FISH.CRAB, FP.RARITY]						= "Kind Of Rare";
 global.fish_data[FISH.CRAB, FP.COST]						= 100;
+global.fish_data[FISH.CRAB, FP.INFO]						= "";
 global.fish_data[FISH.CRAB, FP.ZONE_SIZE_ROD_BASIC_1]		= 5;
 global.fish_data[FISH.CRAB, FP.ZONE_SPEED_ROD_BASIC_1]		= 5;

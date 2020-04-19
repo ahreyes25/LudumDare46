@@ -10,7 +10,7 @@ launch_speed	= undefined;
 miss_aim		= false;
 outer_rot		= random(360);
 inner_rot		= random(360);
-throw_cooldown	= 30;
+throw_cooldown	= 60;
 
 anchor_x		= x;
 anchor_y		= y;
