@@ -12,7 +12,16 @@ draw_text_transformed(_x + sprite_get_width(spr_coin_ui) + 30, _y + sprite_get_h
 draw_set_valign(fa_top);
 
 // Inventory
-draw_sprite_ext(spr_chest, 0, _x, _y + sprite_get_height(spr_coin_ui) + 30 + 70, _scale, _scale, 0, c_white, 1);
+var _iy = _y + sprite_get_height(spr_coin_ui) + 100;
+draw_sprite_ext(spr_chest, 0, _x, _iy, _scale, _scale, 0, c_white, 1);
+
+// Shop
+var _sy = _iy + sprite_get_height(spr_chest) + 100;
+draw_sprite_ext(spr_shop_ui, 0, _x, _sy, _scale, _scale, 0, c_white, 1);
+
+// Library
+var _ly = _sy + sprite_get_height(spr_chest) + 110;
+draw_sprite_ext(spr_library_ui, 0, _x, _ly, _scale, _scale, 0, c_white, 1);
 
 // Pause
 var _scale = 1;

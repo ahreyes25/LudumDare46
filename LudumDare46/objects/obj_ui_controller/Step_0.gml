@@ -22,7 +22,9 @@ if (update_res) {
 #endregion
 
 // Move To New Area -- Clicking
-if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show) {
+if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show && exists(obj_player) && exists(obj_player.rod) && 
+	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show) {
+		
 	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
 		var _mx = device_mouse_x_to_gui(0);
 		var _my = device_mouse_y_to_gui(0);
@@ -49,25 +51,25 @@ if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show)
 }
 
 // Move To New Area -- WASD
-if (!obj_game_controller.paused) {
+if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) && !defined(obj_player.rod.lure)) {
 	if (keyboard_check_pressed(ord("A"))) {
 		camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
 		inventory_hide();
-		merchant_hide();
+		shop_hide();
 	}
 	if (keyboard_check_pressed(ord("D"))) {
 		camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
 		inventory_hide();
-		merchant_hide();
+		shop_hide();
 	}
 	if (keyboard_check_pressed(ord("W"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
 		inventory_hide();
-		merchant_hide();
+		shop_hide();
 	}
 	if (keyboard_check_pressed(ord("S"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
 		inventory_hide();
-		merchant_hide();
+		shop_hide();
 	}
 }

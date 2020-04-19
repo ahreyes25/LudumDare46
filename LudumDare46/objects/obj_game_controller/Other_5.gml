@@ -8,5 +8,6 @@ if (room != _rm_init) {
 		instance_destroy(sidebar_left);
 		instance_destroy(inventory);
 		instance_destroy(merchant);
+		instance_destroy(shop);
 	}
 }

@@ -12,16 +12,23 @@ else if (_show == "release")
 	obj_merchant.state = "show_release";
 else if (_show == "info")
 	obj_merchant.state = "show_info";
+else if (_show == "buy")
+	obj_merchant.state = "show_shop";
+else if (_show == "shop_confirm")
+	obj_merchant.state = "shop_confirm";
 
 if (_item_type == "fish") {
-	obj_merchant.item_name = global.fish_data[_item, FP.NAME];
-	obj_merchant.item_cost = global.fish_data[_item, FP.COST];
+	obj_merchant.item_name		= global.fish_data[_item, FP.NAME];
+	obj_merchant.item_cost_buy	= global.fish_data[_item, FP.COST_BUY];
+	obj_merchant.item_cost_sell	= global.fish_data[_item, FP.COST_SELL];
 }
 if (_item_type == "rod") {
-	obj_merchant.item_name = global.rod_data[_item, FP.NAME];
-	obj_merchant.item_cost = global.rod_data[_item, FP.COST];
+	obj_merchant.item_name		= global.rod_data[_item, RP.NAME];
+	obj_merchant.item_cost_buy	= global.rod_data[_item, RP.COST_BUY];
+	obj_merchant.item_cost_sell	= global.rod_data[_item, RP.COST_SELL];
 }
 if (_item_type == "lure") {
-	obj_merchant.item_name = global.lure_data[_item, FP.NAME];
-	obj_merchant.item_cost = global.lure_data[_item, FP.COST];
+	obj_merchant.item_name		= global.lure_data[_item, LP.NAME];
+	obj_merchant.item_cost_buy	= global.lure_data[_item, LP.COST_BUY];
+	obj_merchant.item_cost_sell	= global.lure_data[_item, LP.COST_SELL];
 }

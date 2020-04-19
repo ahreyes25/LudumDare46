@@ -8,11 +8,12 @@ if (room != _rm_init) {
 		if (!exists(obj_player))
 			player = instance_create_layer(0, 0, "Instances", obj_player);	
 			
-		ui_controller		= instance_create_layer(0, 0, "Controllers", obj_ui_controller);
-		sidebar_right		= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
-		sidebar_left		= instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
-		inventory			= instance_create_layer(0, 0, "Controllers", obj_inventory);
-		merchant			= instance_create_layer(0, 0, "Controllers", obj_merchant);
+		ui_controller	= instance_create_layer(0, 0, "Controllers", obj_ui_controller);
+		sidebar_right	= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+		sidebar_left	= instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
+		inventory		= instance_create_layer(0, 0, "Controllers", obj_inventory);
+		merchant		= instance_create_layer(0, 0, "Controllers", obj_merchant);
+		shop			= instance_create_layer(0, 0, "Controllers", obj_shop);
 		
 		alarm[0] = 60;
 	}

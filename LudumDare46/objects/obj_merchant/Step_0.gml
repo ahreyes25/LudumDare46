@@ -1,4 +1,5 @@
 switch (state) {
+	#region Inventory
 	case "show_sell":
 		if (obj_inventory.show) {
 			xcurr = lerp(xcurr, xtarget, 0.2);
@@ -31,6 +32,19 @@ switch (state) {
 			}
 		}
 		break;
+	#endregion
+	#region Shop
+	case "show_shop":
+		if (obj_shop.show) {
+			xcurr = lerp(xcurr, xtarget, 0.2);
+		
+			if (abs(xcurr - xtarget) <= 1) {
+				state = "shop_wait";
+				phrase = undefined;
+			}
+		}
+		break;
+	#endregion
 	
 	case "hide":
 		xcurr = lerp(xcurr, x_start, 0.1);

@@ -9,8 +9,8 @@ if (show) {
 		if (!surface_exists(surface))
 			surface = surface_create(cell_width, cell_height * _n_items);
 		surface_resize(surface, cell_width + 1, cell_height * _n_items + 1);
-	
 		surface_set_target(surface);
+		draw_clear_alpha(c_black, 0);
 	
 		// Draw Background
 		draw_set_color(c_black);
@@ -26,11 +26,23 @@ if (show) {
 		
 			if (_item_type == "fish")
 				var _item_sprite = global.fish_data[_item_enum, FP.SPRITE];
+			if (_item_type == "rod")
+				var _item_sprite = global.rod_data[_item_enum, RP.SPRITE];
+			if (_item_type == "lure")
+				var _item_sprite = global.lure_data[_item_enum, LP.SPRITE];
 		
-			var _ys = _y + cell_height / 2;
-			draw_sprite_ext(_item_sprite, 0, 
-				_x + cell_width / 2, _ys + cell_height * i + scroll_index,
-				scale / 2, scale / 2, 0, c_white, 1);
+			if (_item_type == "lure") {
+				var _ys = _y + cell_height / 2;
+				draw_sprite_ext(_item_sprite, 0, 
+					_x + cell_width / 2 - sprite_get_width(_item_sprite) / 2, _ys + cell_height * i + scroll_index,
+					scale / 2, scale / 2, 0, c_white, 1);
+			}
+			else {
+				var _ys = _y + cell_height / 2;
+				draw_sprite_ext(_item_sprite, 0, 
+					_x + cell_width / 2, _ys + cell_height * i + scroll_index,
+					scale / 2, scale / 2, 0, c_white, 1);
+			}
 		}
 	
 		// Draw Selection Cursor

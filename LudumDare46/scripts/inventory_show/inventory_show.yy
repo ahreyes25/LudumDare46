@@ -1,8 +1,8 @@
 {
-    "id": "f19ac9e2-1bae-4023-92bc-efa134d6255e",
+    "id": "b5976082-214b-4a1a-902d-17ae3ab994e2",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "fish_sell",
+    "name": "inventory_show",
     "IsCompatibility": false,
     "IsDnD": false
 }

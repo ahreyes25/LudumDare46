@@ -10,6 +10,9 @@ sold_count		= 0;
 released_count	= 0;
 learned_about	= 0;
 
-item_name = undefined;
-item_cost = undefined;
-item_info = undefined;
+item_name		= undefined;
+item_cost_sell	= undefined;
+item_cost_buy	= undefined;
+item_info		= undefined;
+
+shop_text = "What can I get for ya?"

@@ -21,6 +21,7 @@ sidebar_right		= undefined;//instance_create_layer(0, 0, "Controllers", obj_side
 sidebar_left		= undefined;//instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
 inventory			= undefined;//instance_create_layer(0, 0, "Controllers", obj_inventory);
 merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
+merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
 #endregion
 
 #region Sound & Music
