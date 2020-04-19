@@ -19,6 +19,7 @@ player				= undefined;
 rod					= undefined;
 lure				= undefined;
 throw_stats			= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+inventory			= instance_create_layer(0, 0, "Controllers", obj_inventory);
 #endregion
 
 #region Sound & Music

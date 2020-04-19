@@ -7,6 +7,7 @@ instance_destroy(player);
 instance_destroy(rod);
 instance_destroy(lure);
 instance_destroy(throw_stats);
+instance_destroy(inventory);
 
 surface_free(lure_surface);
 
