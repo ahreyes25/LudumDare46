@@ -9,5 +9,6 @@ if (room != _rm_init) {
 		instance_destroy(inventory);
 		instance_destroy(merchant);
 		instance_destroy(shop);
+		instance_destroy(library);
 	}
 }

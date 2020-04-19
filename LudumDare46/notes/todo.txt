@@ -23,6 +23,7 @@
 - UI feedback when menus open and close
 - keep the fisherman bobbing while fishing
 - more shopkeeper dialogue
+- scroll visual indicators in menus
 
 // Extra
 - better fish behavior
@@ -32,10 +33,21 @@
 - coins to collect
 - new regions
 - shrinking ponds
-
-// Extra Extra
 - proc gen ponds
 - easter egg on edge of map?
 	- secret rod => "holy shit you just broke the game"
+	- far distance catch
+	- catch 10 without moving from starting zone
+	- catch every fish?
 - achievements
 - save file
+	- regions unlocked
+	- fish caught
+	- fish data
+	- inventory
+	- shop list
+	- money
+	- items equipped
+	- any achievement data
+		- items sold to shopkeeper, etc
+	- achievements unlocked

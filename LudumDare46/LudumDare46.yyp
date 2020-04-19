@@ -895,6 +895,14 @@
             }
         },
         {
+            "Key": "43c67604-6f3c-44fb-8bf6-197ad96eddcc",
+            "Value": {
+                "id": "ebeeda19-9df3-4b6a-b081-5eadda0928f6",
+                "resourcePath": "objects\\obj_library\\obj_library.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44016307-a099-4a36-988b-c6df6b50e531",
             "Value": {
                 "id": "04b0ced3-0e76-46c8-904e-69c3554041b5",
@@ -915,6 +923,14 @@
             "Value": {
                 "id": "ffada7c1-6c46-4a13-b1a1-473cdf8c8e5a",
                 "resourcePath": "scripts\\fadeout_object_get_by_owner\\fadeout_object_get_by_owner.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "448158d3-620c-4af6-b49c-c24d4f3a37b6",
+            "Value": {
+                "id": "70042a5c-94c2-4186-ad2e-91c1b0b04eb2",
+                "resourcePath": "scripts\\fish_get_lure_best\\fish_get_lure_best.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1735,6 +1751,14 @@
             }
         },
         {
+            "Key": "78b88b6f-164e-4535-9fd1-746d46e73695",
+            "Value": {
+                "id": "9e7069d4-62c5-4e66-8a42-69ead739609c",
+                "resourcePath": "sprites\\spr_exclamation_mark\\spr_exclamation_mark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79234255-bd38-4b7d-81d4-5ca7546f65f5",
             "Value": {
                 "id": "7704f7d1-e0f9-418c-bd4e-8391dcd695a3",
@@ -1772,6 +1796,14 @@
                 "id": "d8d6b4eb-6fd4-4f82-baf9-1b354916563f",
                 "resourcePath": "views\\7b529153-83d9-415a-b500-532356ea55d4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7c0fbdd2-5e83-4abc-ae9f-f22be4480e78",
+            "Value": {
+                "id": "772db0e8-e82d-4207-b532-10baed06d559",
+                "resourcePath": "scripts\\library_show\\library_show.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1852,6 +1884,14 @@
                 "id": "13daf32f-6d1f-4094-9680-7ec6f4de7435",
                 "resourcePath": "scripts\\timer_object_cleanup\\timer_object_cleanup.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "82ab72ba-aa09-4e54-8c2d-12403f29f00a",
+            "Value": {
+                "id": "85540888-fb38-4828-874f-60ed02cb25b6",
+                "resourcePath": "sprites\\spr_question_mark\\spr_question_mark.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2012,6 +2052,14 @@
                 "id": "2b0ad58d-730e-4522-8f6e-d3104060a665",
                 "resourcePath": "shaders\\shdr_pulse_color\\shdr_pulse_color.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "8e42ce78-6b9c-4f86-bf25-f650e49a5fdc",
+            "Value": {
+                "id": "a80dd3d1-5e6f-4eeb-a965-0e6bcac770a9",
+                "resourcePath": "scripts\\library_hide\\library_hide.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3063,6 +3111,14 @@
             }
         },
         {
+            "Key": "d3ca2b4d-0c03-4a61-bd0a-2f96216b18bf",
+            "Value": {
+                "id": "3dcd9040-0a7c-4d5f-8674-efc2fe45931d",
+                "resourcePath": "scripts\\fish_get_region\\fish_get_region.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d524ef8b-b0b9-4ee7-9633-d4b1a351e439",
             "Value": {
                 "id": "3b0ea19c-ba2d-4e2f-bad0-0a1ac2e0ee64",
@@ -3075,6 +3131,14 @@
             "Value": {
                 "id": "0053e8a6-0700-44ea-8a06-e9f6f2e16fcf",
                 "resourcePath": "scripts\\translate_var_code_to_string_name\\translate_var_code_to_string_name.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d578d855-2ecb-45f9-b0d4-5eb577019efe",
+            "Value": {
+                "id": "12a20b74-bbd3-4291-ae16-9ceb63918e03",
+                "resourcePath": "scripts\\fish_get_lure_avg\\fish_get_lure_avg.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3515,6 +3579,14 @@
             "Value": {
                 "id": "81a628cf-d18f-4e24-b37c-c2a033e2125f",
                 "resourcePath": "scripts\\silhouette_draw_end\\silhouette_draw_end.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f09c39fa-2732-47b9-9997-69a5fabb324b",
+            "Value": {
+                "id": "c1b00946-e02e-4887-bb6e-57bdd500d952",
+                "resourcePath": "scripts\\fish_get_lure_worst\\fish_get_lure_worst.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4008,7 +4080,13 @@
         "b5976082-214b-4a1a-902d-17ae3ab994e2",
         "4d484bcd-fea9-422f-963a-e5a64ef56ede",
         "7f717894-452e-46c4-bae6-b67872304b27",
-        "7617fa9d-b024-4647-a378-dbc653e9b528"
+        "7617fa9d-b024-4647-a378-dbc653e9b528",
+        "7c0fbdd2-5e83-4abc-ae9f-f22be4480e78",
+        "8e42ce78-6b9c-4f86-bf25-f650e49a5fdc",
+        "d3ca2b4d-0c03-4a61-bd0a-2f96216b18bf",
+        "448158d3-620c-4af6-b49c-c24d4f3a37b6",
+        "f09c39fa-2732-47b9-9997-69a5fabb324b",
+        "d578d855-2ecb-45f9-b0d4-5eb577019efe"
     ],
     "tutorial": ""
 }

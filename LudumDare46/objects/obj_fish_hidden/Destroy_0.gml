@@ -1,0 +1,1 @@
+ds_list_delete(obj_pond.fish, 0);

@@ -14,6 +14,7 @@ if (room != _rm_init) {
 		inventory		= instance_create_layer(0, 0, "Controllers", obj_inventory);
 		merchant		= instance_create_layer(0, 0, "Controllers", obj_merchant);
 		shop			= instance_create_layer(0, 0, "Controllers", obj_shop);
+		library			= instance_create_layer(0, 0, "Controllers", obj_library);
 		
 		alarm[0] = 60;
 	}

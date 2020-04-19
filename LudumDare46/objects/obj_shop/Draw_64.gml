@@ -81,7 +81,7 @@ if (show) {
 			draw_text(_mini_x + 10, _mini_y + 10, _item_name);
 			draw_text(_mini_x + 10, _mini_y + 30, _item_desc);
 			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
-			draw_text(_mini_x + 10, _mini_y + 70, "Shake Chance (Per Frame): " + string(global.rod_data[_item_enum, RP.ACCURACY] * 10) + "%");
+			draw_text(_mini_x + 10, _mini_y + 70, "Shake Chance (Per Frame): " + string(global.rod_data[_item_enum, RP.ACCURACY] * 100) + "%");
 			draw_text(_mini_x + 10, _mini_y + 90, "Shake Amount: " + string(global.rod_data[_item_enum, RP.SHAKE]) + " pixels");
 			draw_text(_mini_x + 10, _mini_y + 110, "Shake Duration: " + string(global.rod_data[_item_enum, RP.SHAKE_INTERVAL] / room_speed) + " seconds");
 			draw_text(_mini_x + 10, _mini_y + 130, "Launch Speed: " + string(global.rod_data[_item_enum, RP.LAUNCH_SPEED]) + " pixels per second");

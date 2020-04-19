@@ -33,6 +33,16 @@ if (mouse_check_button_released(mb_left)) {
 			else
 				shop_show();
 		}
+		
+		// Library 
+		var _ly = _y1 + sprite_get_height(spr_library_ui) + 110;
+		var _y2 = _ly + sprite_get_height(spr_library_ui) * _scale;
+		if (_mx >= _x1 && _mx <= _x2 && _my >= _ly && _my <= _y2) {
+			if (obj_library.show)
+				library_hide();
+			else
+				library_show();
+		}
 	}
 	
 	// Pause

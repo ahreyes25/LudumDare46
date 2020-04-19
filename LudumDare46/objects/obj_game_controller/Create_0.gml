@@ -20,7 +20,8 @@ lure				= undefined;
 sidebar_right		= undefined;//instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
 sidebar_left		= undefined;//instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
 inventory			= undefined;//instance_create_layer(0, 0, "Controllers", obj_inventory);
-merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
+shop				= undefined;//instance_create_layer(0, 0, "Controllers", obj_shop);
+library				= undefined;//instance_create_layer(0, 0, "Controllers", obj_library);
 merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
 #endregion
 
