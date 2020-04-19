@@ -19,18 +19,21 @@ if (show && mouse_check_button_pressed(mb_left)) {
 	
 	// Select Mini
 	if (show_mini && !show_mini_mini) {
-		var _index = index - (scroll_index div cell_height);
+		var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
 		var _item = inventory[| _index];
-		show_mini_mini = true;
 		
-		switch (index_mini) {
-			case 0:	merchant_show(_item[1], _item[0], "sell");		break;
-			case 1:	merchant_show(_item[1], _item[0], "release");	break;
-			case 2: merchant_show(_item[1], _item[0], "info");		break;
-			case 3:	
-				show_mini = false;	
-				show_mini_mini = false;
-				break;	// cancel
+		if (defined(_item) && array_length_1d(_item) > 0) {
+			show_mini_mini = true;
+		
+			switch (index_mini) {
+				case 0:	merchant_show(_item[1], _item[0], "sell");		break;
+				case 1:	merchant_show(_item[1], _item[0], "release");	break;
+				case 2: merchant_show(_item[1], _item[0], "info");		break;
+				case 3:	
+					show_mini = false;	
+					show_mini_mini = false;
+					break;	// cancel
+			}
 		}
 	}
 	// Select Mini Mini

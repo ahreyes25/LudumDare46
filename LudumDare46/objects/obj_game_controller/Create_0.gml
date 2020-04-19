@@ -17,10 +17,10 @@ camera				= undefined;
 player				= undefined;
 rod					= undefined;
 lure				= undefined;
-sidebar_right		= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
-sidebar_left		= instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
-inventory			= instance_create_layer(0, 0, "Controllers", obj_inventory);
-merchant			= instance_create_layer(0, 0, "Controllers", obj_merchant);
+sidebar_right		= undefined;//instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+sidebar_left		= undefined;//instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
+inventory			= undefined;//instance_create_layer(0, 0, "Controllers", obj_inventory);
+merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
 #endregion
 
 #region Sound & Music

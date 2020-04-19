@@ -33,7 +33,7 @@ surface_reset_target();
 draw_surface(bg_surface, 0, 0);
 
 // Edge Arrows
-if (!defined(obj_player.rod.lure)) {
+if (exists(obj_player) && !defined(obj_player.rod.lure)) {
 	var _aw = sprite_get_width(spr_arrow_down) / 2;
 	var _ah = sprite_get_height(spr_arrow_down) / 2;
 	draw_sprite(spr_arrow_up, 0, _ww / 2, _ah + sin(arrow_iter));

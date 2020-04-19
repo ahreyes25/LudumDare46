@@ -24,7 +24,7 @@ if (update_res) {
 #endregion
 
 // Move To New Area
-if (!obj_inventory.show && !obj_game_controller.paused) {
+if (exists(obj_inventory) && !obj_inventory.show && !obj_game_controller.paused) {
 	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
 		// Left
 		if (window_mouse_get_x() < surface_get_width(application_surface) / 2 && 
