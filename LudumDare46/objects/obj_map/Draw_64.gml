@@ -7,7 +7,7 @@ if (show) {
 	if (_n_items > 0) {
 	
 		if (!surface_exists(surface))
-			surface = surface_create(cell_width, cell_height * _n_items);
+			surface = surface_create(cell_width, cell_height * _n_items + 1);
 		surface_resize(surface, cell_width + 1, cell_height * _n_items + 1);
 		surface_set_target(surface);
 		draw_clear_alpha(c_black, 0);

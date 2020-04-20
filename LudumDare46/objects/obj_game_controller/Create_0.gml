@@ -54,3 +54,26 @@ sfx_desert			= sfx_desert_song;
 sfx_desert_inst		= undefined;
 sfx_glacier			= sfx_glacier_song;
 sfx_glacier_inst	= undefined;
+
+player_rod_type		= ROD.ROD_BASIC_1;
+player_lure_type	= LURE.LURE_BASIC_1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
