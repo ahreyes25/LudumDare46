@@ -299,7 +299,7 @@ global.fish_data[FISH.LOBSTER, FP.RARITY]					= "Extremely Rare";
 global.fish_data[FISH.LOBSTER, FP.COST_SELL]				= 2500;
 global.fish_data[FISH.LOBSTER, FP.COST_BUY]					= 2500;
 global.fish_data[FISH.LOBSTER, FP.INFO]						= "This is a big lobster; the biggest. \nI've seen no bigger. \nThe largest ever found. \nNo lobster is bigger than this. \nBigly.";
-global.fish_data[FISH.LOBSTER, FP.ZONE_SIZE_ROD_BASIC_1]	= 150;
+global.fish_data[FISH.LOBSTER, FP.ZONE_SIZE_ROD_BASIC_1]	= 15;
 global.fish_data[FISH.LOBSTER, FP.ZONE_SPEED_ROD_BASIC_1]	= 3;
 
 global.fish_data[FISH.OCTO, FP.NAME]						= "Octopussy";
