@@ -4,8 +4,8 @@ if (exists(_camera)) {
 	_camera.lock_time_y	= undefined;
 	_camera.lock_x		= undefined;
 	_camera.lock_y		= undefined;
-	alarm[_camera.timer_lock_x] = -1;
-	alarm[_camera.timer_lock_y] = -1;
+	_camera.alarm[_camera.timer_lock_x] = -1;
+	_camera.alarm[_camera.timer_lock_y] = -1;
 	return true;
 }
 return false;

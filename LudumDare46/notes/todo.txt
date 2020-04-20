@@ -1,16 +1,10 @@
-// Before Submitting
-- make sure that meter_create() has updated rod values
-- remove starting money
-
 // Core	
-- modify content
 - more shopkeeper dialogue
 
 // Polish
 - catch reward juice
 	- flip card around
 	- screen flash
-- screen shake? -- miss catch?
 - meter bouncing juice
 - catch junk and items?
 

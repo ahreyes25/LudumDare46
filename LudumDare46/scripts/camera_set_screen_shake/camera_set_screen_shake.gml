@@ -9,7 +9,7 @@ if (exists(_camera)) {
 
 	_camera.screen_shake_size = _screen_shake_size * SHAKE_MULT;
 	_camera.screen_shake_time = _screen_shake_time;
-	alarm[_camera.timer_screen_shake_time] = _screen_shake_time;
+	_camera.alarm[_camera.timer_screen_shake_time] = _screen_shake_time;
 	return true;
 }
 return false;

@@ -27,9 +27,9 @@ zoom_speed_base		= 0.1;
 zoom_speed			= undefined;
 
 // Screen Shake
-screen_shake_size_base	= 1;
+screen_shake_size_base	= 8;
 screen_shake_size		= undefined;
-screen_shake_time_base	= 10;
+screen_shake_time_base	= 30;
 screen_shake_time		= undefined;
 
 // Screen Flash

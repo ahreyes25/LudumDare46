@@ -17,6 +17,7 @@ if (alarm[0] == -1) {
 				sfx_play(sfx_fish_escape);
 				obj_player.sad = true;
 				obj_player.alarm[0] = 120;
+				camera_set_screen_shake();
 			}
 			else {
 				move_dir = DIR.UP;
@@ -38,6 +39,7 @@ if (mouse_check_button_pressed(mb_left)) {
 			sfx_play(sfx_fish_escape);
 			obj_player.sad = true;
 			obj_player.alarm[0] = 120;
+			camera_set_screen_shake();
 		}
 		instance_destroy();
 	}
@@ -46,5 +48,6 @@ if (mouse_check_button_pressed(mb_left)) {
 		sfx_play(sfx_fish_escape);
 		obj_player.sad = true;
 		obj_player.alarm[0] = 120;
+		camera_set_screen_shake();
 	}
 }
