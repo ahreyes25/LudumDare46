@@ -9,6 +9,7 @@
 - lure moving while trying to fish
 - resize surface for lure wire
 - draw distance and angle on cursor
+- muted music
 
 // Polish
 - meter bouncing juice

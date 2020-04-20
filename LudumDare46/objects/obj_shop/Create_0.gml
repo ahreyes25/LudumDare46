@@ -17,11 +17,11 @@ ds_list_add(shop, ["region", REGION.GLACIER]);
 ds_list_add(shop, ["region", REGION.OCEAN]);
 
 // Add All Lures
-for (var i = 1; i < global.lure_total; i++)
-	ds_list_add(shop, ["rod", i]);
-	
-// Add All Rods
 for (var i = 1; i < global.rod_total; i++)
+	ds_list_add(shop, ["rod", i]);
+
+// Add All Rods
+for (var i = 1; i < global.lure_total; i++)
 	ds_list_add(shop, ["lure", i]);
 
 // Add All Fish Data
