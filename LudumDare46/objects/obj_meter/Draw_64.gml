@@ -1,3 +1,11 @@
+if (exists(obj_banner)) {
+	draw_set_alpha(alpha);
+	draw_set_color(c_black);
+	draw_rectangle(0, 0, surface_get_width(application_surface), surface_get_height(application_surface), false);
+	draw_set_color(global.tint_color);
+	draw_set_alpha(1);
+}
+
 if (!surface_exists(surface))
 	surface	= surface_create(width, height);
 	
@@ -28,6 +36,4 @@ if (surface_exists(surface)) {
 
 // Draw Surface
 var _scale	= 1.1;
-var _surf_x = display_get_gui_width() / 2 - width / 2;
-var _surf_y = display_get_gui_height() - (display_get_gui_height() - height * _scale) / 2;
-draw_sprite_ext(sprite, 0, _surf_x, _surf_y, _scale, _scale, 0, global.tint_color, 1);
+draw_sprite_ext(sprite, 0, surf_x, surf_y, scale, scale, rot, global.tint_color, alpha);

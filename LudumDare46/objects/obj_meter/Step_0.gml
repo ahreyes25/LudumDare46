@@ -1,3 +1,7 @@
+rot = lerp(rot, rot_target, 0.1);
+alpha = lerp(alpha, alpha_target, 0.05);
+scale = lerp(scale, scale_target, 0.1);
+
 if (alarm[0] == -1) {
 	if (move_dir == DIR.UP) {
 		arrow_tick_pos += meter_speed;	
@@ -13,7 +17,7 @@ if (alarm[0] == -1) {
 	
 		if (arrow_tick_pos <= 0) {
 			if (bounces >= max_bounces) {
-				instance_destroy();
+				state = "leave";
 				sfx_play(sfx_fish_escape);
 				obj_player.sad = true;
 				obj_player.alarm[0] = 120;
@@ -25,6 +29,9 @@ if (alarm[0] == -1) {
 			}
 		}
 	}
+	
+	if (arrow_tick_pos mod (pixel_per_tick * 2) == 0 && state != "leave" && state != "wait")
+		sfx_play(sfx_meter_tick);
 }
 
 // Click!
@@ -33,21 +40,56 @@ if (mouse_check_button_pressed(mb_left)) {
 		meter_speed = 0;
 	
 		// Win
-		if (arrow_tick_pos <= goal_ticks + goal_offset + 1 && arrow_tick_pos >= goal_offset - 1)
+		if (arrow_tick_pos <= goal_ticks + goal_offset + 1 && arrow_tick_pos >= goal_offset - 1) {
 			catch_reward(fish, "fish");
+			scale = 1.3;
+			state = "wait";
+			alarm[2] = 10;
+		}
 		else {
 			sfx_play(sfx_fish_escape);
 			obj_player.sad = true;
 			obj_player.alarm[0] = 120;
 			camera_set_screen_shake();
+			scale = 0.9;
+			state = "wait";
+			alarm[2] = 20;
 		}
-		instance_destroy();
 	}
 	else {
-		instance_destroy();
+		state = "leave";
 		sfx_play(sfx_fish_escape);
 		obj_player.sad = true;
 		obj_player.alarm[0] = 120;
 		camera_set_screen_shake();
 	}
 }
+
+if (state == "leave") {
+	alpha_target	= 0;
+	//scale_target	= 0;
+	surf_y += 50;
+	
+	if (alarm[1] == -1)
+		alarm[1] = 30;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

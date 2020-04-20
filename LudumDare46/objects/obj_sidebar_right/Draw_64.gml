@@ -1,4 +1,4 @@
-if (exists(obj_player)) {
+if (exists(obj_player) && !exists(obj_banner)) {
 	depth = obj_ui_controller.depth - 1;
 
 	var _x = surface_get_width(application_surface) - 

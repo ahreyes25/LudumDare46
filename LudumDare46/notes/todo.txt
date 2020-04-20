@@ -2,7 +2,8 @@
 - more shopkeeper dialogue
 
 // Polish
-- meter bouncing juice
+- draw actual fishing rod
+- phrases when fish gets away?
 
 // -----------------------------------
 // Extra

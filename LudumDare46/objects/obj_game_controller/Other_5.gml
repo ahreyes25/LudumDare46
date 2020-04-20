@@ -18,3 +18,4 @@ audio_stop_sound(sfx_water_loop);
 audio_stop_sound(sfx_forest_song);
 audio_stop_sound(sfx_desert_song);
 audio_stop_sound(sfx_glacier_song);
+audio_stop_sound(sfx_ocean_song);

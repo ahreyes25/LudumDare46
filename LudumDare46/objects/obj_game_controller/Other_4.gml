@@ -42,7 +42,7 @@ switch (room) {
 		
 	case rm_glacier:
 		global.tint_color = global.color_white;
-		sfx_play_array(SFX_EMITTER_MUSIC, sfx_glacier_song, true);
+		sfx_play_array(SFX_EMITTER_MUSIC, sfx_ocean_song, true);
 		//sfx_play_array(SFX_EMITTER_MUSIC_MUTED, sfx_glacier_song, true);
 		break;
 		

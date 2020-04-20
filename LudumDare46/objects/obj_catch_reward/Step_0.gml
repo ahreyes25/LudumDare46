@@ -4,7 +4,7 @@ if (mouse_check_button_pressed(mb_left) && state != "leave")
 xscale = lerp(xscale, xscale_target, 0.2);
 
 if (abs(xscale - xscale_target) <= 0.05 && !flashed) {
-	camera_set_screen_flash(0.5);
+	//camera_set_screen_flash(0.5);
 	camera_set_screen_shake();
 	camera_reset_zoom_factor();
 	sfx_play(sfx_card_reveal);

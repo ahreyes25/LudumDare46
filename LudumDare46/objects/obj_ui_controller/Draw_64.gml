@@ -14,22 +14,24 @@ if (room != rm_title) {
 		wave_surface = surface_create(_sw, _sh - boat_y - 30);
 	
 	// Draw Waves
-	surface_set_target(wave_surface);
-	draw_clear_alpha(c_black, 0);
-	var _wave_scale = 2;
-	var _ww = sprite_get_width(spr_wave_ui);
-	for (var i = 0; i < _sw; i += _ww * _wave_scale)
-		draw_sprite_ext(spr_wave_ui, 0, i, 0, _wave_scale, _wave_scale, 0, c_white, 1);
+	if (!exists(obj_banner)) {
+		surface_set_target(wave_surface);
+		draw_clear_alpha(c_black, 0);
+		var _wave_scale = 2;
+		var _ww = sprite_get_width(spr_wave_ui);
+		for (var i = 0; i < _sw; i += _ww * _wave_scale)
+			draw_sprite_ext(spr_wave_ui, 0, i, 0, _wave_scale, _wave_scale, 0, c_white, 1);
 	
-	surface_reset_target();
+		surface_reset_target();
 	
-	if (!defined(wave_sprite))
-		wave_sprite = sprite_create_from_surface(wave_surface, 0, 0, _sw, surface_get_height(wave_surface), 0, 0, _sw / 2, surface_get_height(wave_surface));
+		if (!defined(wave_sprite))
+			wave_sprite = sprite_create_from_surface(wave_surface, 0, 0, _sw, surface_get_height(wave_surface), 0, 0, _sw / 2, surface_get_height(wave_surface));
 	
-	draw_set_color(c_black);
-	draw_rectangle(0, wave_y - sprite_get_height(wave_sprite) * boat_scale + 30, _sw, _sh, false);
-	draw_set_color(global.tint_color);
-	draw_sprite_ext(wave_sprite, _sw / 2, 0, wave_y, boat_scale, boat_scale, wave_r, global.tint_color, 1);
+		draw_set_color(c_black);
+		draw_rectangle(0, wave_y - sprite_get_height(wave_sprite) * boat_scale + 30, _sw, _sh, false);
+		draw_set_color(global.tint_color);
+		draw_sprite_ext(wave_sprite, _sw / 2, 0, wave_y, boat_scale, boat_scale, wave_r, global.tint_color, 1);
+	}
 }
 
 // HUD Surface
