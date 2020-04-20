@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "0737b58e-590f-4ebb-b83e-82583e42b790",
+            "Value": {
+                "id": "d5676328-dc3d-435a-80d1-de9e2e970481",
+                "resourcePath": "sprites\/spr_rod_3\/spr_rod_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07ebeb1f-1e84-4788-9318-c56680cb375c",
             "Value": {
                 "id": "839fcda6-9aae-46ed-8fb2-4ab18e93ec88",
@@ -740,6 +748,14 @@
                 "id": "76d4ab7d-feac-4e0f-85c8-a8f5431f072e",
                 "resourcePath": "scripts\/timer_reset_ext\/timer_reset_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2a6d5ba1-05fb-4c72-896f-ce9246017c5f",
+            "Value": {
+                "id": "925e3a9d-c1aa-49c5-99d5-cc54447aded9",
+                "resourcePath": "sprites\/spr_rod_5\/spr_rod_5.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1575,6 +1591,14 @@
             }
         },
         {
+            "Key": "5860abc7-5896-4869-a97c-17394e80a13e",
+            "Value": {
+                "id": "4f34a440-3168-4090-9dc5-e01071c08b69",
+                "resourcePath": "sprites\/spr_rod_4\/spr_rod_4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58a3f079-3931-478c-b9c4-a54bc2c0678b",
             "Value": {
                 "id": "1e320daf-b128-4e62-b8b5-ae66f0f6208f",
@@ -2167,6 +2191,14 @@
             }
         },
         {
+            "Key": "792ad273-ac54-4ba7-8f69-835a8787161f",
+            "Value": {
+                "id": "1f787f4f-e5bb-40be-a8b1-49988948874c",
+                "resourcePath": "sprites\/spr_rod_1\/spr_rod_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a04f769-87c2-4761-8357-21854f39ac94",
             "Value": {
                 "id": "86782041-8a1a-45fc-a660-dc2ae71db8c9",
@@ -2300,6 +2332,14 @@
                 "id": "4eb06095-ec8b-43f5-9627-ecab1b3b16ef",
                 "resourcePath": "rooms\/rm_ocean_0\/rm_ocean_0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "802ddc25-cc53-4618-a83d-9cd93c1f0691",
+            "Value": {
+                "id": "46adbd22-4ad6-45d5-b956-640a7a170433",
+                "resourcePath": "sprites\/spr_rod_2\/spr_rod_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
