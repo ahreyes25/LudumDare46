@@ -20,7 +20,17 @@ switch (state) {
 		
 		// Check For Landing On Water
 		if (path_position == 1) {
-			state = "float";
+			// Hit Land
+			if (!collision_point(x, y, obj_solid, false, false)) {
+				state = "return";
+				sfx_play(sfx_reel);
+				sfx_play(sfx_ground_hit);
+			}
+			else {
+				state = "float";
+				sfx_stop(sfx_reel);
+				sfx_play(sfx_splash);
+			}
 			obj_game_controller.need_to_clear_surface = true;
 		}
 		
@@ -33,14 +43,13 @@ switch (state) {
 		break;
 		
 	case "float":
-		// Hit Land
-		if (!collision_point(x, y, obj_solid, false, false))
-			state = "return";
+		sfx_stop(sfx_reel);
 		
 		// Return
-		if (mouse_check_button_pressed(mb_left)) {
+		if (mouse_check_button_pressed(mb_left) && !exists(obj_meter)) {
 			path_clear_points(path);
 			state = "return";
+			sfx_play(sfx_reel);
 		}
 		break;
 		

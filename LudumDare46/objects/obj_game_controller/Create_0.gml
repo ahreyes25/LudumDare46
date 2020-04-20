@@ -23,6 +23,7 @@ inventory			= undefined;//instance_create_layer(0, 0, "Controllers", obj_invento
 shop				= undefined;//instance_create_layer(0, 0, "Controllers", obj_shop);
 library				= undefined;//instance_create_layer(0, 0, "Controllers", obj_library);
 merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
+map					= undefined;//instance_create_layer(0, 0, "Controllers", obj_map);
 #endregion
 
 #region Sound & Music

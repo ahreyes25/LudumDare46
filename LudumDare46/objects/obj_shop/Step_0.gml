@@ -11,7 +11,9 @@ if (!show_mini)
 else
 	index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
-if (mouse_check_button_pressed(mb_left) && show) {
+if (mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > surface_get_width(application_surface) / 2 && show) {
+	sfx_play(sfx_memu_select);
+	
 	var _index	= index - (scroll_index div cell_height);
 	
 	if (_index >= 0 && _index < ds_list_size(shop)) {
@@ -29,6 +31,7 @@ if (mouse_check_button_pressed(mb_left) && show) {
 				show_mini = false;
 				obj_merchant.state = "shop_wait";
 				obj_merchant.shop_text = "huh... fine then...";
+				sfx_play(sfx_no_purchase);
 			}
 			// Yes
 			else {
@@ -53,11 +56,13 @@ if (mouse_check_button_pressed(mb_left) && show) {
 					obj_merchant.state = "shop_done";
 					ds_list_delete(shop, _index);
 					show_mini = false;
+					sfx_play(sfx_purchase);
 				}
 				// Dont Have Enough Money
 				else {
 					obj_merchant.state = "shop_reject";
 					show_mini = false;
+					sfx_play(sfx_not_enough_money);
 				}
 			}
 		}

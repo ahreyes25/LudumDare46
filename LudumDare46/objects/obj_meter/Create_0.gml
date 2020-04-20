@@ -20,3 +20,5 @@ camera_y		= undefined;
 
 surface			= surface_create(width + 20, height);
 sprite			= undefined;
+
+alarm[0]		= 60;
