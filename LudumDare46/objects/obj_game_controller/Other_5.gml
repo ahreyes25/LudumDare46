@@ -10,10 +10,8 @@ if (room != _rm_init && room != rm_title) {
 		instance_destroy(merchant);
 		instance_destroy(shop);
 		instance_destroy(library);
+		instance_destroy(map);
 	}
 }
 
-switch (room) {
-	case rm_title:		sfx_stop_array(sfx_water_loop);	break;
-	case rm_forest_0:	sfx_stop_array(sfx_water_loop);	break;
-}
+audio_stop_all();

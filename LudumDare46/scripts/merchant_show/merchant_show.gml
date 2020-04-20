@@ -16,6 +16,8 @@ else if (_show == "buy")
 	obj_merchant.state = "show_shop";
 else if (_show == "shop_confirm")
 	obj_merchant.state = "shop_confirm";
+else if (_show == "travel")
+	obj_merchant.state = "travel";
 
 if (_item_type == "fish") {
 	obj_merchant.item_name		= global.fish_data[_item, FP.NAME];

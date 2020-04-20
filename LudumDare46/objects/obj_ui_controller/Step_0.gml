@@ -23,7 +23,8 @@ if (update_res) {
 
 // Move To New Area -- Clicking
 if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show && exists(obj_player) && exists(obj_player.rod) && 
-	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show && exists(obj_library) && !obj_library.show) {
+	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show && exists(obj_library) && !obj_library.show &&
+	exists(obj_map) && !obj_map.show) {
 		
 	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
 		var _mx = device_mouse_x_to_gui(0);
@@ -35,17 +36,25 @@ if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show 
 		
 		// Left
 		if (_mx > _left_edge && _mx < _right_edge) {
-			if (_mx < _sw / 2 && _my > 100 && _my < _sh - 100)
+			if (_mx < _sw / 2 && _my > 100 && _my < _sh - 100) {
 				camera_set_focus_point(obj_camera.x - obj_camera.width / 2, obj_camera.y, -1);
+				sfx_play(sfx_page_turn);
+			}
 			// Right
-			else if (_mx > _sw / 2 && _my > 100 && _my < _sh - 100)
+			else if (_mx > _sw / 2 && _my > 100 && _my < _sh - 100) {
 				camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
+				sfx_play(sfx_page_turn);
+			}
 			// Up
-			else if (_my < _sh / 2)
+			else if (_my < _sh / 2) {
 				camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
+				sfx_play(sfx_page_turn);
+			}
 			// Down
-			else
+			else {
 				camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
+				sfx_play(sfx_page_turn);
+			}
 		}
 	}
 }
@@ -57,23 +66,31 @@ if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) 
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
+		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("D"))) {
 		camera_set_focus_point(obj_camera.x + obj_camera.width / 2, obj_camera.y, -1);
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
+		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("W"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y - obj_camera.height / 2, -1);	
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
+		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("S"))) {
 		camera_set_focus_point(obj_camera.x, obj_camera.y + obj_camera.height / 2, -1);
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
+		sfx_play(sfx_page_turn);
 	}
 }

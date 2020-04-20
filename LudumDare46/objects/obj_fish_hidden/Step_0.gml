@@ -3,5 +3,6 @@ if (defined(_lure) && _lure.state == "float") {
 	if (percent(0.01) && !defined(obj_player.meter)) {
 		_lure.bubbles = id;
 		meter_create(_lure);
+		sfx_play(sfx_hooked);
 	}
 }

@@ -6,4 +6,5 @@ if (mouse_check_button_pressed(mb_left)) {
 			room_goto_next();
 			break;
 	}
+	sfx_play(sfx_memu_select);
 }

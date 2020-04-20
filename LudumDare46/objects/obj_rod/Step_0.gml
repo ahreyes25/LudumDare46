@@ -9,7 +9,7 @@ y = obj_camera.y + (obj_camera.height * obj_camera.zoom_factor) / 2 - _sh;
 
 var _can_fish = !defined(lure) && !exists(obj_catch_reward) && !obj_inventory.show && 
 	!obj_game_controller.paused && obj_game_controller.alarm[0] == -1 && !obj_sidebar_left.in_left &&
-	!mouse_touching_edges() && !obj_shop.show && !obj_library.show;
+	!mouse_touching_edges() && !obj_shop.show && !obj_library.show && !obj_map.show;
 
 // Cursor Coords
 if (mouse_check_button(mb_left) && defined(anchor_x) && defined(anchor_y) && _can_fish) {
