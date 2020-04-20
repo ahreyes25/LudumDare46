@@ -134,8 +134,8 @@ global.fish_data[FISH.DIAMOND, FP.RARITY]					= "Common";
 global.fish_data[FISH.DIAMOND, FP.COST_SELL]				= 30;
 global.fish_data[FISH.DIAMOND, FP.COST_BUY]					= 30;
 global.fish_data[FISH.DIAMOND, FP.INFO]						= "A gold fish with diamond reflection. It's not valuable, despite it's name.";
-global.fish_data[FISH.DIAMOND, FP.ZONE_SIZE_ROD_BASIC_1]		= 100;
-global.fish_data[FISH.DIAMOND, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.DIAMOND, FP.ZONE_SIZE_ROD_BASIC_1]	= 100;
+global.fish_data[FISH.DIAMOND, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
 
 global.fish_data[FISH.TONY, FP.NAME]						= "Tony";
 global.fish_data[FISH.TONY, FP.SPRITE]						= spr_fish_4;
@@ -179,7 +179,7 @@ global.fish_data[FISH.SINKER, FP.COST_SELL]					= 25;
 global.fish_data[FISH.SINKER, FP.COST_BUY]					= 25;
 global.fish_data[FISH.SINKER, FP.INFO]						= "It's not breathing... and I think it's dead.";
 global.fish_data[FISH.SINKER, FP.ZONE_SIZE_ROD_BASIC_1]		= 100;
-global.fish_data[FISH.SINKER, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.SINKER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
 
 global.fish_data[FISH.SHREDDER, FP.NAME]					= "Shredder";
 global.fish_data[FISH.SHREDDER, FP.SPRITE]					= spr_fish_8;
@@ -189,8 +189,8 @@ global.fish_data[FISH.SHREDDER, FP.RARITY]					= "Uncommon";
 global.fish_data[FISH.SHREDDER, FP.COST_SELL]				= 75;
 global.fish_data[FISH.SHREDDER, FP.COST_BUY]				= 75;
 global.fish_data[FISH.SHREDDER, FP.INFO]					= "You question why this fish smells like sewage... and pizza.";
-global.fish_data[FISH.SHREDDER, FP.ZONE_SIZE_ROD_BASIC_1]		= 100;
-global.fish_data[FISH.SHREDDER, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.SHREDDER, FP.ZONE_SIZE_ROD_BASIC_1]	= 100;
+global.fish_data[FISH.SHREDDER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
 
 global.fish_data[FISH.GUPPY, FP.NAME]						= "Guppy";
 global.fish_data[FISH.GUPPY, FP.SPRITE]						= spr_fish_9;
