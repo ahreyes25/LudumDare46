@@ -2599,6 +2599,14 @@
             }
         },
         {
+            "Key": "8fc6704d-8905-4989-bd9f-6ea9ad4acf06",
+            "Value": {
+                "id": "404e3cb0-0e28-42cc-9c20-07869673e28b",
+                "resourcePath": "sounds\\sfx_card_reveal\\sfx_card_reveal.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8fce59c7-e849-4300-bc3b-5829538f4754",
             "Value": {
                 "id": "47d42af7-43e1-403c-b42c-ac8574872809",
@@ -3468,6 +3476,14 @@
                 "id": "980ee1d7-ab62-49d7-bd4b-9b3c2f55311a",
                 "resourcePath": "shaders\/shdr_gradient_fade_up\/shdr_gradient_fade_up.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "bfc5c2bd-4f0a-4e23-98e4-37443783e7ac",
+            "Value": {
+                "id": "ce45ce19-79b5-4e1f-a67a-5560c13229d2",
+                "resourcePath": "sounds\\sfx_card_leave\\sfx_card_leave.yy",
+                "resourceType": "GMSound"
             }
         },
         {

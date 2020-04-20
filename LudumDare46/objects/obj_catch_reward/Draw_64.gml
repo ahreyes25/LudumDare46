@@ -1,11 +1,18 @@
+if (!surface_exists(surface))
+	surface = surface_create(sprite_width * 2, sprite_height * 2);
+
+surface_set_target(surface);
+
+draw_clear_alpha(c_black, 0);
+
 var _sw = surface_get_width(application_surface);
 var _sh = surface_get_height(application_surface);
-var _x  = _sw / 2;
-var _y	= _sh / 2;
+var _x  = sprite_width;
+var _y	= sprite_height;
 var _scale = 2;
 
-draw_sprite_ext(sprite_index, 0, _x, _y, _scale, _scale, 0, global.tint_color, 1);
-draw_sprite_ext(sprite, 0, _x, _y - sprite_get_height(sprite) * _scale, _scale, _scale, 0, global.tint_color, 1);
+draw_sprite_ext(sprite_index, 0, _x, _y, _scale, _scale, 0, c_white, 1);
+draw_sprite_ext(sprite, 0, _x, _y - sprite_get_height(sprite) * _scale, _scale, _scale, 0, c_white, 1);
 
 draw_set_halign(fa_center);
 draw_text_transformed(_x, _y - 30, name, 1, 1, 0);
@@ -37,3 +44,7 @@ draw_text_transformed(_x, _y + 120 , "weight: " + string(weight) + " lbs", 1, 1,
 draw_text_transformed(_x, _y + 140 , "length: " + string(length) + " ft", 1, 1, 0);
 draw_text_transformed(_x, _y + 200 , rarity, 1, 1, 0);
 draw_set_halign(fa_left);
+
+surface_reset_target();
+
+draw_surface_ext(surface, surf_x - surface_get_width(surface) / 2, surf_y - surface_get_height(surface) / 2, xscale, 1, 0, global.tint_color, 1);
