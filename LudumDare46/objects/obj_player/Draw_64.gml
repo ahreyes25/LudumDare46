@@ -15,6 +15,7 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 	// Draw Boat
 	draw_sprite_ext(spr_boat_side, 0, boat_x, boat_y, boat_scale, boat_scale, boat_r, global.tint_color, 1);
 	draw_sprite_ext(spr_player_still, 0, boat_x - 30, boat_y - 10, boat_scale / 2, boat_scale / 2, boat_r, global.tint_color, 1);
+	draw_sprite_ext(global.rod_data[obj_game_controller.player_rod_type, RP.SPRITE], 0, boat_x + 10, boat_y - 30, boat_scale / 2, boat_scale / 2, boat_r, global.tint_color, 1);
 	if (sad)
 		draw_sprite_ext(spr_emoji_sad_1, 0, boat_x - 30, boat_y - 10 - 60, 1, 1, 0, global.tint_color, emoji_fade);
 	if (happy)

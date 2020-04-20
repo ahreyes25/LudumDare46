@@ -35,6 +35,7 @@ draw_sprite_ext(wave_sprite, _sw / 2, 0, end_y, boat_scale, boat_scale, wave_r, 
 // Draw Boat
 draw_sprite_ext(spr_boat_side, 0, boat_x, end_y - 40, boat_scale, boat_scale, boat_r, global.tint_color, 1);
 draw_sprite_ext(spr_player_still, 0, boat_x - 30, end_y - 50, boat_scale / 2, boat_scale / 2, boat_r, global.tint_color, 1);
+draw_sprite_ext(global.rod_data[obj_game_controller.player_rod_type, RP.SPRITE], 0, boat_x + 10, end_y - 70, boat_scale / 2, boat_scale / 2, boat_r, global.tint_color, 1);
 
 // Draw Menu
 draw_set_halign(fa_center);
