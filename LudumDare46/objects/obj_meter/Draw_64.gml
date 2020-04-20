@@ -5,7 +5,7 @@ surface_set_target(surface);
 
 draw_clear_alpha(c_black, 0);
 
-var _x = 20 + 80;
+var _x = 100;
 var _y = 4;
 
 draw_sprite_nine_slice(spr_meter_frame, 0, _x, _y, _x + width, _y + height, 1);
@@ -26,6 +26,6 @@ if (surface_exists(surface)) {
 
 // Draw Surface
 var _scale	= 1.1;
-var _surf_x = display_get_gui_width() / 2 - width / 2 - 20;
+var _surf_x = display_get_gui_width() / 2 - width / 2;
 var _surf_y = display_get_gui_height() - (display_get_gui_height() - height * _scale) / 2;
 draw_sprite_ext(sprite, 0, _surf_x, _surf_y, _scale, _scale, 0, global.tint_color, 1);

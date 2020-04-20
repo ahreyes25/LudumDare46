@@ -9,7 +9,6 @@
 - lure moving while trying to fish
 - resize surface for lure wire
 - draw distance and angle on cursor
-- center meter
 
 // Polish
 - meter bouncing juice
