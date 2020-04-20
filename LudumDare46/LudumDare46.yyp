@@ -1175,6 +1175,14 @@
             }
         },
         {
+            "Key": "47aeb3e6-aecf-42e5-be58-3c80ff5d1d7e",
+            "Value": {
+                "id": "fc400e66-c509-4db9-9cd4-b5e6f0a85277",
+                "resourcePath": "sounds\\sfx_desert_song_muted\\sfx_desert_song_muted.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4825e214-9545-4cea-b2d0-da8492fc350c",
             "Value": {
                 "id": "6c9a8f33-9c26-4eaf-a1df-43a296f710c9",
@@ -2767,6 +2775,14 @@
             }
         },
         {
+            "Key": "a07450ea-1a09-4f26-89c2-d3120e93c08a",
+            "Value": {
+                "id": "12f85668-c17c-47a9-8b91-2cb67c133cef",
+                "resourcePath": "sounds\\sfx_forest_song_muted\\sfx_forest_song_muted.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a08182be-2cda-434e-bf49-5716ce29f10f",
             "Value": {
                 "id": "a3b43e86-2e46-4f3f-88b8-95805acdf64d",
@@ -3028,6 +3044,14 @@
                 "id": "47ce6a08-b221-4a8f-810f-6b9db0b72724",
                 "resourcePath": "scripts\/timer_resume_ext\/timer_resume_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aef697c9-f5b2-40a1-882c-07be3aedd822",
+            "Value": {
+                "id": "9fcc0d02-c5e6-48f2-ac13-80cef8ec90d6",
+                "resourcePath": "sounds\\sfx_glacier_song_muted\\sfx_glacier_song_muted.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -3556,6 +3580,14 @@
                 "id": "51e55b22-58de-4444-96fd-75b291eda268",
                 "resourcePath": "views\/c97bcef3-b1b7-4ed8-a06d-052b8fef4829.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c9e99726-c869-41e2-9380-efb910560b06",
+            "Value": {
+                "id": "9fb1c98f-44d0-4eb0-b027-ad638c9eed8c",
+                "resourcePath": "scripts\\music_toggle_mute\\music_toggle_mute.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4827,7 +4859,8 @@
         "bb32b58f-b34f-45c7-a271-b46abd962b54",
         "d9cfd024-32d1-4c5b-9ccf-39b622003ca9",
         "87bef54d-82ec-4544-9085-19cf107e9525",
-        "b6e5f828-14d1-4c5a-84d1-6a5ea8b40a21"
+        "b6e5f828-14d1-4c5a-84d1-6a5ea8b40a21",
+        "c9e99726-c869-41e2-9380-efb910560b06"
     ],
     "tutorial": ""
 }

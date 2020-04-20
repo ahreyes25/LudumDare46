@@ -16,6 +16,8 @@ surface_free(lure_surface);
 
 // Sounds
 audio_emitter_free(SFX_EMITTER);
+audio_emitter_free(SFX_EMITTER_MUSIC);
+audio_emitter_free(SFX_EMITTER_MUSIC_MUTED);
 ds_list_destroy(global.audio_emitters);
 
 // Global Data

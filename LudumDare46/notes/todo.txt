@@ -1,12 +1,13 @@
-// Core	
-- setup glacier region
-- fish need to have unique size and color/weight properties
-- remove starting money
+// Before Submitting
 - make sure that meter_create() has updated rod values
+- remove starting money
+- test on josis computer, and others if possible
+
+// Core	
+- fish need to have unique size and color/weight properties
 - fish sloshing whiel trying to catch
 - lure moving while trying to fish
 - draw distance and angle on cursor
-- muted music
 - add range to lure
 - fix text formatting off screen
 - add menu placeholder items

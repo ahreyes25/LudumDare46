@@ -17,6 +17,7 @@ if (mouse_check_button_released(mb_left)) {
 				inventory_show();
 			else if (obj_inventory.show)
 				inventory_hide();
+			music_toggle_mute();
 		}
 	
 		// Shop
@@ -34,6 +35,7 @@ if (mouse_check_button_released(mb_left)) {
 				shop_hide();
 			else
 				shop_show();
+			music_toggle_mute();
 		}
 		
 		// Library 
@@ -45,6 +47,7 @@ if (mouse_check_button_released(mb_left)) {
 				library_hide();
 			else
 				library_show();
+			music_toggle_mute();
 		}
 		
 		// Map
@@ -56,6 +59,7 @@ if (mouse_check_button_released(mb_left)) {
 				map_hide();
 			else
 				map_show();
+			music_toggle_mute();
 		}
 	}
 	
@@ -71,6 +75,7 @@ if (mouse_check_button_released(mb_left)) {
 	if (_mx >= _x1 && _mx <= _x2 && _my >= _y1 && _my <= _y2) {
 		obj_game_controller.paused = !obj_game_controller.paused;	
 		sfx_play(sfx_memu_select);
+		music_toggle_mute();
 	}
 }
 

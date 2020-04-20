@@ -36,9 +36,15 @@ global.tint_color			= global.color_green;
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_master_gain(global.sound_mult);
 audio_listener_orientation(0, 1, 0, 0, 0, 1);
-global.audio_emitters	= ds_list_create();
-global.audio_emitter	= audio_emitter_create();
-#macro SFX_EMITTER		global.audio_emitter
+global.audio_emitters				= ds_list_create();
+global.audio_emitter				= audio_emitter_create();
+global.audio_emitter_music			= audio_emitter_create();
+global.audio_emitter_music_muted	= audio_emitter_create();
+#macro SFX_EMITTER					global.audio_emitter
+#macro SFX_EMITTER_MUSIC			global.audio_emitter_music
+#macro SFX_EMITTER_MUSIC_MUTED		global.audio_emitter_music_muted
+audio_emitter_gain(SFX_EMITTER_MUSIC, 1);
+audio_emitter_gain(SFX_EMITTER_MUSIC_MUTED, 0);
 
 // Particles
 global.part_system = part_system_create();

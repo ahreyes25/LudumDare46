@@ -30,6 +30,7 @@ switch (state) {
 				state = "float";
 				sfx_stop(sfx_reel);
 				sfx_play(sfx_splash);
+				music_toggle_mute();
 			}
 			obj_game_controller.need_to_clear_surface = true;
 		}
@@ -38,6 +39,7 @@ switch (state) {
 		if (mouse_check_button_pressed(mb_left)) {
 			path_clear_points(path);
 			state = "return";
+			music_toggle_mute();
 			obj_game_controller.need_to_clear_surface = true;
 		}
 		break;
@@ -49,6 +51,7 @@ switch (state) {
 		if (mouse_check_button_pressed(mb_left) && !exists(obj_meter)) {
 			path_clear_points(path);
 			state = "return";
+			music_toggle_mute();
 			sfx_play(sfx_reel);
 		}
 		break;
