@@ -1,7 +1,6 @@
 enum LURE {
 	NONE,
 	LURE_BASIC_1,
-	LURE_BASIC_2,
 	FANCY,
 	FANCIER,
 	FANCIEST,
@@ -51,50 +50,6 @@ global.lure_data[LURE.LURE_BASIC_1, LP.SPRITE]				= spr_lure_basic_1;
 global.lure_data[LURE.LURE_BASIC_1, LP.COST_SELL]			= 0;	
 global.lure_data[LURE.LURE_BASIC_1, LP.COST_BUY]			= 10;	
 global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
-	/* NONE		*/						undefined,
-	/* CLAM		*/						1.0,
-	/* CLOWN	*/						0.4,
-	/* CARP		*/						0.2,
-	/* DIAMOND	*/						0.2,
-	/* TONY		LOLLIPOP 3		*/		0.3,
-	/* SHARK	FRAZZLE 4		*/		0.1,
-	/* MOAWK	LOLLIPOP 1		*/		0.05,
-	/* SINKER	*/						1.0,
-	/* SHREDDER POINTED			*/		0.2,
-	/* GUPPY	LOLLIPOP 2		*/		0.5,
-	/* CHEDDAR	*/						1.0,
-	/* WHALE	SWITCHBLADE		*/		0.0,
-	/* KOI		LOLLIPOP 1		*/		0.07,
-	/* SPIKY	POINTED			*/		0.07,
-	/* LIP		FRAZZLE 2		*/		0.0,
-	/* TERROR	FEATHERED		*/		0.05,
-	/* BONES	*/						1.0,
-	/* GLUB		FRAZZLE 1		*/		0.2,
-	/* LOBSTER	COINED			*/		0.1,
-	/* OCTO		LOLLIPOP 2		*/		0.1,
-	/* GIRAFFE	TWINED			*/		0.2,
-	/* GARY		LOLLIPOP 3		*/		0.2,
-	/* SHRIMP	*/						1.0,
-	/* STAR		TWINED			*/		0.15,
-	/* SEEKER	FEATHERED		*/		0.0,
-	/* HEART	CHAINED			*/		0.0,
-	/* METROID	FLARED			*/		0.0,
-	/* SKULL	SIMPLE RING		*/		0.0,
-	/* GHOST	FRAZZLE 3		*/		0.1,
-	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
-	/* AERYS					*/		0.0,
-	/* FISH						*/		0.25,
-	/* OCTOPUS					*/		0.25,
-	/* CRAB						*/		0.25
-];
-				
-global.lure_data[LURE.LURE_BASIC_2, LP.NAME]				= "Basic Lure 2";		
-global.lure_data[LURE.LURE_BASIC_2, LP.DESC]				= "A hook, nothing more..";		
-global.lure_data[LURE.LURE_BASIC_2, LP.INFO]				= "I once got 3 of these stuck\nin my big toe...\nat the same time! ha";		
-global.lure_data[LURE.LURE_BASIC_2, LP.SPRITE]				= spr_lure_basic_1;	
-global.lure_data[LURE.LURE_BASIC_2, LP.COST_SELL]			= 0;	
-global.lure_data[LURE.LURE_BASIC_2, LP.COST_BUY]			= 10;	
-global.lure_data[LURE.LURE_BASIC_2, LP.CATCH_CHANCE]		= [
 	/* NONE		*/						undefined,
 	/* CLAM		*/						1.0,
 	/* CLOWN	*/						0.4,
