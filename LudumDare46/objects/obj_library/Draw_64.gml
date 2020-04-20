@@ -67,14 +67,19 @@ if (show) {
 			if (obj_player.fish_data[| _index]) {
 				// Info Panel Frame
 				draw_set_color(c_black);
-				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, false);
+				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 2.1, false);
 				draw_set_color(global.tint_color);
-				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.9, true);
+				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 2.1, true);
 			
 				if (obj_player.fish_caught[| _index] > 0) 
 					draw_text(_mini_x + 10, _mini_y + 10, global.fish_data[_index, FP.NAME]);
 				else
 					draw_text(_mini_x + 10, _mini_y + 10, "???");
+					
+				if (obj_player.fish_caught[| _index] > 0) 
+					draw_text(_mini_x + 10, _mini_y + 30, global.fish_data[_index, FP.DESC]);
+				else
+					draw_text(_mini_x + 10, _mini_y + 30, "???");
 				
 				var _fish_list = ds_list_create();
 				fish_get_region(_index, _fish_list);
@@ -102,13 +107,13 @@ if (show) {
 				var _lure_avg			= fish_get_lure_avg(_index);
 				var _lure_avg_chance	= _lure_avg * 100;
 				
-				draw_text(_mini_x + 10, _mini_y + 30, "Caught: " + string(obj_player.fish_caught[| _index]));
-				draw_text(_mini_x + 10, _mini_y + 50, "Rarity: " + string(global.fish_data[_index, FP.RARITY]));
-				draw_text(_mini_x + 10, _mini_y + 70, "Region(s):" + _string);
-				draw_text(_mini_x + 10, _mini_y + 90, "Best Lure: " + string(_lure_best_name));
-				draw_text(_mini_x + 10, _mini_y + 110, "Encounter Chance With Best Lure: " + string(_lure_best_chance) + "%");
-				draw_text(_mini_x + 10, _mini_y + 130, "Worst Encounter Chance: " + string(_lure_worst_chance) + "%");
-				draw_text(_mini_x + 10, _mini_y + 150, "Average Encounter Chance: " + string(_lure_avg_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 50, "Caught: " + string(obj_player.fish_caught[| _index]));
+				draw_text(_mini_x + 10, _mini_y + 70, "Rarity: " + string(global.fish_data[_index, FP.RARITY]));
+				draw_text(_mini_x + 10, _mini_y + 90, "Region(s):" + _string);
+				draw_text(_mini_x + 10, _mini_y + 110, "Best Lure: " + string(_lure_best_name));
+				draw_text(_mini_x + 10, _mini_y + 130, "Encounter Chance With Best Lure: " + string(_lure_best_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 150, "Worst Encounter Chance: " + string(_lure_worst_chance) + "%");
+				draw_text(_mini_x + 10, _mini_y + 170, "Average Encounter Chance: " + string(_lure_avg_chance) + "%");
 			}
 			else {
 				// Info Panel Frame
