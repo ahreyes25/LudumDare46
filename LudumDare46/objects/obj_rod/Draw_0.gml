@@ -24,8 +24,3 @@ if (defined(lure)) {
 		draw_line_width(lure.start_x, lure.start_y, lure.x, lure.y, 3);
 	}
 }
-
-if (defined(anchor_x) && defined(anchor_y) && defined(desired_x) && defined(desired_y))
-	draw_text(mouse_x, mouse_y, "dis: " + string(point_distance(anchor_x, anchor_y, desired_x, desired_y)) + "m");
-else
-	draw_text(mouse_x, mouse_y, "dis: 0m");

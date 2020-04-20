@@ -4,9 +4,9 @@
 - test on josis computer, and others if possible
 
 // Core	
-- draw distance and angle on cursor
 - scroll visual indicators in menus
 - fix text formatting off screen
+- fish description to inventory
 - modify content
 
 - fish need to have unique size and color/weight properties
