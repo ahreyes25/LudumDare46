@@ -24,6 +24,7 @@ switch (state) {
 			if (!collision_point(x, y, obj_solid, false, false)) {
 				state = "return";
 				sfx_play(sfx_reel);
+				sfx_play(sfx_ground_hit);
 			}
 			else {
 				state = "float";

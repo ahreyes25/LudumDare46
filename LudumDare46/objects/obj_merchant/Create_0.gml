@@ -15,4 +15,5 @@ item_cost_sell	= undefined;
 item_cost_buy	= undefined;
 item_info		= undefined;
 
-shop_text = "What can I get for ya?"
+shop_text = "What can I get for ya?";
+map_text = "";

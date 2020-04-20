@@ -11,7 +11,7 @@ if (!show_mini)
 else
 	index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
-if (mouse_check_button_pressed(mb_left) && show) {
+if (mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > surface_get_width(application_surface) / 2 && show) {
 	sfx_play(sfx_memu_select);
 	
 	var _index	= index - (scroll_index div cell_height);

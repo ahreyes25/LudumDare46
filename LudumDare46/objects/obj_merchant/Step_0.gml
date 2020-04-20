@@ -49,4 +49,15 @@ switch (state) {
 	case "hide":
 		xcurr = lerp(xcurr, x_start, 0.1);
 		break;
+		
+	case "travel":
+		if (obj_map.show) {
+			xcurr = lerp(xcurr, xtarget, 0.2);
+		
+			if (abs(xcurr - xtarget) <= 1) {
+				state = "travel_wait";
+				phrase = undefined;
+			}
+		}
+		break;
 }

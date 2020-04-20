@@ -23,7 +23,8 @@ if (update_res) {
 
 // Move To New Area -- Clicking
 if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show && exists(obj_player) && exists(obj_player.rod) && 
-	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show && exists(obj_library) && !obj_library.show) {
+	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show && exists(obj_library) && !obj_library.show &&
+	exists(obj_map) && !obj_map.show) {
 		
 	if (mouse_check_button_pressed(mb_left) && mouse_touching_edges()) {
 		var _mx = device_mouse_x_to_gui(0);
@@ -65,6 +66,7 @@ if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) 
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
 		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("D"))) {
@@ -72,6 +74,7 @@ if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) 
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
 		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("W"))) {
@@ -79,6 +82,7 @@ if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) 
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
 		sfx_play(sfx_page_turn);
 	}
 	if (keyboard_check_pressed(ord("S"))) {
@@ -86,6 +90,7 @@ if (!obj_game_controller.paused && exists(obj_player) && exists(obj_player.rod) 
 		inventory_hide();
 		shop_hide();
 		library_hide();
+		map_hide();
 		sfx_play(sfx_page_turn);
 	}
 }
