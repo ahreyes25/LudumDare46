@@ -33,6 +33,7 @@ enum FISH {
 	AERYS,
 	FISH,
 	OCTOPUS,
+	ALLIGATOR,
 	CRAB
 }
 
@@ -96,7 +97,7 @@ global.fish_data[FISH.FISH, FP.ZONE_SIZE_ROD_5]				= 30;
 global.fish_data[FISH.FISH, FP.ZONE_SPEED_ROD_5]			= .5;
 
 
-global.fish_data[FISH.OCTOPUS, FP.NAME]						= "Octopus";
+global.fish_data[FISH.OCTOPUS, FP.NAME]						= "Eight Legged Fish";
 global.fish_data[FISH.OCTOPUS, FP.SPRITE]					= spr_octopus_2;
 global.fish_data[FISH.OCTOPUS, FP.DESC]						= "A regular octopus for regular things.";
 global.fish_data[FISH.OCTOPUS, FP.REGION]					= undefined;
@@ -788,5 +789,26 @@ global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_4]			= 11;
 global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_4]			= 11;
 global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_5]			= 13;
 global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_5]			= 10;
+
+global.fish_data[FISH.ALLIGATOR, FP.NAME]						= "Archer";
+global.fish_data[FISH.ALLIGATOR, FP.SPRITE]						= spr_alligator;
+global.fish_data[FISH.ALLIGATOR, FP.DESC]						= "Any moment now...";
+global.fish_data[FISH.ALLIGATOR, FP.REGION]						= undefined;
+global.fish_data[FISH.ALLIGATOR, FP.RARITY]						= "Once In A Lifetime";
+global.fish_data[FISH.ALLIGATOR, FP.COST_SELL]					= 100;
+global.fish_data[FISH.ALLIGATOR, FP.COST_BUY]					= 100;
+global.fish_data[FISH.ALLIGATOR, FP.INFO]						= "I once wrestled three alligators\nat the same time, all\nwhile blindfolded.";
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_BASIC_1]		= 6;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_BASIC_1]		= 12;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_1]			= 8;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_1]			= 10;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_2]			= 10;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_2]			= 8;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_3]			= 12;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_3]			= 6;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_4]			= 14;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_4]			= 4;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_5]			= 16;
+global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_5]			= 3;
 
 global.fish_total = array_height_2d(global.fish_data);
