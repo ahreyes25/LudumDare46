@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "0cd78b18-7046-46d9-b84a-fb6240d2b339",
+            "Value": {
+                "id": "1686f540-9698-4bc2-9b2d-e628c08a2a57",
+                "resourcePath": "sprites\\spr_emoji_happy_2\\spr_emoji_happy_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0cda6744-ffb2-4c4d-b987-6a99b88455ad",
             "Value": {
                 "id": "b9297e05-871f-4688-97de-0d0137ec8e0d",
@@ -487,6 +495,14 @@
             }
         },
         {
+            "Key": "1b7aefd6-0362-4983-8381-cf7e163904f8",
+            "Value": {
+                "id": "a4fbe0e8-604a-4c78-a0eb-891e11f72970",
+                "resourcePath": "sprites\\spr_emoji_sad_1\\spr_emoji_sad_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c11a277-6945-47ec-85fa-f5139c0cf6aa",
             "Value": {
                 "id": "29781886-4bbd-41c8-8c4e-cda9aecdfe7c",
@@ -652,6 +668,14 @@
                 "id": "7adb5d0c-8749-4c4f-b03d-15af309268ad",
                 "resourcePath": "scripts\/timer_start_ext\/timer_start_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "27b51cd3-68e2-416b-97d3-f90877d1b84d",
+            "Value": {
+                "id": "2b4cf916-5b96-443c-b20b-9471ec5042db",
+                "resourcePath": "sprites\\spr_emoji_happy_1\\spr_emoji_happy_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3044,6 +3068,14 @@
                 "id": "14fc79b3-4405-4851-8016-634f8e4e6665",
                 "resourcePath": "scripts\/fadeout_object_get_by_sprite_and_owner\/fadeout_object_get_by_sprite_and_owner.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b18a1fae-5989-43eb-9123-f15d9a1a6446",
+            "Value": {
+                "id": "26c3a39f-2ee7-4daa-a7c5-678f391506ee",
+                "resourcePath": "sprites\\spr_emoji_sad_2\\spr_emoji_sad_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

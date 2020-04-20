@@ -40,6 +40,8 @@ for (var i = 0; i < ds_list_size(obj_shop.shop); i++) {
 }
 
 sfx_play(sfx_fish_caught);
+obj_player.happy = true;
+obj_player.alarm[0] = 180;
 return _reward;
 
 

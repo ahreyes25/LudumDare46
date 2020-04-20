@@ -14,6 +14,10 @@ boat_bob_speed	= 0.1;
 wave_surface	= undefined;
 wave_sprite		= undefined;
 
+happy			= false;
+sad				= false;
+emoji_fade		= 1;
+
 fish_caught		= ds_list_create();
 fish_data		= ds_list_create();
 for (var i = 0; i < global.fish_total; i++) {

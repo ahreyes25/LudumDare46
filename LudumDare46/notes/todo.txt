@@ -11,14 +11,13 @@
 - add range to lure
 - fix text formatting off screen
 - add menu placeholder items
+- room transitions
 
 // Polish
 - meter bouncing juice
-- room transitions
 - catch reward juice
 - arrows sink when navigating areas
 - secret rod for donating a ton
-- fisherman emojis
 - UI feedback when menus open and close
 - keep the fisherman bobbing while fishing
 - more shopkeeper dialogue

@@ -15,6 +15,8 @@ if (alarm[0] == -1) {
 			if (bounces >= max_bounces) {
 				instance_destroy();
 				sfx_play(sfx_fish_escape);
+				obj_player.sad = true;
+				obj_player.alarm[0] = 120;
 			}
 			else {
 				move_dir = DIR.UP;
@@ -30,8 +32,11 @@ if (alarm[0] == -1) {
 		// Win
 		if (arrow_tick_pos <= goal_ticks)
 			catch_reward(fish, "fish");
-		else
+		else {
 			sfx_play(sfx_fish_escape);
+			obj_player.sad = true;
+			obj_player.alarm[0] = 120;
+		}
 		instance_destroy();
 	}
 }

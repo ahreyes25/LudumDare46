@@ -1,0 +1,1 @@
+emoji_fade = 1;
