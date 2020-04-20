@@ -31,11 +31,12 @@ enum FISH {
 	GHOST,
 	RIGOR,
 	AERYS,
+	REAL,
 	FISH,
 	OCTOPUS,
+	CRAB,
 	ALLIGATOR,
 	PENGUIN,
-	CRAB
 }
 
 enum FP {
@@ -775,8 +776,8 @@ global.fish_data[FISH.AERYS, FP.SPRITE]						= spr_aerys_fish;
 global.fish_data[FISH.AERYS, FP.DESC]						= "You wonder who this is...";
 global.fish_data[FISH.AERYS, FP.REGION]						= undefined;
 global.fish_data[FISH.AERYS, FP.RARITY]						= "Foretold by the Prophet Aerys";
-global.fish_data[FISH.AERYS, FP.COST_SELL]					= 10000;
-global.fish_data[FISH.AERYS, FP.COST_BUY]					= 10000;
+global.fish_data[FISH.AERYS, FP.COST_SELL]					= 9999;
+global.fish_data[FISH.AERYS, FP.COST_BUY]					= 9999;
 global.fish_data[FISH.AERYS, FP.INFO]						= "You might want to let this one go... \nYou might be disrupting the natural order of things...";
 global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_BASIC_1]		= 3;
 global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_BASIC_1]		= 15;
@@ -790,6 +791,27 @@ global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_4]			= 11;
 global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_4]			= 11;
 global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_5]			= 13;
 global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_5]			= 10;
+
+global.fish_data[FISH.REAL, FP.NAME]						= "A Real Fish";
+global.fish_data[FISH.REAL, FP.SPRITE]						= spr_real_fish;
+global.fish_data[FISH.REAL, FP.DESC]						= "How did this one get in here?";
+global.fish_data[FISH.REAL, FP.REGION]						= undefined;
+global.fish_data[FISH.REAL, FP.RARITY]						= "Accident";
+global.fish_data[FISH.REAL, FP.COST_SELL]					= 10000;
+global.fish_data[FISH.REAL, FP.COST_BUY]					= 10000;
+global.fish_data[FISH.REAL, FP.INFO]						= "The developers think \nthey're so clever\ndon't they?";
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_BASIC_1]		= 3;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_BASIC_1]		= 15;
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_1]				= 5;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_1]			= 14;
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_2]				= 7;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_2]			= 13;
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_3]				= 9;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_3]			= 12;
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_4]				= 11;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_4]			= 11;
+global.fish_data[FISH.REAL, FP.ZONE_SIZE_ROD_5]				= 13;
+global.fish_data[FISH.REAL, FP.ZONE_SPEED_ROD_5]			= 10;
 
 global.fish_data[FISH.ALLIGATOR, FP.NAME]						= "Archer";
 global.fish_data[FISH.ALLIGATOR, FP.SPRITE]						= spr_alligator;

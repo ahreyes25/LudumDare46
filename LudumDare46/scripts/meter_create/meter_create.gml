@@ -8,9 +8,39 @@ with (argument0) {
 	var _fish_name	= fish_name(_fish);
 	
 	switch (_rod) {
-		default: 	
+		case ROD.ROD_BASIC_1: 	
 			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_BASIC_1];		
 			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_BASIC_1];	
+			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
+			break;
+			
+		case ROD.ROD_1:
+			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_1];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_1];	
+			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
+			break;
+			
+		case ROD.ROD_2:
+			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_2];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_2];	
+			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
+			break;
+			
+		case ROD.ROD_3:
+			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_3];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_3];	
+			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
+			break;
+			
+		case ROD.ROD_4:
+			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_4];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_4];	
+			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
+			break;
+			
+		case ROD.ROD_5:
+			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_5];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_5];	
 			player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];
 			break;
 	}

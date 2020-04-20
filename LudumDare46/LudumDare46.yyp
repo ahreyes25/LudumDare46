@@ -1239,6 +1239,14 @@
             }
         },
         {
+            "Key": "486ad3bf-63f3-493b-8188-e8e3342f65a6",
+            "Value": {
+                "id": "445fadcb-2180-4181-a2c3-242b48c126cd",
+                "resourcePath": "sprites\\spr_real_fish\\spr_real_fish.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "488db5d6-e5b3-426b-af4e-e19fba05ab90",
             "Value": {
                 "id": "c3f087fb-d39c-4124-b431-f6febc869bd4",
