@@ -30,21 +30,21 @@ switch (room) {
 		
 	case rm_forest:
 		global.tint_color = global.color_green;
-		sfx_play(sfx_forest_song);
+		sfx_play(sfx_forest_song, true);
 		break;
 		
 	case rm_desert:
 		global.tint_color = global.color_tan;
-		sfx_play(sfx_desert_song);
+		sfx_play(sfx_desert_song, true);
 		break;
 		
 	case rm_glacier:
 		global.tint_color = global.color_white;
-		sfx_play(sfx_glacier_song);
+		sfx_play(sfx_glacier_song, true);
 		break;
 		
 	case rm_ocean:
 		global.tint_color = global.color_blue;
-		sfx_play(sfx_glacier_song);
+		sfx_play(sfx_glacier_song, true);
 		break;
 }

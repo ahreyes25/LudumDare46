@@ -1,9 +1,9 @@
 // Core	
 - setup glacier region
-- fish need to have unique size and color/weight properties -- 30 min 
+- fish need to have unique size and color/weight properties
 - remove starting money
 - make sure that meter_create() has updated rod values
-
+- draw lure when thrown
 - fish sloshing whiel trying to catch
 - clicking too early causes fish to run away
 - lure moving while trying to fish
@@ -37,6 +37,7 @@
 	- far distance catch
 	- catch 10 without moving from starting zone
 	- catch every fish?
+- point system and leaderboards
 - achievements
 - save file
 	- regions unlocked
