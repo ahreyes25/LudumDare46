@@ -2,14 +2,11 @@
 - more shopkeeper dialogue
 
 // Polish
-- catch reward juice
-	- flip card around
-	- screen flash
 - meter bouncing juice
-- catch junk and items?
 
 // -----------------------------------
 // Extra
+- catch junk and items?
 - fish sloshing whiel trying to catch
 - lure moving while trying to fish
 - add range to lure

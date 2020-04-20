@@ -12,6 +12,9 @@ if (mouse_check_button_pressed(mb_left)) {
 			global.sound_mult = !global.sound_mult;
 			audio_master_gain(global.sound_mult);
 			break;
+		case 4:
+			room_transition(rm_outro_0);
+			break;
 	}
 	sfx_play(sfx_memu_select);
 }

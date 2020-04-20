@@ -18,6 +18,10 @@ switch (room) {
 	case rm_ocean_0:
 		var _text = "The Fish don't bite as much as they used to...";
 		break;
+		
+	case rm_outro_0:
+		var _text = "Keep Our Animals Alive... Do Your Part";
+		break;
 }
 draw_text(_sw / 2, _sh / 2 + sin(bob_iter) * 2, _text);
 draw_set_halign(fa_left);

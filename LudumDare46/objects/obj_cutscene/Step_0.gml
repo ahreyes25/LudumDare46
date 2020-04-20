@@ -1,5 +1,9 @@
-if (mouse_check_button_pressed(mb_any)) 
-	room_transition(room + 1);
+if (mouse_check_button_pressed(mb_any)) {
+	if (room == rm_outro_0)
+		game_end();
+	else
+		room_transition(room + 1);
+}
 	
 switch (room) {
 	case rm_forest_0:

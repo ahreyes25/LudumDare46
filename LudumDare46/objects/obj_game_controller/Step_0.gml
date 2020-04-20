@@ -11,6 +11,10 @@ if (paused) {
 		room_transition(rm_title);
 		paused = false;
 	}
+	if (keyboard_check_pressed(ord("Q"))) {
+		room_transition(rm_outro_0);
+		paused = false;	
+	}
 		
 	merchant_hide();
 	shop_hide();
