@@ -1,24 +1,24 @@
 #region New Screen Resolution
-if (update_res) {
-	window_set_size(width, height);
-		
-	// Maintain Aspect Ratio		
-	if (width >= height)
-		width = height * aspect_ratio;
-		
-	display_set_gui_size(width, height);
-	surface_resize(application_surface, width, height);
-	//surface_resize(bg_surface, surface_get_width(application_surface), surface_get_height(application_surface));
-	
-	// Center Window
-	if (!centered) {
-		alarm[0] = 1;
-		centered = true;
-	}
-	
-	update_res = false;
-	init_load  = false;
-}
+//if (update_res) {
+//	window_set_size(width, height);
+//		
+//	// Maintain Aspect Ratio		
+//	if (width >= height)
+//		width = height * aspect_ratio;
+//		
+//	display_set_gui_size(width, height);
+//	surface_resize(application_surface, width, height);
+//	//surface_resize(bg_surface, surface_get_width(application_surface), surface_get_height(application_surface));
+//	
+//	// Center Window
+//	if (!centered) {
+//		alarm[0] = 1;
+//		centered = true;
+//	}
+//	
+//	update_res = false;
+//	init_load  = false;
+//}
 #endregion
 
 target_wave_y = ((exists(obj_player) && !defined(obj_player.rod.lure)) ? 
