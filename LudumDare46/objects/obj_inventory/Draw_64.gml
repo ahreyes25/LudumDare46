@@ -58,7 +58,12 @@ if (show) {
 		
 		// Draw Mini Menu
 		if (show_mini) {
-			var _text	= ["Sell", "Donate", "Info", "Cancel"];
+			var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
+			var _item = inventory[| _index];
+			if (_item[0] == "fish")
+				var _text	= ["Sell", "Donate", "Info", "Cancel"];
+			else
+				var _text	= ["Equip", "Sell", "Donate", "Info", "Cancel"];
 			var _mini_w = 128;
 			var _mini_h = 64;
 			var _mini_x = start_x + cell_width;
@@ -66,7 +71,7 @@ if (show) {
 			
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);
-			for (var i = 0; i < 4; i++) {
+			for (var i = 0; i < array_length_1d(_text); i++) {
 				draw_set_color(c_black);
 				draw_rectangle(_mini_x, _mini_y + (_mini_h * i), _mini_x + _mini_w, _mini_y + (_mini_h * i) + _mini_h, false);	
 				draw_set_color(global.tint_color);

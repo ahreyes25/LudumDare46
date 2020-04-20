@@ -1,5 +1,8 @@
 depth = player.depth - 1;
 
+type = obj_player.rod_type;
+lure_type = obj_player.lure_type;
+
 var _sh = (sprite_get_height(spr_boat_side) * player.boat_scale) / 2;
 x = obj_camera.x;
 y = obj_camera.y + (obj_camera.height * obj_camera.zoom_factor) / 2 - _sh;

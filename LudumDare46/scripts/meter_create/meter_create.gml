@@ -10,7 +10,7 @@ with (argument0) {
 	switch (_rod) {
 		case ROD.ROD_BASIC_1: 	
 			player.meter.meter_speed = global.fish_data[_fish, FP.ZONE_SPEED_ROD_BASIC_1];		
-			player.meter.goal_ticks	= global.fish_data[_fish, FP.ZONE_SIZE_ROD_BASIC_1];		
+			player.meter.goal_ticks	 = global.fish_data[_fish, FP.ZONE_SIZE_ROD_BASIC_1];		
 			break;
 	}
 	player.meter.max_bounces = global.rod_data[_rod, RP.DURABILITY];

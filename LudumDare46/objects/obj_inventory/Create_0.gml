@@ -16,3 +16,6 @@ target_y		= start_y;
 scroll_index	= 0;
 
 surface			= surface_create(cell_width, 1);
+
+ds_list_add(inventory, ["rod", ROD.ROD_BASIC_1]);
+ds_list_add(inventory, ["lure", LURE.LURE_BASIC_1]);
