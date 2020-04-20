@@ -29,6 +29,14 @@ if (show) {
 			var _item_sprite = global.rod_data[_item_enum, RP.SPRITE];
 		if (_item_type == "lure")
 			var _item_sprite = global.lure_data[_item_enum, LP.SPRITE];
+		if (_item_type == "region") {
+			switch (_item_enum) {
+				case 0: var _item_sprite = spr_forest_region;	break;	
+				case 1: var _item_sprite = spr_desert_region;	break;	
+				case 2: var _item_sprite = spr_glacier_region;	break;	
+				case 3: var _item_sprite = spr_ocean_region;	break;	
+			}
+		}
 		
 		if (_item_type == "lure") {
 			var _ys = _y1 + cell_height / 2;
@@ -121,6 +129,21 @@ if (show) {
 			// Info Text
 			draw_text(_mini_x + 10, _mini_y + 10, "Random Fish Data");
 			draw_text(_mini_x + 10, _mini_y + 30, "Adds Information About 1 Fish To Your Library");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
+		}
+		if (_item_type == "region") {
+			// Info Panel Frame
+			draw_set_color(c_black);
+			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, false);
+			draw_set_color(global.tint_color);
+			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, true);
+			
+			var _item_cost = global.region_data[_item_enum, P.COST];
+			var _item_name = global.region_data[_item_enum, P.NAME];
+			
+			// Info Text
+			draw_text(_mini_x + 10, _mini_y + 10, "New Region Access -- " + string(_item_name));
+			draw_text(_mini_x + 10, _mini_y + 30, "Allow Travel To New Region");
 			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
 		}
 	}
