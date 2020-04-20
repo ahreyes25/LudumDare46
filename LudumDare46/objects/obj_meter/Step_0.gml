@@ -24,9 +24,11 @@ if (alarm[0] == -1) {
 			}
 		}
 	}
+}
 
-	// Click!
-	if (mouse_check_button_pressed(mb_left)) {
+// Click!
+if (mouse_check_button_pressed(mb_left)) {
+	if (alarm[0] == -1) {
 		meter_speed = 0;
 	
 		// Win
@@ -38,5 +40,11 @@ if (alarm[0] == -1) {
 			obj_player.alarm[0] = 120;
 		}
 		instance_destroy();
+	}
+	else {
+		instance_destroy();
+		sfx_play(sfx_fish_escape);
+		obj_player.sad = true;
+		obj_player.alarm[0] = 120;
 	}
 }

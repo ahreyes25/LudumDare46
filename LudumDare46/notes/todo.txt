@@ -4,7 +4,6 @@
 - remove starting money
 - make sure that meter_create() has updated rod values
 - fish sloshing whiel trying to catch
-- clicking too early causes fish to run away
 - lure moving while trying to fish
 - draw distance and angle on cursor
 - muted music
