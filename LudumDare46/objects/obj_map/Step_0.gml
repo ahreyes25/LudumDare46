@@ -40,10 +40,10 @@ if (show && mouse_check_button_pressed(mb_left)) {
 				map_hide();
 				show_mini = false;
 				switch (regions[| _index]) {
-					case 0:	room_goto(rm_forest_0); break;
-					case 1: room_goto(rm_desert_0); break;
-					case 2: room_goto(rm_glacier_0); break;
-					case 3: room_goto(rm_ocean_0); break;
+					case 0:	room_transition(rm_forest_0); break;
+					case 1: room_transition(rm_desert_0); break;
+					case 2: room_transition(rm_glacier_0); break;
+					case 3: room_transition(rm_ocean_0); break;
 				}
 			}
 		}

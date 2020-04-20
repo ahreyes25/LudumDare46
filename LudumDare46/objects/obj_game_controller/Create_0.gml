@@ -32,6 +32,7 @@ merchant		= instance_create_layer(0, 0, "Controllers", obj_merchant);
 shop			= instance_create_layer(0, 0, "Controllers", obj_shop);
 library			= instance_create_layer(0, 0, "Controllers", obj_library);
 map				= instance_create_layer(0, 0, "Controllers", obj_map);
+transitions		= instance_create_layer(0, 0, "Controllers", obj_transitions);
 #endregion
 
 #region Sound & Music

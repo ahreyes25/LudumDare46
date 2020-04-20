@@ -1,5 +1,5 @@
-if (mouse_check_button_pressed(mb_any))
-	room_goto_next();
+if (mouse_check_button_pressed(mb_any)) 
+	room_transition(room + 1);
 	
 switch (room) {
 	case rm_forest_0:

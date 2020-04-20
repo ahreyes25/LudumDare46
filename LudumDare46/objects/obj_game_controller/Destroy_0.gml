@@ -9,6 +9,7 @@ instance_destroy(sidebar_right);
 instance_destroy(sidebar_left);
 instance_destroy(inventory);
 instance_destroy(merchant);
+instance_destroy(transitions);
 
 surface_free(lure_surface);
 

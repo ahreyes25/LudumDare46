@@ -3,7 +3,7 @@ menu_index = clamp((device_mouse_y_to_gui(0) - menu_y) div (string_height("A") *
 if (mouse_check_button_pressed(mb_left)) {
 	switch (menu_index) {
 		case 0:
-			room_goto_next();
+			room_transition(rm_forest_0);
 			break;
 	}
 	sfx_play(sfx_memu_select);

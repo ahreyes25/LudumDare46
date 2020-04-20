@@ -8,7 +8,7 @@ if (paused) {
 		audio_master_gain(global.sound_mult);
 	}
 	if (keyboard_check_pressed(ord("E"))) {
-		room_goto(rm_title);
+		room_transition(rm_title);
 		paused = false;
 	}
 		

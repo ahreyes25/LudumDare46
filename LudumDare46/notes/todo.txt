@@ -4,24 +4,23 @@
 - test on josis computer, and others if possible
 
 // Core	
+- room transitions
+- draw distance and angle on cursor
+- fix text formatting off screen
+- modify content
+
 - fish need to have unique size and color/weight properties
 - fish sloshing whiel trying to catch
 - lure moving while trying to fish
-- draw distance and angle on cursor
 - add range to lure
-- fix text formatting off screen
 - add menu placeholder items
-- room transitions
+- more shopkeeper dialogue
+- scroll visual indicators in menus
 
 // Polish
 - meter bouncing juice
 - catch reward juice
-- arrows sink when navigating areas
-- secret rod for donating a ton
 - UI feedback when menus open and close
-- keep the fisherman bobbing while fishing
-- more shopkeeper dialogue
-- scroll visual indicators in menus
 
 // Extra
 - better fish behavior
@@ -29,8 +28,6 @@
 - right click to cancel throw
 - hit zones in different areas/multiple meter hit zones
 - coins to collect
-- new regions
-- shrinking ponds
 - proc gen ponds
 - easter egg on edge of map?
 	- secret rod => "holy shit you just broke the game"
@@ -45,6 +42,7 @@
 	- fish data
 	- inventory
 	- shop list
+	- secret rod for donating a ton
 	- money
 	- items equipped
 	- any achievement data

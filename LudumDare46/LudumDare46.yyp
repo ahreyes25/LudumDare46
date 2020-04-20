@@ -679,6 +679,14 @@
             }
         },
         {
+            "Key": "27f5138f-98f3-432c-91d0-84e1edef2d7e",
+            "Value": {
+                "id": "28dd1e31-522d-4c3c-9f7d-935cc07164d9",
+                "resourcePath": "objects\\obj_transitions\\obj_transitions.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "285aa7b5-e33c-4224-be12-2d52844a386c",
             "Value": {
                 "id": "bef5b2bb-8859-40c0-80dc-a803e671f6fa",
@@ -1804,6 +1812,14 @@
                 "id": "1d0325de-7ce5-4329-94e7-fddb5dde692e",
                 "resourcePath": "views\/678c0b7f-b91e-4c5e-b92f-a3e26663e086.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "67cbaefe-9ad8-475c-90d3-b35672695f48",
+            "Value": {
+                "id": "93bfc159-fe7a-446a-8e99-28a63d355d9d",
+                "resourcePath": "scripts\\room_transition\\room_transition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4860,7 +4876,8 @@
         "d9cfd024-32d1-4c5b-9ccf-39b622003ca9",
         "87bef54d-82ec-4544-9085-19cf107e9525",
         "b6e5f828-14d1-4c5a-84d1-6a5ea8b40a21",
-        "c9e99726-c869-41e2-9380-efb910560b06"
+        "c9e99726-c869-41e2-9380-efb910560b06",
+        "67cbaefe-9ad8-475c-90d3-b35672695f48"
     ],
     "tutorial": ""
 }
