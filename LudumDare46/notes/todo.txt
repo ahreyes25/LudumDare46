@@ -1,10 +1,8 @@
 // Core	
-- setup other regions -- 1 hour
-
+- setup glacier region
 - inventory floating sub menu
-
-- fish need to have unique size and color/weight properties -- 30 min 
 - rod durability
+- fish need to have unique size and color/weight properties -- 30 min 
 - remove starting money
 - make sure that meter_create() has updated rod values
 

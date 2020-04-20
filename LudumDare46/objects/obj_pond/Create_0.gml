@@ -1,5 +1,10 @@
 fish		= ds_list_create();
-max_fish	= 20;
+switch (room) {
+	case rm_forest:		max_fish	= 30;	break;
+	case rm_desert:		max_fish	= 10;	break;
+	case rm_ocean:		max_fish	= 50;	break;
+	case rm_glacier:	max_fish	= 20;	break;
+}
 
 repeat (max_fish) {
 	var _solids = ds_list_create();
