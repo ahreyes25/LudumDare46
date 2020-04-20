@@ -5,6 +5,7 @@
 
 // Core	
 - scroll visual indicators in menus
+- move hit zone to random pos
 - fix text formatting off screen
 - modify content
 

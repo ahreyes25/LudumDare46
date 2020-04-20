@@ -12,6 +12,7 @@ if (paused) {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
 	
+	draw_text(_sw / 2, _sh / 2 - 140, "Press Escape To Unpause");
 	draw_text(_sw / 2, _sh / 2 - 100, "Press R To Restart Level.");
 	draw_text(_sw / 2, _sh / 2 - 80, "-- Your Progress Will Not Be Lost! --");
 	draw_text(_sw / 2, _sh / 2 - 40, "Press F To Toggle Fullscreen.");

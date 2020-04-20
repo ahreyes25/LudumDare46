@@ -22,11 +22,13 @@ else if (!show_mini_mini) {
 index_mini_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
 // Select Inventory Item
-if (show && mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width) {	
-	sfx_play(sfx_memu_select);
-	
+var _mx = device_mouse_x_to_gui(0);
+var _my = device_mouse_y_to_gui(0);
+
+if (show && mouse_check_button_pressed(mb_left)) {	
 	// Select Mini
-	if (show_mini && !show_mini_mini && device_mouse_x_to_gui(0) > obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width) {
+	if (show_mini && !show_mini_mini && _mx >= start_x + cell_width && _mx <= start_x + cell_width * 2) {
+		sfx_play(sfx_memu_select);
 		var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
 		var _item = inventory[| _index];
 		
@@ -63,7 +65,8 @@ if (show && mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > ob
 		}
 	}
 	// Select Mini Mini
-	else if (show_mini_mini && show_mini && device_mouse_x_to_gui(0) > obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width) {
+	else if (show_mini_mini && show_mini) {
+		sfx_play(sfx_memu_select);
 		var _left_edge  = obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_width;
 		var _mx = device_mouse_x_to_gui(0);
 		
@@ -128,7 +131,8 @@ if (show && mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > ob
 		}
 	}
 	// Select Normal
-	else {
+	else if (_mx >= start_x && _mx <= start_x + cell_width) {
+		sfx_play(sfx_memu_select);
 		show_mini = true;
 		show_mini_mini = false;	
 	}
