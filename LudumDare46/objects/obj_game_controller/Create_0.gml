@@ -40,7 +40,7 @@ map				= instance_create_layer(0, 0, "Controllers", obj_map);
 room_goto_next();
 
 need_to_clear_surface = false;
-lure_surface = surface_create(room_width, room_height);
+lure_surface = surface_create(room_width * 2, room_height * 2);
 paused = false;
 
 u_color = shader_get_uniform(shdr_solid_color, "u_color");

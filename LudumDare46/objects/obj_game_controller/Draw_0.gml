@@ -1,5 +1,5 @@
 if (!surface_exists(lure_surface))
-	lure_surface = surface_create(room_width, room_height);
+	lure_surface = surface_create(room_width * 2, room_height * 2);
 
 surface_set_target(lure_surface);
 
