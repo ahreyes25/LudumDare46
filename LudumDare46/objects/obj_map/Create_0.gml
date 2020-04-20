@@ -12,6 +12,3 @@ surface			= surface_create(cell_width, 1);
 regions			= ds_list_create();
 
 ds_list_add(regions, REGION.FOREST);
-ds_list_add(regions, REGION.FOREST);
-ds_list_add(regions, REGION.FOREST);
-ds_list_add(regions, REGION.FOREST);

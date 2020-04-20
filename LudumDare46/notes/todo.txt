@@ -13,6 +13,7 @@
 
 // Polish
 - meter bouncing juice
+- room transitions
 - catch reward juice
 - arrows sink when navigating areas
 - secret rod for donating a ton
