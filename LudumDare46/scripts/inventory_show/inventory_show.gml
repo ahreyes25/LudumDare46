@@ -6,4 +6,5 @@ obj_shop.show_mini				= false;
 obj_library.show				= false;
 obj_map.show					= false;
 obj_map.show_mini				= false;
+obj_inventory.scroll_index		= 0;
 merchant_hide();

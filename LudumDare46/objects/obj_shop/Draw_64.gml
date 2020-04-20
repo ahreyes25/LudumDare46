@@ -41,7 +41,7 @@ if (show) {
 		if (_item_type == "lure") {
 			var _ys = _y1 + cell_height / 2;
 			draw_sprite_ext(_item_sprite, 0, 
-				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index,
+				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index - sprite_get_width(_item_sprite) / 2,
 				scale / 2, scale / 2, -90, global.tint_color, 1);
 		}
 		else if (_item_type == "fish") {
