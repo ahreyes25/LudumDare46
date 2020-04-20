@@ -34,3 +34,7 @@ if (_item_type == "lure") {
 	obj_merchant.item_cost_buy	= global.lure_data[_item, LP.COST_BUY];
 	obj_merchant.item_cost_sell	= global.lure_data[_item, LP.COST_SELL];
 }
+if (_item_type == "region") {
+	obj_merchant.item_name		= global.region_data[_item, P.NAME];
+	obj_merchant.item_cost_buy	= global.region_data[_item, P.COST];
+}
