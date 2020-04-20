@@ -1,0 +1,31 @@
+{
+    "id": "007b1ddb-614e-4af3-b375-c9c2c1cba44b",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "007b1ddb-614e-4af3-b375-c9c2c1cba44b",
+    "children": [
+        "a1d8f5a0-012f-4533-8839-5e3c559da497",
+        "500a3203-28d6-4adc-88a0-edb57a015998",
+        "ea6d30e9-792a-4cde-8f41-a8b7fb4eee0a",
+        "f7f311e6-c6cf-43f5-83f0-b08c8663b1e3",
+        "9a29ff02-275a-4dad-9f07-064c65af9136",
+        "ed9daab6-e2a1-4a92-9c1d-35646f72329e",
+        "c8c74811-97e0-4376-aeb9-af208a3be411",
+        "17db380b-ba3c-4339-a460-01bf5a9db911",
+        "051168cb-d544-4b54-9994-28de1598ce0d",
+        "b160d67d-49b6-459d-bd04-1b8909fbc93a",
+        "447ae23a-c7f6-46d2-8c07-4360a116f15f",
+        "98f396c5-c111-4154-97b0-278cbfb66fc2",
+        "6e60a1b5-2a80-43f7-9dde-df092b37427c",
+        "53af583f-b0c2-45a3-b7b7-6c15b32cc84f",
+        "6b13ad5a-cc27-4057-ac15-eee72d4bd7ec",
+        "e82d70ae-6c4c-4fcd-b275-ff738cb0d8ef",
+        "ff6b290f-4efe-4b32-9bdf-5d38f0fc48a3",
+        "0acfb13a-9df3-467f-8147-1a1856a95a03",
+        "29b2563a-a0a0-4c5f-a1f2-76b7a8333e38"
+    ],
+    "filterType": "GMScript",
+    "folderName": "Fadeout Object Scripts",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}
