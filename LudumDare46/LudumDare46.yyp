@@ -3999,6 +3999,14 @@
             }
         },
         {
+            "Key": "f914d07e-d9e9-40e2-9428-7b45151bfc92",
+            "Value": {
+                "id": "082d3676-d7a0-41b4-aa1f-ebd23476335e",
+                "resourcePath": "sounds\\sfx_meter_start\\sfx_meter_start.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f923cae9-fddc-4db6-aebb-c93e5cb1d60e",
             "Value": {
                 "id": "99c12030-05f1-4854-8237-5f54ab633c6f",

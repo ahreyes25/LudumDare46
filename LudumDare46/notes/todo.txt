@@ -1,12 +1,9 @@
 // Core	
 - setup other regions -- 1 hour
-- inventory floating sub menu
-- menu item name float on mouse over
 
-- sell all equipment
+- inventory floating sub menu
+
 - fish need to have unique size and color/weight properties -- 30 min 
-- fix meter threshold
-- fix throw cooldown 
 - rod durability
 - remove starting money
 - make sure that meter_create() has updated rod values
@@ -15,8 +12,9 @@
 - clicking too early causes fish to run away
 - lure moving while trying to fish
 - resize surface for lure wire
-- fail sound when meter destroys
 - draw distance and angle on cursor
+- baclk outline around meter
+- center meter
 
 // Polish
 - meter bouncing juice
