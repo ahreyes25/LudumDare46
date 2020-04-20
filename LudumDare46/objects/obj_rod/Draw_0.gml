@@ -20,6 +20,7 @@ if (defined(cursor_x) && defined(cursor_y) && defined(anchor_x) && defined(ancho
 }
 
 if (defined(lure)) {
-	if (lure.state == "return" || lure.state == "float")
+	if (lure.state == "return" || lure.state == "float") {
 		draw_line_width(lure.start_x, lure.start_y, lure.x, lure.y, 3);
+	}
 }
