@@ -504,12 +504,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Double-Angled Lure";
+global.lure_data[LURE.NONE, LP.DESC]						= "Able to catch fish from many directions.";
+global.lure_data[LURE.NONE, LP.INFO]						= "Though unconventional- this lure can help catch two fish at once! \nAt least... that's the theory.";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_11;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 110;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 300;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -544,12 +544,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Chained Lure";
+global.lure_data[LURE.NONE, LP.DESC]						= "Chained for easier drag";
+global.lure_data[LURE.NONE, LP.INFO]						= "This lure is able to drag heavier fish- it is much less likely to break!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_12;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 110;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 360;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -584,12 +584,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Simple Ring Hook";
+global.lure_data[LURE.NONE, LP.DESC]						= "A Classic Design";
+global.lure_data[LURE.NONE, LP.INFO]						= "Used by the fishers of yore- you can't go wrong with this fine lure!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_13;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 150;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 450;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -624,12 +624,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Coined Double-Tip";
+global.lure_data[LURE.NONE, LP.DESC]						= "A shiny bauble!";
+global.lure_data[LURE.NONE, LP.INFO]						= "The coin attached is supposed to attract... special fish.";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_14;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 225;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 550;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -664,12 +664,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Frazzle J Hook 1";
+global.lure_data[LURE.NONE, LP.DESC]						= "Frazzle Jazzle this hook is gonna Snazzle!";
+global.lure_data[LURE.NONE, LP.INFO]						= "Underwater signals are captured by this lure. \nMaybe you can catch a ghost!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_15;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 200;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 600;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -704,12 +704,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Frazzle J Hook 2";
+global.lure_data[LURE.NONE, LP.DESC]						= "Frazzle Jazzle this hook is gonna Snazzle!";
+global.lure_data[LURE.NONE, LP.INFO]						= "Underwater signals are captured by this lure. \nMaybe you can catch a heart!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_16;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 200;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 500;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -744,12 +744,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Frazzle J Hook 3";
+global.lure_data[LURE.NONE, LP.DESC]						= "Frazzle Jazzle this hook is gonna Snazzle";
+global.lure_data[LURE.NONE, LP.INFO]						= "Underwater signals are captured by this lure. \nMaybe you can catch a walker!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_17;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 200;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 600;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -784,12 +784,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Frazzle J Hook 4";
+global.lure_data[LURE.NONE, LP.DESC]						= "Frazzle Jazzle this hook is gonna Snazzle";
+global.lure_data[LURE.NONE, LP.INFO]						= "Underwater signals are captured by this lure. \nMaybe you can catch... something else!";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_18;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 200;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 600;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -824,12 +824,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Switchblade Lure";
+global.lure_data[LURE.NONE, LP.DESC]						= "An Unconventional Design";
+global.lure_data[LURE.NONE, LP.INFO]						= "Though non standard, you believe this lure might have special drawing properties.";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_19;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 250;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 750;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
@@ -864,12 +864,12 @@ global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* RIGOR	*/			0.1,
 ];
 
-global.lure_data[LURE.NONE, LP.NAME]						= "";
-global.lure_data[LURE.NONE, LP.DESC]						= "";
-global.lure_data[LURE.NONE, LP.INFO]						= "";
+global.lure_data[LURE.NONE, LP.NAME]						= "Hook Lure";
+global.lure_data[LURE.NONE, LP.DESC]						= "Just a Hook.";
+global.lure_data[LURE.NONE, LP.INFO]						= "It Works.";
 global.lure_data[LURE.NONE, LP.SPRITE]						= spr_lure_20;
-global.lure_data[LURE.NONE, LP.COST_SELL]					= ;
-global.lure_data[LURE.NONE, LP.COST_BUY]					= ;
+global.lure_data[LURE.NONE, LP.COST_SELL]					= 500;
+global.lure_data[LURE.NONE, LP.COST_BUY]					= 1500;
 global.lure_data[LURE.NONE, LP.CATCH_CHANCE]				= [
 	/* NONE		*/			undefined,
 	/* CLAM		*/			1.0,
