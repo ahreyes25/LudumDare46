@@ -29,4 +29,39 @@ if (_item_type == "fish") {
 	ds_list_replace(obj_player.fish_data, _item, true);
 }
 
+// Remove From Shop
+for (var i = 0; i < ds_list_size(obj_shop.shop); i++) {
+	var _shop_item = obj_shop.shop[| i];	
+	var _shop_type = _shop_item[0];
+	var _shop_enum = _shop_item[1];
+	
+	if (_shop_type == _item_type && _shop_enum == _item) 
+		ds_list_delete(obj_shop.shop, i);
+}
+
 return _reward;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
