@@ -82,6 +82,10 @@ global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
 	/* SKULL	SIMPLE RING		*/		0.0,
 	/* GHOST	FRAZZLE 3		*/		0.1,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 				
 global.lure_data[LURE.LURE_BASIC_2, LP.NAME]				= "Basic Lure 2";		
@@ -122,6 +126,10 @@ global.lure_data[LURE.LURE_BASIC_2, LP.CATCH_CHANCE]		= [
 	/* SKULL	SIMPLE RING		*/		0.0,
 	/* GHOST	FRAZZLE 3		*/		0.1,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.FANCY, LP.NAME]						= "Fancy Lure";
@@ -162,6 +170,10 @@ global.lure_data[LURE.FANCY, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.0,
 	/* GHOST	FRAZZLE 3		*/		0.2,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.FANCIER, LP.NAME]						= "Fancier Lure";
@@ -202,6 +214,10 @@ global.lure_data[LURE.FANCIER, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.01,
 	/* GHOST	FRAZZLE 3		*/		0.25,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.01,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.FANCIEST, LP.NAME]						= "Fanciest Lure";
@@ -242,6 +258,10 @@ global.lure_data[LURE.FANCIEST, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.FEATHERED, LP.NAME]						= "Feathered Lure";
@@ -282,6 +302,10 @@ global.lure_data[LURE.FEATHERED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.POINTED, LP.NAME]						= "Pointed Lure";
@@ -322,6 +346,10 @@ global.lure_data[LURE.POINTED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.TWINED, LP.NAME]						= "Twined Lure";
@@ -362,6 +390,10 @@ global.lure_data[LURE.TWINED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.LOLLIPOP_1, LP.NAME]						= "Lollipop Lure 1";
@@ -402,6 +434,10 @@ global.lure_data[LURE.LOLLIPOP_1, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.LOLLIPOP_2, LP.NAME]						= "Lollipop Lure 2";
@@ -442,6 +478,10 @@ global.lure_data[LURE.LOLLIPOP_2, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.LOLLIPOP_3, LP.NAME]						= "Lollipop Lure 3";
@@ -482,6 +522,10 @@ global.lure_data[LURE.LOLLIPOP_3, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.FLARED, LP.NAME]						= "Flared lure";
@@ -522,6 +566,10 @@ global.lure_data[LURE.FLARED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.DOUBLE, LP.NAME]						= "Double-Angled Lure";
@@ -562,6 +610,10 @@ global.lure_data[LURE.DOUBLE, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.75,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.CHAINED, LP.NAME]						= "Chained Lure";
@@ -602,6 +654,10 @@ global.lure_data[LURE.CHAINED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.RING, LP.NAME]						= "Simple Ring Hook";
@@ -642,6 +698,10 @@ global.lure_data[LURE.RING, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.75,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.COINED, LP.NAME]						= "Coined Double-Tip";
@@ -682,6 +742,10 @@ global.lure_data[LURE.COINED, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.J_1, LP.NAME]						= "Frazzle J Hook 1";
@@ -722,6 +786,10 @@ global.lure_data[LURE.J_1, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.J_2, LP.NAME]						= "Frazzle J Hook 2";
@@ -762,6 +830,10 @@ global.lure_data[LURE.J_2, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.J_3, LP.NAME]						= "Frazzle J Hook 3";
@@ -802,6 +874,10 @@ global.lure_data[LURE.J_3, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.8,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.J_4, LP.NAME]						= "Frazzle J Hook 4";
@@ -842,6 +918,10 @@ global.lure_data[LURE.J_4, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.BLADE, LP.NAME]						= "Switchblade Lure";
@@ -882,6 +962,10 @@ global.lure_data[LURE.BLADE, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.05,
 	/* GHOST	FRAZZLE 3		*/		0.3,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.05,
+	/* AERYS					*/		0.0,
+	/* FISH						*/		0.25,
+	/* OCTOPUS					*/		0.25,
+	/* CRAB						*/		0.25
 ];
 
 global.lure_data[LURE.HOOK, LP.NAME]						= "Hook Lure";
@@ -922,6 +1006,10 @@ global.lure_data[LURE.HOOK, LP.CATCH_CHANCE]				= [
 	/* SKULL	SIMPLE RING		*/		0.6,
 	/* GHOST	FRAZZLE 3		*/		1.0,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.6,
+	/* AERYS					*/		1.0,
+	/* FISH						*/		0.6,
+	/* OCTOPUS					*/		0.6,
+	/* CRAB						*/		0.6
 ];
 
 global.lure_total = array_height_2d(global.lure_data);

@@ -29,7 +29,11 @@ enum FISH {
 	METROID,
 	SKULL,
 	GHOST,
-	RIGOR
+	RIGOR,
+	AERYS,
+	FISH,
+	OCTOPUS,
+	CRAB
 }
 
 enum FP {
@@ -60,38 +64,38 @@ global.fish_data[FISH.NONE, FP.ZONE_SIZE_ROD_BASIC_1]		= undefined;
 global.fish_data[FISH.NONE, FP.ZONE_SPEED_ROD_BASIC_1]		= undefined;
 #endregion
 
-//global.fish_data[FISH.FISH, FP.NAME]						= "Fish";
-//global.fish_data[FISH.FISH, FP.SPRITE]						= spr_fish_1;
-//global.fish_data[FISH.FISH, FP.DESC]						= "The Fishiest of Fish";
-//global.fish_data[FISH.FISH, FP.REGION]						= REGION.FOREST;
-//global.fish_data[FISH.FISH, FP.RARITY]						= "Common";
-//global.fish_data[FISH.FISH, FP.COST_SELL]					= 10;
-//global.fish_data[FISH.FISH, FP.COST_BUY]					= 10;
-//global.fish_data[FISH.FISH, FP.INFO]						= "This fish is the fishiest \nof all fish, quite fishy \nin all ways. Indeed!";
-//global.fish_data[FISH.FISH, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
-//global.fish_data[FISH.FISH, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.FISH, FP.NAME]						= "Fish";
+global.fish_data[FISH.FISH, FP.SPRITE]						= spr_fish_1;
+global.fish_data[FISH.FISH, FP.DESC]						= "The Fishiest of Fish";
+global.fish_data[FISH.FISH, FP.REGION]						= undefined;
+global.fish_data[FISH.FISH, FP.RARITY]						= "Common";
+global.fish_data[FISH.FISH, FP.COST_SELL]					= 10;
+global.fish_data[FISH.FISH, FP.COST_BUY]					= 10;
+global.fish_data[FISH.FISH, FP.INFO]						= "This fish is the fishiest \nof all fish, quite fishy \nin all ways. Indeed!";
+global.fish_data[FISH.FISH, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
+global.fish_data[FISH.FISH, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
 
-//global.fish_data[FISH.OCTUPUS, FP.NAME]						= "Octopus";
-//global.fish_data[FISH.OCTUPUS, FP.SPRITE]					= spr_octopus_1;
-//global.fish_data[FISH.OCTUPUS, FP.DESC]						= "";
-//global.fish_data[FISH.OCTUPUS, FP.REGION]					= REGION.FOREST;
-//global.fish_data[FISH.OCTUPUS, FP.RARITY]					= "Rare";
-//global.fish_data[FISH.OCTUPUS, FP.COST_SELL]				= 1000;
-//global.fish_data[FISH.OCTUPUS, FP.COST_BUY]					= 1000;
-//global.fish_data[FISH.OCTUPUS, FP.INFO]						= "";
-//global.fish_data[FISH.OCTUPUS, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
-//global.fish_data[FISH.OCTUPUS, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
+global.fish_data[FISH.OCTUPUS, FP.NAME]						= "Octopus";
+global.fish_data[FISH.OCTUPUS, FP.SPRITE]					= spr_octopus_2;
+global.fish_data[FISH.OCTUPUS, FP.DESC]						= "A regular octopus for regular things.";
+global.fish_data[FISH.OCTUPUS, FP.REGION]					= undefined;
+global.fish_data[FISH.OCTUPUS, FP.RARITY]					= "Rare";
+global.fish_data[FISH.OCTUPUS, FP.COST_SELL]				= 10;
+global.fish_data[FISH.OCTUPUS, FP.COST_BUY]					= 10;
+global.fish_data[FISH.OCTUPUS, FP.INFO]						= "It has 8 legs. It's wicked smart. Bring it in for a paltry sum.";
+global.fish_data[FISH.OCTUPUS, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
+global.fish_data[FISH.OCTUPUS, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
 
-//global.fish_data[FISH.CRAB, FP.NAME]						= "Crab";
-//global.fish_data[FISH.CRAB, FP.SPRITE]						= spr_crab_1;
-//global.fish_data[FISH.CRAB, FP.DESC]						= "";
-//global.fish_data[FISH.CRAB, FP.REGION]						= REGION.FOREST;
-//global.fish_data[FISH.CRAB, FP.RARITY]						= "Kind Of Rare";
-//global.fish_data[FISH.CRAB, FP.COST_SELL]					= 100;
-//global.fish_data[FISH.CRAB, FP.COST_BUY]					= 100;
-//global.fish_data[FISH.CRAB, FP.INFO]						= "";
-//global.fish_data[FISH.CRAB, FP.ZONE_SIZE_ROD_BASIC_1]		= 10;
-//global.fish_data[FISH.CRAB, FP.ZONE_SPEED_ROD_BASIC_1]		= 3;
+global.fish_data[FISH.CRAB, FP.NAME]						= "Crab";
+global.fish_data[FISH.CRAB, FP.SPRITE]						= spr_crab;
+global.fish_data[FISH.CRAB, FP.DESC]						= "Just your every-day, run-of-the-mill, crab.";
+global.fish_data[FISH.CRAB, FP.REGION]						= undefined;
+global.fish_data[FISH.CRAB, FP.RARITY]						= "Kind Of Rare";
+global.fish_data[FISH.CRAB, FP.COST_SELL]					= 100;
+global.fish_data[FISH.CRAB, FP.COST_BUY]					= 100;
+global.fish_data[FISH.CRAB, FP.INFO]						= "It has claws. It pinches. It goes great in rolls.";
+global.fish_data[FISH.CRAB, FP.ZONE_SIZE_ROD_BASIC_1]		= 10;
+global.fish_data[FISH.CRAB, FP.ZONE_SPEED_ROD_BASIC_1]		= 3;
 
 global.fish_data[FISH.CLAM, FP.NAME]						= "Manila Clam";
 global.fish_data[FISH.CLAM, FP.SPRITE]						= spr_clam;
@@ -422,5 +426,16 @@ global.fish_data[FISH.RIGOR, FP.COST_BUY]					= 2250;
 global.fish_data[FISH.RIGOR, FP.INFO]						= "Its eyes are closed, but you can sense that it sees you.";
 global.fish_data[FISH.RIGOR, FP.ZONE_SIZE_ROD_BASIC_1]		= 6;
 global.fish_data[FISH.RIGOR, FP.ZONE_SPEED_ROD_BASIC_1]		= 12;
+
+global.fish_data[FISH.AERYS, FP.NAME]						= "Ancient Sea Guardian";
+global.fish_data[FISH.AERYS, FP.SPRITE]						= spr_Aerys___From_Twitch;
+global.fish_data[FISH.AERYS, FP.DESC]						= "You wonder who this is...";
+global.fish_data[FISH.AERYS, FP.REGION]						= undefined;
+global.fish_data[FISH.AERYS, FP.RARITY]						= "God -- Aerys";
+global.fish_data[FISH.AERYS, FP.COST_SELL]					= 0;
+global.fish_data[FISH.AERYS, FP.COST_BUY]					= 100000;
+global.fish_data[FISH.AERYS, FP.INFO]						= "You might want to let this one go... \nYou might be disrupting the natural order of things...";
+global.fish_data[FISH.AERYS, FP.ZONE_SIZE_ROD_BASIC_1]		= 3;
+global.fish_data[FISH.AERYS, FP.ZONE_SPEED_ROD_BASIC_1]		= 15;
 
 global.fish_total = array_height_2d(global.fish_data);

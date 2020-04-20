@@ -36,7 +36,8 @@
         "4f87eb13-328f-40af-9bfc-5466c505ae77",
         "70a2be28-c076-4d7e-b52d-7429d8e77a52",
         "a26f6893-ed07-4c3e-9786-76fa9b842493",
-        "07ebeb1f-1e84-4788-9318-c56680cb375c"
+        "07ebeb1f-1e84-4788-9318-c56680cb375c",
+        "31b77de9-5cf4-43c2-a5f6-bfa8d725554e"
     ],
     "filterType": "GMSprite",
     "folderName": "Fish",
