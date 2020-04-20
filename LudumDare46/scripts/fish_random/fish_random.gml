@@ -38,7 +38,7 @@ for (var i = 0; i < ds_list_size(_won); i++) {
 }
 
 var _n_min_fish = ds_list_size(_min_fish);
-var _win_fish	= _n_min_fish > 0 ? _min_fish[| irandom(ds_list_size(_min_fish) - 1)] : FISH.FISH;
+var _win_fish	= _n_min_fish > 0 ? _min_fish[| irandom(ds_list_size(_min_fish) - 1)] : FISH.CLAM;
 ds_list_destroy(_won);
 ds_list_destroy(_min_fish);
 

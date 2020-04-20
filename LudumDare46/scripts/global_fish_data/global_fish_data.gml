@@ -135,7 +135,7 @@ global.fish_data[FISH.DIAMOND, FP.COST_SELL]				= 30;
 global.fish_data[FISH.DIAMOND, FP.COST_BUY]					= 30;
 global.fish_data[FISH.DIAMOND, FP.INFO]						= "A gold fish with diamond reflection. It's not valuable, despite it's name.";
 global.fish_data[FISH.DIAMOND, FP.ZONE_SIZE_ROD_BASIC_1]		= 100;
-global.fish_data[FISH.CADIAMONDRP, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.DIAMOND, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
 
 global.fish_data[FISH.TONY, FP.NAME]						= "Tony";
 global.fish_data[FISH.TONY, FP.SPRITE]						= spr_fish_4;
