@@ -24,8 +24,6 @@ else {
 }
 #endregion
 
-show_debug_message(alarm[1]);
-
 // Update Camera
 viewmat = matrix_build_lookat(x, y, z_from, x, y, 0, 0, 1, 0);
 camera_set_view_mat(camera, viewmat);

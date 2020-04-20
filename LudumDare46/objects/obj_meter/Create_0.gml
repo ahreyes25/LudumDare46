@@ -29,8 +29,8 @@ alpha			= 0;
 alpha_target	= 1;
 scale			= 0;
 scale_target	= 1.1;
-surf_x			= display_get_gui_width() / 2 - width / 2;
-surf_y			= display_get_gui_height() - (display_get_gui_height() - height * scale_target) / 2;
+surf_x			= surface_get_width(application_surface) / 2 - width / 2;
+surf_y			= surface_get_height(application_surface)  - (surface_get_height(application_surface) - height * scale_target) / 2;
 
 alarm[0]		= 60;
 
