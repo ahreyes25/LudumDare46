@@ -24,6 +24,9 @@ if (room != _rm_init && room != rm_title) {
 switch (room) {
 	case rm_title:		sfx_play_array(SFX_EMITTER, sfx_water_loop, true);	break;
 	case rm_forest_0:	sfx_play_array(SFX_EMITTER, sfx_water_loop, true);	break;
+	case rm_desert_0:	sfx_play_array(SFX_EMITTER, sfx_water_loop, true);	break;
+	case rm_glacier_0:	sfx_play_array(SFX_EMITTER, sfx_water_loop, true);	break;
+	case rm_ocean_0:	sfx_play_array(SFX_EMITTER, sfx_water_loop, true);	break;
 		
 	case rm_forest:
 		global.tint_color = global.color_green;

@@ -2031,6 +2031,14 @@
             }
         },
         {
+            "Key": "80284c78-6f2c-48ad-8dc6-af282e585345",
+            "Value": {
+                "id": "4eb06095-ec8b-43f5-9627-ecab1b3b16ef",
+                "resourcePath": "rooms\\rm_ocean_0\\rm_ocean_0.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "812d15f0-dcc7-4351-bae7-6d935db6b865",
             "Value": {
                 "id": "154eae22-aed4-4432-b8fc-4928fdd9410c",
@@ -3503,6 +3511,14 @@
             }
         },
         {
+            "Key": "dbc64b82-35a3-4410-a402-d5367a2e2306",
+            "Value": {
+                "id": "96d897dc-88f5-476f-b8e8-0ca8e55a5829",
+                "resourcePath": "rooms\\rm_glacier_0\\rm_glacier_0.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "dc77cdca-a09d-41eb-994d-58988b8f1d00",
             "Value": {
                 "id": "a0395449-2c3f-47b1-becb-650d626a770f",
@@ -3716,6 +3732,14 @@
                 "id": "39329d36-0fce-4cce-92e9-1f9b43c9926e",
                 "resourcePath": "scripts\\fadeout_object_delete_by_owner\\fadeout_object_delete_by_owner.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ea3e4fdb-1d5d-44fe-99d3-298ff913355d",
+            "Value": {
+                "id": "4b4b38a8-cc80-4a0d-bdda-3d273b740f09",
+                "resourcePath": "rooms\\rm_desert_0\\rm_desert_0.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
