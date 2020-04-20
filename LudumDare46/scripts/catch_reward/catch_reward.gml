@@ -39,6 +39,7 @@ for (var i = 0; i < ds_list_size(obj_shop.shop); i++) {
 		ds_list_delete(obj_shop.shop, i);
 }
 
+sfx_play(sfx_fish_caught);
 return _reward;
 
 

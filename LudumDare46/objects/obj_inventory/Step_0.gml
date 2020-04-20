@@ -21,6 +21,7 @@ index_mini_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
 // Select Inventory Item
 if (show && mouse_check_button_pressed(mb_left)) {	
+	sfx_play(sfx_memu_select);
 	
 	// Select Mini
 	if (show_mini && !show_mini_mini) {
@@ -43,7 +44,11 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			}
 			else {
 				switch (index_mini) {
-					case 0: equip_item(_item[1], _item[0]); break;
+					case 0: 
+						equip_item(_item[1], _item[0]); 
+						merchant_hide();
+						sfx_play(sfx_equip);
+						break;
 					case 1:	merchant_show(_item[1], _item[0], "sell");		break;
 					case 2:	merchant_show(_item[1], _item[0], "release");	break;
 					case 3: merchant_show(_item[1], _item[0], "info");		break;
@@ -68,24 +73,54 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			}
 			// Do Thing
 			else {
-				switch (index_mini) {
-					case 0:	
-						item_sell();
-						show_mini_mini = false;
-						show_mini = false;
-						break;	// sell
+				var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
+				var _item = inventory[| _index];
+				
+				if (_item[0] == "fish") {
+					switch (index_mini) {
+						case 0:	
+							item_sell();
+							show_mini_mini = false;
+							show_mini = false;
+							sfx_play(sfx_purchase);
+							break;	// sell
 					
-					case 1:	
-						fish_release();
-						show_mini_mini = false;
-						show_mini = false;
-						break;	// release
+						case 1:	
+							fish_release();
+							show_mini_mini = false;
+							show_mini = false;
+							sfx_play(sfx_no_purchase);
+							break;	// release
 					
-					case 2: 
-						fish_info();
-						show_mini_mini = false;
-						show_mini = false;
-						break;	// get info
+						case 2: 
+							fish_info();
+							show_mini_mini = false;
+							show_mini = false;
+							break;	// get info
+					}
+				}
+				else {
+					switch (index_mini) {
+						case 1:	
+							item_sell();
+							show_mini_mini = false;
+							show_mini = false;
+							sfx_play(sfx_purchase);
+							break;	// sell
+					
+						case 2:	
+							fish_release();
+							show_mini_mini = false;
+							show_mini = false;
+							sfx_play(sfx_no_purchase);
+							break;	// release
+					
+						case 3: 
+							fish_info();
+							show_mini_mini = false;
+							show_mini = false;
+							break;	// get info
+					}
 				}
 			}	
 		}

@@ -1,8 +1,8 @@
 // Core	
 
-- sounds & music -- 1 hour
 - setup other regions -- 1 hour
 - be able to change regions -- 1 hour
+- inventory floating sub menu
 
 - sell all equipment
 - fish need to have unique size and color/weight properties -- 30 min

@@ -5,6 +5,7 @@ if (alarm[0] == -1) {
 		if (arrow_tick_pos >= 100) {
 			move_dir = DIR.DOWN;
 			bounces++;
+			sfx_play(sfx_meter_bounce);
 		}
 	}
 	else {
@@ -13,8 +14,10 @@ if (alarm[0] == -1) {
 		if (arrow_tick_pos <= 0) {
 			if (bounces >= max_bounces)
 				instance_destroy();
-			else
+			else {
 				move_dir = DIR.UP;
+				sfx_play(sfx_meter_bounce);
+			}
 		}
 	}
 
@@ -25,6 +28,8 @@ if (alarm[0] == -1) {
 		// Win
 		if (arrow_tick_pos <= goal_ticks)
 			catch_reward(fish, "fish");
+		else
+			sfx_play(sfx_fish_escape);
 		instance_destroy();
 	}
 }
