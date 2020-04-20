@@ -4,9 +4,7 @@
 
 // Core	
 - modify content
-- add menu placeholder items
 - more shopkeeper dialogue
-- finish clamping shop x mouse click
 
 // Polish
 - catch reward juice
@@ -14,6 +12,7 @@
 	- screen flash
 - screen shake? -- miss catch?
 - meter bouncing juice
+- catch junk and items?
 
 // -----------------------------------
 // Extra

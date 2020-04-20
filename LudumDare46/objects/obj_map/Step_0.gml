@@ -7,8 +7,10 @@ if (!show_mini)
 	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, 3);
 index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
+var _mx = device_mouse_x_to_gui(0);
+
 if (show && mouse_check_button_pressed(mb_left)) {
-	if (!show_mini && device_mouse_x_to_gui(0) < surface_get_width(application_surface) / 2) {
+	if (!show_mini && _mx >= start_x && _mx <= start_x + cell_width) {
 		var _index = clamp(index - (scroll_index div cell_height), 0, 3);
 		if (_index < ds_list_size(regions)) {
 			show_mini = true;	
@@ -23,7 +25,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			}
 		}
 	}
-	else {
+	else if (show_mini && _mx > surface_get_width(application_surface) / 2) {
 		// No
 		if (index_mini) {
 			obj_merchant.state = "travel_wait";
