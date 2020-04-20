@@ -29,7 +29,11 @@ global.region_data[REGION.FOREST, P.FISH] = [
 		FISH.HEART,
 		FISH.METROID,
 		FISH.GHOST,
-		FISH.RIGOR
+		FISH.RIGOR,
+		FISH.AERYS,
+		FISH.FISH,
+		FISH.OCTOPUS,
+		FISH.CRAB
 ];
 
 global.region_data[REGION.DESERT, P.NAME] = "Desert";
@@ -57,7 +61,11 @@ global.region_data[REGION.DESERT, P.FISH] = [
 		FISH.METROID,
 		FISH.SKULL,
 		FISH.GHOST,
-		FISH.RIGOR
+		FISH.RIGOR,
+		FISH.AERYS,
+		FISH.FISH,
+		FISH.OCTOPUS,
+		FISH.CRAB
 ];
 
 global.region_data[REGION.OCEAN, P.NAME] = "Ocean";
@@ -85,7 +93,11 @@ global.region_data[REGION.OCEAN, P.FISH] = [
 		FISH.METROID,
 		FISH.SKULL,
 		FISH.GHOST,
-		FISH.RIGOR
+		FISH.RIGOR,
+		FISH.AERYS,
+		FISH.FISH,
+		FISH.OCTOPUS,
+		FISH.CRAB
 ];
 
 global.region_data[REGION.GLACIER, P.NAME] = "Glacier";
@@ -114,6 +126,10 @@ global.region_data[REGION.GLACIER, P.FISH] = [
 		FISH.HEART,
 		FISH.SKULL,
 		FISH.GHOST,
+		FISH.AERYS,
+		FISH.FISH,
+		FISH.OCTOPUS,
+		FISH.CRAB
 ];
 
 global.region_total = array_height_2d(global.region_data);
