@@ -4,7 +4,6 @@
 - test on josis computer, and others if possible
 
 // Core	
-- travel sound
 - draw distance and angle on cursor
 - fix text formatting off screen
 - modify content

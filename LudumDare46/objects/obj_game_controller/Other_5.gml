@@ -14,4 +14,7 @@ need_to_clear_surface = true;
 //	}
 //}
 
-audio_stop_all();
+audio_stop_sound(sfx_water_loop);
+audio_stop_sound(sfx_forest_song);
+audio_stop_sound(sfx_desert_song);
+audio_stop_sound(sfx_glacier_song);

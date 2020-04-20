@@ -1487,6 +1487,14 @@
             }
         },
         {
+            "Key": "551e56c0-6909-431a-98a9-979e56f79cf4",
+            "Value": {
+                "id": "8bfb058e-a29a-4d20-8d1e-f2542e9835d0",
+                "resourcePath": "sounds\\sfx_travel\\sfx_travel.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "5526f9dd-04de-4aee-9494-eb882b2a1017",
             "Value": {
                 "id": "e4fd8da8-90b8-46fe-835b-04e52ad3ab35",
