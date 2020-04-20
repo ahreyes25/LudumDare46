@@ -15,7 +15,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			obj_merchant.state = "travel_confirm";
 			sfx_play(sfx_memu_select);
 			
-			switch (_index) {
+			switch (regions[| _index]) {
 				case 0:	obj_merchant.map_text = "You want to go to the \nForest?";	break;
 				case 1: obj_merchant.map_text = "You want to go to the \nDesert?";	break;
 				case 2: obj_merchant.map_text = "You want to go to the \nGlacier?"; break;
@@ -35,7 +35,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			if (_index < ds_list_size(regions)) {
 				sfx_play(sfx_memu_select);
 			
-				switch (_index) {
+				switch (regions[| _index]) {
 					case 0:	room_goto(rm_forest_0); break;
 					case 1: room_goto(rm_desert_0); break;
 					case 2: room_goto(rm_glacier_0); break;
