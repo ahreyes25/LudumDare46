@@ -34,8 +34,8 @@ if (show) {
 			if (_item_type == "lure") {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
-					_x + cell_width / 2 - sprite_get_width(_item_sprite) / 2, _ys + cell_height * i + scroll_index,
-					scale / 2, scale / 2, 0, global.tint_color, 1);
+					_x + cell_width / 2, _ys + cell_height * i + scroll_index - sprite_get_width(_item_sprite) / 2,
+					scale / 2, scale / 2, -90, global.tint_color, 1);
 			}
 			else {
 				var _ys = _y + cell_height / 2;

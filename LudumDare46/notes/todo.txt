@@ -9,6 +9,7 @@
 - draw distance and angle on cursor
 - muted music
 - add range to lure
+- fix text formatting off screen
 
 // Polish
 - meter bouncing juice
