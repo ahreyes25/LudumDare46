@@ -22,3 +22,15 @@ centered = false;
 
 arrow_iter = irandom(100);
 arrow_iter_speed = 0.1;
+
+wave_surface	= undefined;
+wave_sprite		= undefined;
+boat_scale		= 2;
+boat_bob_iter	= 0;
+boat_bob_speed	= 0.1;
+
+target_wave_y	= 0;
+wave_y			= 0;
+boat_x			= 0;
+boat_y			= 0;
+boat_r			= 0;

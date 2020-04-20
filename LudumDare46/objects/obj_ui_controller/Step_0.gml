@@ -21,6 +21,12 @@ if (update_res) {
 }
 #endregion
 
+target_wave_y = ((exists(obj_player) && !defined(obj_player.rod.lure)) ? 
+	(boat_y + sin(boat_bob_iter + 100) * -10) - 10 : 
+	(boat_y + sin(boat_bob_iter + 100) * -10) - 10 + 80);
+	
+wave_y = lerp(wave_y, target_wave_y, 0.05);
+
 // Move To New Area -- Clicking
 if (!obj_game_controller.paused && exists(obj_inventory) && !obj_inventory.show && exists(obj_player) && exists(obj_player.rod) && 
 	!defined(obj_player.rod.lure) && exists(obj_shop) && !obj_shop.show && exists(obj_library) && !obj_library.show &&

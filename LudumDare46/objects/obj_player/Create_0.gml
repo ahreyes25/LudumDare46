@@ -11,9 +11,6 @@ boat_scale		= 2;
 boat_bob_iter	= 0;
 boat_bob_speed	= 0.1;
 
-wave_surface	= undefined;
-wave_sprite		= undefined;
-
 happy			= false;
 sad				= false;
 emoji_fade		= 1;
