@@ -5,6 +5,13 @@ if (mouse_check_button_pressed(mb_left)) {
 		case 0:
 			room_transition(rm_forest_0);
 			break;
+		case 1:
+			window_set_fullscreen(!window_get_fullscreen());
+			break;
+		case 2:
+			global.sound_mult = !global.sound_mult;
+			audio_master_gain(global.sound_mult);
+			break;
 	}
 	sfx_play(sfx_memu_select);
 }

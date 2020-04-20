@@ -2,7 +2,7 @@
     "id": "31b77de9-5cf4-43c2-a5f6-bfa8d725554e",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_Aerys___From_Twitch",
+    "name": "spr_aerys_fish",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -46,9 +46,8 @@ enum FP {
 	COST_SELL,
 	COST_BUY,
 	
-	// Rod Props
-	ZONE_SIZE_ROD_BASIC_1,
-	ZONE_SPEED_ROD_BASIC_1,
+	ZONE_SIZE_ROD_BASIC_1,	// basic_rod_1
+	ZONE_SPEED_ROD_BASIC_1,	// basic_rod_1
 }
 
 #region No Fish
@@ -75,16 +74,16 @@ global.fish_data[FISH.FISH, FP.INFO]						= "This fish is the fishiest \nof all 
 global.fish_data[FISH.FISH, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
 global.fish_data[FISH.FISH, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
 
-global.fish_data[FISH.OCTUPUS, FP.NAME]						= "Octopus";
-global.fish_data[FISH.OCTUPUS, FP.SPRITE]					= spr_octopus_2;
-global.fish_data[FISH.OCTUPUS, FP.DESC]						= "A regular octopus for regular things.";
-global.fish_data[FISH.OCTUPUS, FP.REGION]					= undefined;
-global.fish_data[FISH.OCTUPUS, FP.RARITY]					= "Rare";
-global.fish_data[FISH.OCTUPUS, FP.COST_SELL]				= 10;
-global.fish_data[FISH.OCTUPUS, FP.COST_BUY]					= 10;
-global.fish_data[FISH.OCTUPUS, FP.INFO]						= "It has 8 legs. It's wicked smart. Bring it in for a paltry sum.";
-global.fish_data[FISH.OCTUPUS, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
-global.fish_data[FISH.OCTUPUS, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
+global.fish_data[FISH.OCTOPUS, FP.NAME]						= "Octopus";
+global.fish_data[FISH.OCTOPUS, FP.SPRITE]					= spr_octopus_2;
+global.fish_data[FISH.OCTOPUS, FP.DESC]						= "A regular octopus for regular things.";
+global.fish_data[FISH.OCTOPUS, FP.REGION]					= undefined;
+global.fish_data[FISH.OCTOPUS, FP.RARITY]					= "Rare";
+global.fish_data[FISH.OCTOPUS, FP.COST_SELL]				= 10;
+global.fish_data[FISH.OCTOPUS, FP.COST_BUY]					= 10;
+global.fish_data[FISH.OCTOPUS, FP.INFO]						= "It has 8 legs. It's wicked smart. Bring it in for a paltry sum.";
+global.fish_data[FISH.OCTOPUS, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
+global.fish_data[FISH.OCTOPUS, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
 
 global.fish_data[FISH.CRAB, FP.NAME]						= "Crab";
 global.fish_data[FISH.CRAB, FP.SPRITE]						= spr_crab;
@@ -307,7 +306,7 @@ global.fish_data[FISH.LOBSTER, FP.ZONE_SIZE_ROD_BASIC_1]	= 15;
 global.fish_data[FISH.LOBSTER, FP.ZONE_SPEED_ROD_BASIC_1]	= 3;
 
 global.fish_data[FISH.OCTO, FP.NAME]						= "Octopussy";
-global.fish_data[FISH.OCTO, FP.SPRITE]						= spr_octopus;
+global.fish_data[FISH.OCTO, FP.SPRITE]						= spr_octopus_1;
 global.fish_data[FISH.OCTO, FP.DESC]						= "WHOAH!";
 global.fish_data[FISH.OCTO, FP.REGION]						= undefined;
 global.fish_data[FISH.OCTO, FP.RARITY]						= "Uncommon";
@@ -428,7 +427,7 @@ global.fish_data[FISH.RIGOR, FP.ZONE_SIZE_ROD_BASIC_1]		= 6;
 global.fish_data[FISH.RIGOR, FP.ZONE_SPEED_ROD_BASIC_1]		= 12;
 
 global.fish_data[FISH.AERYS, FP.NAME]						= "Ancient Sea Guardian";
-global.fish_data[FISH.AERYS, FP.SPRITE]						= spr_Aerys___From_Twitch;
+global.fish_data[FISH.AERYS, FP.SPRITE]						= spr_aerys_fish;
 global.fish_data[FISH.AERYS, FP.DESC]						= "You wonder who this is...";
 global.fish_data[FISH.AERYS, FP.REGION]						= undefined;
 global.fish_data[FISH.AERYS, FP.RARITY]						= "God -- Aerys";

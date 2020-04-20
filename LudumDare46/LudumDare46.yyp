@@ -874,7 +874,7 @@
             "Key": "31b77de9-5cf4-43c2-a5f6-bfa8d725554e",
             "Value": {
                 "id": "45f6877a-54d5-4d30-b337-0b393f21fc2d",
-                "resourcePath": "sprites\/spr_Aerys___From_Twitch\/spr_Aerys___From_Twitch.yy",
+                "resourcePath": "sprites\\spr_aerys_fish\\spr_aerys_fish.yy",
                 "resourceType": "GMSprite"
             }
         },

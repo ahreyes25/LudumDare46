@@ -7,6 +7,6 @@ title_iter_speed = 0.01;
 wave_surface	= undefined;
 wave_sprite		= undefined;
 
-menu_options	= ["Start Game"];
+menu_options	= ["Start Game", "Fullscreen?", "Music?", "Load Game\n(Coming Soon!)"];
 menu_index		= 0;
 menu_y			= 0;
