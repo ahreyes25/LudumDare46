@@ -5,23 +5,24 @@
 
 // Core	
 - draw distance and angle on cursor
+- scroll visual indicators in menus
 - fix text formatting off screen
 - modify content
 
 - fish need to have unique size and color/weight properties
+- add menu placeholder items
+- more shopkeeper dialogue
+
 - fish sloshing whiel trying to catch
 - lure moving while trying to fish
 - add range to lure
-- add menu placeholder items
-- more shopkeeper dialogue
-- scroll visual indicators in menus
 
 // Polish
 - meter bouncing juice
 - catch reward juice
-- UI feedback when menus open and close
 
 // Extra
+- UI feedback when menus open and close
 - better fish behavior
 - fishing zones & "hot spots"
 - right click to cancel throw

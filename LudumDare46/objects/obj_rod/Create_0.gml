@@ -20,3 +20,5 @@ cursor_x		= undefined;
 cursor_y		= undefined;
 camera_x		= undefined;
 camera_y		= undefined;
+desired_x		= undefined;
+desired_y		= undefined;
