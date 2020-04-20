@@ -32,7 +32,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		meter_speed = 0;
 	
 		// Win
-		if (arrow_tick_pos <= goal_ticks)
+		if (arrow_tick_pos <= goal_ticks + goal_offset && arrow_tick_pos >= goal_offset)
 			catch_reward(fish, "fish");
 		else {
 			sfx_play(sfx_fish_escape);

@@ -7,6 +7,7 @@ height			= ticks * pixel_per_tick;
 player			= undefined;
 meter_speed		= undefined;
 goal_ticks		= undefined;
+goal_offset		= undefined;
 max_bounces		= undefined;
 fish			= undefined;
 lure			= undefined;

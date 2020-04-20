@@ -20,4 +20,5 @@ with (argument0) {
 	player.meter.fish		= _fish;
 	player.meter.player		= player;
 	player.meter.lure		= id;
+	player.meter.goal_offset= irandom(100 - player.meter.goal_ticks - 1);;
 }
