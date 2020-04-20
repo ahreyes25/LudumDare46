@@ -10,7 +10,7 @@ var _x = 30;
 if (state == "sell_wait") {	
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
 		"Oh! I could take that \n" + string(item_name) + "\noff your hands for a \nlofty $" + string(item_cost_sell) + ".00?", 2, 2, 0);
-	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, 
+	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, 
 		"What do ya say?", 2, 2, 0);	
 		
 	if (!obj_inventory.index_mini_mini)

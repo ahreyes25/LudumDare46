@@ -7,5 +7,6 @@ obj_library.show				= false;
 obj_map.show					= false;
 obj_map.show_mini				= false;
 obj_map.scroll_index			= 0;
+obj_shop.scroll_index			= 0;
 obj_merchant.shop_text = "What can I get for ya?";
 merchant_show(undefined, undefined, "buy");

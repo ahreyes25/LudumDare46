@@ -7,6 +7,10 @@ if (paused) {
 		global.sound_mult = !global.sound_mult;
 		audio_master_gain(global.sound_mult);
 	}
+	if (keyboard_check_pressed(ord("E"))) {
+		room_goto(rm_title);
+		paused = false;
+	}
 		
 	merchant_hide();
 	shop_hide();

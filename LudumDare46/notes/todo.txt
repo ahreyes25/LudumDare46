@@ -10,6 +10,7 @@
 - muted music
 - add range to lure
 - fix text formatting off screen
+- add menu placeholder items
 
 // Polish
 - meter bouncing juice
