@@ -1,10 +1,8 @@
 // Before Submitting
 - make sure that meter_create() has updated rod values
 - remove starting money
-- test on josis computer, and others if possible
 
 // Core	
-- scroll visual indicators in menus
 - fix text formatting off screen
 - modify content
 
@@ -20,6 +18,7 @@
 - meter bouncing juice
 - catch reward juice
 
+// -----------------------------------
 // Extra
 - UI feedback when menus open and close
 - better fish behavior

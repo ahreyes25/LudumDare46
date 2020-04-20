@@ -68,6 +68,10 @@ if (show) {
 	
 	surface_reset_target();
 	draw_surface(surface, start_x, start_y);
+	
+	// Draw Scroll Bar
+	var _scroll_y = ((((_n_items * cell_height) - scroll_index) / (_n_items * cell_height)) * surface_get_height(application_surface)) - surface_get_height(application_surface);
+	draw_sprite_ext(spr_scroll_bar, 0, start_x, clamp(_scroll_y, 0, surface_get_height(application_surface) - cell_height), 1, 1, 0, global.tint_color, 0.75);
 	#endregion
 	
 	#region Item Info

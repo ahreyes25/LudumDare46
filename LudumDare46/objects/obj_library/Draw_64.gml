@@ -8,8 +8,8 @@ if (show) {
 	if (_n_items > 0) {
 	
 		if (!surface_exists(surface))
-			surface = surface_create(cell_width, cell_height * _n_items);
-		surface_resize(surface, cell_width + 1, cell_height * _n_items + 1);
+			surface = surface_create(cell_width + 1, surface_get_height(application_surface) - start_y * 2 + 1);
+		surface_resize(surface, cell_width + 1, surface_get_height(application_surface) - (start_y * 2) + 1);
 		surface_set_target(surface);
 		draw_clear_alpha(c_black, 0);
 	
@@ -55,6 +55,10 @@ if (show) {
 	
 		surface_reset_target();
 		draw_surface(surface, start_x, start_y);
+		
+		// Draw Scroll Bar
+		var _scroll_y = ((((_n_items * cell_height) - scroll_index) / (_n_items * cell_height)) * surface_get_height(application_surface)) - surface_get_height(application_surface);
+		draw_sprite_ext(spr_scroll_bar, 0, start_x, _scroll_y, 1, 1, 0, global.tint_color, 0.75);
 		
 		// Draw Fish Info And If Caught, Etc
 		// Draw Info Panel

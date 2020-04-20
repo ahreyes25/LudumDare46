@@ -3391,6 +3391,14 @@
             }
         },
         {
+            "Key": "bf83e767-4430-4da4-9fcb-13e7aaaba41a",
+            "Value": {
+                "id": "5fab6f19-11d5-47ce-8a55-b6fef94512a0",
+                "resourcePath": "sprites\\spr_scroll_bar\\spr_scroll_bar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf8c5b7c-0717-4a83-8af4-1ae317d894e3",
             "Value": {
                 "id": "980ee1d7-ab62-49d7-bd4b-9b3c2f55311a",
