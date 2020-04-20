@@ -98,7 +98,8 @@ global.region_data[REGION.GLACIER, P.FISH] = [
 	FISH.LIP,
 	FISH.STAR,
 	FISH.FISH,
-	FISH.CRAB	
+	FISH.CRAB,
+	FISH.PENGUIN
 ];
 
 global.region_total = array_height_2d(global.region_data);

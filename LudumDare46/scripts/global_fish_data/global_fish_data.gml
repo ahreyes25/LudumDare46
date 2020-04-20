@@ -34,6 +34,7 @@ enum FISH {
 	FISH,
 	OCTOPUS,
 	ALLIGATOR,
+	PENGUIN,
 	CRAB
 }
 
@@ -810,5 +811,26 @@ global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_4]			= 14;
 global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_4]			= 4;
 global.fish_data[FISH.ALLIGATOR, FP.ZONE_SIZE_ROD_5]			= 16;
 global.fish_data[FISH.ALLIGATOR, FP.ZONE_SPEED_ROD_5]			= 3;
+
+global.fish_data[FISH.PENGUIN, FP.NAME]							= "Pengu";
+global.fish_data[FISH.PENGUIN, FP.SPRITE]						= spr_penguin;
+global.fish_data[FISH.PENGUIN, FP.DESC]							= "Kind of looks like a Gentoo penguin?";
+global.fish_data[FISH.PENGUIN, FP.REGION]						= undefined;
+global.fish_data[FISH.PENGUIN, FP.RARITY]						= "Kind Of Rare";
+global.fish_data[FISH.PENGUIN, FP.COST_SELL]					= 300;
+global.fish_data[FISH.PENGUIN, FP.COST_BUY]						= 100;
+global.fish_data[FISH.PENGUIN, FP.INFO]							= "The most prestigious of all\nanimals. Indeed!";
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_BASIC_1]		= 10;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_BASIC_1]		= 3;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_1]				= 12;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_1]				= 2.9;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_2]				= 14;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_2]				= 2.8;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_3]				= 16;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_3]				= 2.7;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_4]				= 18;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_4]				= 2.6;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SIZE_ROD_5]				= 20;
+global.fish_data[FISH.PENGUIN, FP.ZONE_SPEED_ROD_5]				= 2.5;
 
 global.fish_total = array_height_2d(global.fish_data);
