@@ -11,10 +11,12 @@ else if (!show_mini_mini) {
 	var _start_y = index * cell_height;
 	var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
 	var _item = inventory[| _index];
-	if (_item[0] == "fish")	
-		index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 3);
-	else
-		index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 4);
+	if (defined(_item)) {
+		if (_item[0] == "fish")	
+			index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 3);
+		else
+			index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 4);
+	}
 }
 
 index_mini_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
