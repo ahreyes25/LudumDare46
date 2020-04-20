@@ -102,7 +102,7 @@ global.fish_data[FISH.CLAM, FP.COST_SELL]					= 10;
 global.fish_data[FISH.CLAM, FP.COST_BUY]					= 10;
 global.fish_data[FISH.CLAM, FP.INFO]						= "Normally worthless; but sometimes a real treasure!";
 global.fish_data[FISH.CLAM, FP.ZONE_SIZE_ROD_BASIC_1]		= 40;
-global.fish_data[FISH.CLAM, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.CLAM, FP.ZONE_SPEED_ROD_BASIC_1]		= .5;
 
 global.fish_data[FISH.CLOWN, FP.NAME]						= "Clown Fish";
 global.fish_data[FISH.CLOWN, FP.SPRITE]						= spr_fish_1;
@@ -113,7 +113,7 @@ global.fish_data[FISH.CLOWN, FP.COST_SELL]					= 25;
 global.fish_data[FISH.CLOWN, FP.COST_BUY]					= 25;
 global.fish_data[FISH.CLOWN, FP.INFO]						= "When you put it on a stage, it's not that funny.";
 global.fish_data[FISH.CLOWN, FP.ZONE_SIZE_ROD_BASIC_1]		= 40;
-global.fish_data[FISH.CLOWN, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.CLOWN, FP.ZONE_SPEED_ROD_BASIC_1]		= .5;
 
 global.fish_data[FISH.CARP, FP.NAME]						= "A Carp Diem";
 global.fish_data[FISH.CARP, FP.SPRITE]						= spr_fish_2;
@@ -146,7 +146,7 @@ global.fish_data[FISH.TONY, FP.COST_SELL]					= 45;
 global.fish_data[FISH.TONY, FP.COST_BUY]					= 45;
 global.fish_data[FISH.TONY, FP.INFO]						= "He's looking for a sole mate. Just one.";
 global.fish_data[FISH.TONY, FP.ZONE_SIZE_ROD_BASIC_1]		= 35;
-global.fish_data[FISH.TONY, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.TONY, FP.ZONE_SPEED_ROD_BASIC_1]		= 1.5;
 
 global.fish_data[FISH.SHARK, FP.NAME]						= "Shark Fish";
 global.fish_data[FISH.SHARK, FP.SPRITE]						= spr_fish_5;
@@ -157,7 +157,7 @@ global.fish_data[FISH.SHARK, FP.COST_SELL]					= 100;
 global.fish_data[FISH.SHARK, FP.COST_BUY]					= 100;
 global.fish_data[FISH.SHARK, FP.INFO]						= "The apex predator of all fish in these waters. Watch out!";
 global.fish_data[FISH.SHARK, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
-global.fish_data[FISH.SHARK, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.SHARK, FP.ZONE_SPEED_ROD_BASIC_1]		= 1.5;
 
 global.fish_data[FISH.MOAWK, FP.NAME]						= "Mo'Awk Fish";
 global.fish_data[FISH.MOAWK, FP.SPRITE]						= spr_fish_6;
@@ -168,7 +168,7 @@ global.fish_data[FISH.MOAWK, FP.COST_SELL]					= 250;
 global.fish_data[FISH.MOAWK, FP.COST_BUY]					= 250;
 global.fish_data[FISH.MOAWK, FP.INFO]						= "Some say it's mohawk is used in ancient, sacred rituals.";
 global.fish_data[FISH.MOAWK, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
-global.fish_data[FISH.MOAWK, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.MOAWK, FP.ZONE_SPEED_ROD_BASIC_1]		= 2;
 
 global.fish_data[FISH.SINKER, FP.NAME]						= "Sinker Fish";
 global.fish_data[FISH.SINKER, FP.SPRITE]					= spr_fish_7;
@@ -179,7 +179,7 @@ global.fish_data[FISH.SINKER, FP.COST_SELL]					= 25;
 global.fish_data[FISH.SINKER, FP.COST_BUY]					= 25;
 global.fish_data[FISH.SINKER, FP.INFO]						= "It's not breathing... and I think it's dead.";
 global.fish_data[FISH.SINKER, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
-global.fish_data[FISH.SINKER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.SINKER, FP.ZONE_SPEED_ROD_BASIC_1]	= 2;
 
 global.fish_data[FISH.SHREDDER, FP.NAME]					= "Shredder";
 global.fish_data[FISH.SHREDDER, FP.SPRITE]					= spr_fish_8;
@@ -190,7 +190,7 @@ global.fish_data[FISH.SHREDDER, FP.COST_SELL]				= 75;
 global.fish_data[FISH.SHREDDER, FP.COST_BUY]				= 75;
 global.fish_data[FISH.SHREDDER, FP.INFO]					= "You question why this fish smells like sewage... and pizza.";
 global.fish_data[FISH.SHREDDER, FP.ZONE_SIZE_ROD_BASIC_1]	= 30;
-global.fish_data[FISH.SHREDDER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.SHREDDER, FP.ZONE_SPEED_ROD_BASIC_1]	= 2.5;
 
 global.fish_data[FISH.GUPPY, FP.NAME]						= "Guppy";
 global.fish_data[FISH.GUPPY, FP.SPRITE]						= spr_fish_9;
@@ -223,7 +223,7 @@ global.fish_data[FISH.WHALE, FP.COST_SELL]					= 400;
 global.fish_data[FISH.WHALE, FP.COST_BUY]					= 400;
 global.fish_data[FISH.WHALE, FP.INFO]						= "This fish is just misunderstood; it's actually just big boned.";
 global.fish_data[FISH.WHALE, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.WHALE, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.WHALE, FP.ZONE_SPEED_ROD_BASIC_1]		= 3.5;
 
 global.fish_data[FISH.KOI, FP.NAME]							= "Koi";
 global.fish_data[FISH.KOI, FP.SPRITE]						= spr_fish_12;
@@ -234,7 +234,7 @@ global.fish_data[FISH.KOI, FP.COST_SELL]					= 350;
 global.fish_data[FISH.KOI, FP.COST_BUY]						= 350;
 global.fish_data[FISH.KOI, FP.INFO]							= "It might be koi, but it isnt shy.";
 global.fish_data[FISH.KOI, FP.ZONE_SIZE_ROD_BASIC_1]		= 30;
-global.fish_data[FISH.KOI, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.KOI, FP.ZONE_SPEED_ROD_BASIC_1]		= 3;
 
 global.fish_data[FISH.SPIKY, FP.NAME]						= "Spiky Boi";
 global.fish_data[FISH.SPIKY, FP.SPRITE]						= spr_fish_13;
@@ -245,7 +245,7 @@ global.fish_data[FISH.SPIKY, FP.COST_SELL]					= 500;
 global.fish_data[FISH.SPIKY, FP.COST_BUY]					= 500;
 global.fish_data[FISH.SPIKY, FP.INFO]						= "This fish is Extra Rare-- it's impossible to cook all the way.";
 global.fish_data[FISH.SPIKY, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.SPIKY, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.SPIKY, FP.ZONE_SPEED_ROD_BASIC_1]		= 4;
 
 global.fish_data[FISH.LIP, FP.NAME]							= "Lip Fish";
 global.fish_data[FISH.LIP, FP.SPRITE]						= spr_fish_14;
@@ -256,7 +256,7 @@ global.fish_data[FISH.LIP, FP.COST_SELL]					= 620;
 global.fish_data[FISH.LIP, FP.COST_BUY]						= 620;
 global.fish_data[FISH.LIP, FP.INFO]							= "Instructions unclear...";
 global.fish_data[FISH.LIP, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.LIP, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.LIP, FP.ZONE_SPEED_ROD_BASIC_1]		= 5;
 
 global.fish_data[FISH.TERROR, FP.NAME]						= "Terrorizer";
 global.fish_data[FISH.TERROR, FP.SPRITE]					= spr_fish_15;
@@ -267,7 +267,7 @@ global.fish_data[FISH.TERROR, FP.COST_SELL]					= 1000;
 global.fish_data[FISH.TERROR, FP.COST_BUY]					= 1000;
 global.fish_data[FISH.TERROR, FP.INFO]						= "It emits a strange glow. \nFrom the depths of the ocean, this fish emerged. I wouldn't touch it.";
 global.fish_data[FISH.TERROR, FP.ZONE_SIZE_ROD_BASIC_1]		= 17;
-global.fish_data[FISH.TERROR, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.TERROR, FP.ZONE_SPEED_ROD_BASIC_1]	= 6;
 
 global.fish_data[FISH.BONES, FP.NAME]						= "Fish Bones";
 global.fish_data[FISH.BONES, FP.SPRITE]						= spr_fish_bones;
@@ -289,7 +289,7 @@ global.fish_data[FISH.GLUB, FP.COST_SELL]					= 35;
 global.fish_data[FISH.GLUB, FP.COST_BUY]					= 35;
 global.fish_data[FISH.GLUB, FP.INFO]						= "Making a peanut-butter-and-jelly sandwich from this will shock you!";
 global.fish_data[FISH.GLUB, FP.ZONE_SIZE_ROD_BASIC_1]		= 40;
-global.fish_data[FISH.GLUB, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.GLUB, FP.ZONE_SPEED_ROD_BASIC_1]		= 2;
 
 global.fish_data[FISH.LOBSTER, FP.NAME]						= "Lobstess Monster";
 global.fish_data[FISH.LOBSTER, FP.SPRITE]					= spr_lobster;
@@ -300,7 +300,7 @@ global.fish_data[FISH.LOBSTER, FP.COST_SELL]				= 2500;
 global.fish_data[FISH.LOBSTER, FP.COST_BUY]					= 2500;
 global.fish_data[FISH.LOBSTER, FP.INFO]						= "This is a big lobster; the biggest. \nI've seen no bigger. \nThe largest ever found. \nNo lobster is bigger than this. \nBigly.";
 global.fish_data[FISH.LOBSTER, FP.ZONE_SIZE_ROD_BASIC_1]	= 150;
-global.fish_data[FISH.LOBSTER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.LOBSTER, FP.ZONE_SPEED_ROD_BASIC_1]	= 3;
 
 global.fish_data[FISH.OCTO, FP.NAME]						= "Octopussy";
 global.fish_data[FISH.OCTO, FP.SPRITE]						= spr_octopus;
@@ -311,7 +311,7 @@ global.fish_data[FISH.OCTO, FP.COST_SELL]					= 100;
 global.fish_data[FISH.OCTO, FP.COST_BUY]					= 100;
 global.fish_data[FISH.OCTO, FP.INFO]						= "It emits a faint and strange sound... \"weee...boo...\"";
 global.fish_data[FISH.OCTO, FP.ZONE_SIZE_ROD_BASIC_1]		= 15;
-global.fish_data[FISH.OCTO, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.OCTO, FP.ZONE_SPEED_ROD_BASIC_1]		= 4;
 
 global.fish_data[FISH.GIRAFFE, FP.NAME]						= "Seagiraffe";
 global.fish_data[FISH.GIRAFFE, FP.SPRITE]					= spr_seahorse;
@@ -333,7 +333,7 @@ global.fish_data[FISH.GARY, FP.COST_SELL]					= 66;
 global.fish_data[FISH.GARY, FP.COST_BUY]					= 65;
 global.fish_data[FISH.GARY, FP.INFO]						= "He carries a sponge. Does he like to clean?";
 global.fish_data[FISH.GARY, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.GARY, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.GARY, FP.ZONE_SPEED_ROD_BASIC_1]		= 2;
 
 global.fish_data[FISH.SHRIMP, FP.NAME]						= "Bumble Shrimp";
 global.fish_data[FISH.SHRIMP, FP.SPRITE]					= spr_shrimp;
@@ -355,7 +355,7 @@ global.fish_data[FISH.STAR, FP.COST_SELL]					= 50;
 global.fish_data[FISH.STAR, FP.COST_BUY]					= 50;
 global.fish_data[FISH.STAR, FP.INFO]						= "These rain down from the skies.";
 global.fish_data[FISH.STAR, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.STAR, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.STAR, FP.ZONE_SPEED_ROD_BASIC_1]		= 2.5;
 
 global.fish_data[FISH.SEEKER, FP.NAME]						= "Seeker";
 global.fish_data[FISH.SEEKER, FP.SPRITE]					= spr_unidentified_1;
@@ -366,7 +366,7 @@ global.fish_data[FISH.SEEKER, FP.COST_SELL]					= 1500;
 global.fish_data[FISH.SEEKER, FP.COST_BUY]					= 1500;
 global.fish_data[FISH.SEEKER, FP.INFO]						= "Isn't there a movie with these things-- like giant eyeballs?";
 global.fish_data[FISH.SEEKER, FP.ZONE_SIZE_ROD_BASIC_1]		= 10;
-global.fish_data[FISH.SEEKER, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.SEEKER, FP.ZONE_SPEED_ROD_BASIC_1]	= 10;
 
 global.fish_data[FISH.HEART, FP.NAME]						= "Ricardo";
 global.fish_data[FISH.HEART, FP.SPRITE]						= spr_unidentified_2;
@@ -377,7 +377,7 @@ global.fish_data[FISH.HEART, FP.COST_SELL]					= 5000;
 global.fish_data[FISH.HEART, FP.COST_BUY]					= 5000;
 global.fish_data[FISH.HEART, FP.INFO]						= "It moves slow... but dont let it catch you.";
 global.fish_data[FISH.HEART, FP.ZONE_SIZE_ROD_BASIC_1]		= 5;
-global.fish_data[FISH.HEART, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.HEART, FP.ZONE_SPEED_ROD_BASIC_1]		= 10;
 
 global.fish_data[FISH.METROID, FP.NAME]						= "Metro ID";
 global.fish_data[FISH.METROID, FP.SPRITE]					= spr_unidentified_3;
@@ -388,7 +388,7 @@ global.fish_data[FISH.METROID, FP.COST_SELL]				= 1250;
 global.fish_data[FISH.METROID, FP.COST_BUY]					= 1250;
 global.fish_data[FISH.METROID, FP.INFO]						= "I think it wants to go home.";
 global.fish_data[FISH.METROID, FP.ZONE_SIZE_ROD_BASIC_1]	= 10;
-global.fish_data[FISH.METROID, FP.ZONE_SPEED_ROD_BASIC_1]	= 1;
+global.fish_data[FISH.METROID, FP.ZONE_SPEED_ROD_BASIC_1]	= 6;
 
 global.fish_data[FISH.SKULL, FP.NAME]						= "Skulltular";
 global.fish_data[FISH.SKULL, FP.SPRITE]						= spr_unidentified_4;
@@ -399,7 +399,7 @@ global.fish_data[FISH.SKULL, FP.COST_SELL]					= 1750;
 global.fish_data[FISH.SKULL, FP.COST_BUY]					= 1750;
 global.fish_data[FISH.SKULL, FP.INFO]						= "Have you tried hitting it with a slingshot?";
 global.fish_data[FISH.SKULL, FP.ZONE_SIZE_ROD_BASIC_1]		= 8;
-global.fish_data[FISH.SKULL, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.SKULL, FP.ZONE_SPEED_ROD_BASIC_1]		= 5;
 
 global.fish_data[FISH.GHOST, FP.NAME]						= "Ghost Fish";
 global.fish_data[FISH.GHOST, FP.SPRITE]						= spr_unidentified_5;
@@ -410,7 +410,7 @@ global.fish_data[FISH.GHOST, FP.COST_SELL]					= 175;
 global.fish_data[FISH.GHOST, FP.COST_BUY]					= 175;
 global.fish_data[FISH.GHOST, FP.INFO]						= "Some fish must have died here!";
 global.fish_data[FISH.GHOST, FP.ZONE_SIZE_ROD_BASIC_1]		= 20;
-global.fish_data[FISH.GHOST, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.GHOST, FP.ZONE_SPEED_ROD_BASIC_1]		= .1;
 
 global.fish_data[FISH.RIGOR, FP.NAME]						= "Rigormortis";
 global.fish_data[FISH.RIGOR, FP.SPRITE]						= spr_unidentified_6;
@@ -421,6 +421,6 @@ global.fish_data[FISH.RIGOR, FP.COST_SELL]					= 2250;
 global.fish_data[FISH.RIGOR, FP.COST_BUY]					= 2250;
 global.fish_data[FISH.RIGOR, FP.INFO]						= "Its eyes are closed, but you can sense that it sees you.";
 global.fish_data[FISH.RIGOR, FP.ZONE_SIZE_ROD_BASIC_1]		= 6;
-global.fish_data[FISH.RIGOR, FP.ZONE_SPEED_ROD_BASIC_1]		= 1;
+global.fish_data[FISH.RIGOR, FP.ZONE_SPEED_ROD_BASIC_1]		= 12;
 
 global.fish_total = array_height_2d(global.fish_data);
