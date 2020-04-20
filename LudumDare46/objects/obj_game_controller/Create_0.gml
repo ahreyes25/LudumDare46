@@ -24,6 +24,14 @@ shop				= undefined;//instance_create_layer(0, 0, "Controllers", obj_shop);
 library				= undefined;//instance_create_layer(0, 0, "Controllers", obj_library);
 merchant			= undefined;//instance_create_layer(0, 0, "Controllers", obj_merchant);
 map					= undefined;//instance_create_layer(0, 0, "Controllers", obj_map);
+//ui_controller	= instance_create_layer(0, 0, "Controllers", obj_ui_controller);
+sidebar_right	= instance_create_layer(0, 0, "Controllers", obj_sidebar_right);
+sidebar_left	= instance_create_layer(0, 0, "Controllers", obj_sidebar_left);
+inventory		= instance_create_layer(0, 0, "Controllers", obj_inventory);
+merchant		= instance_create_layer(0, 0, "Controllers", obj_merchant);
+shop			= instance_create_layer(0, 0, "Controllers", obj_shop);
+library			= instance_create_layer(0, 0, "Controllers", obj_library);
+map				= instance_create_layer(0, 0, "Controllers", obj_map);
 #endregion
 
 #region Sound & Music

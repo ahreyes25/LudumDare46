@@ -18,7 +18,7 @@ bounces			= 0;
 camera_x		= undefined;
 camera_y		= undefined;
 
-surface			= surface_create(width + 20, height);
+surface			= surface_create(width + 20 + 80, height + 8);
 sprite			= undefined;
 
 alarm[0]		= 60;

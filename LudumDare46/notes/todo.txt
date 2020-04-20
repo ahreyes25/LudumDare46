@@ -1,15 +1,14 @@
 // Core	
-- setup other regions -- 1 hour
-- inventory floating sub menu
-- menu item name float on mouse over
-
-- sell all equipment
+- setup glacier region
 - fish need to have unique size and color/weight properties -- 30 min 
-- fix meter threshold
-- fix throw cooldown 
-- rod durability
 - remove starting money
 - make sure that meter_create() has updated rod values
+
+- fish sloshing whiel trying to catch
+- clicking too early causes fish to run away
+- lure moving while trying to fish
+- resize surface for lure wire
+- draw distance and angle on cursor
 
 // Polish
 - meter bouncing juice

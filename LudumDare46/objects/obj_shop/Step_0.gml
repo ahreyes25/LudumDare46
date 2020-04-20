@@ -1,7 +1,7 @@
 if (mouse_wheel_down())
-	scroll_index += cell_height;
-if (mouse_wheel_up())
 	scroll_index -= cell_height;
+if (mouse_wheel_up())
+	scroll_index += cell_height;
 
 start_x	= obj_merchant.xcurr - sprite_get_width(spr_merchant) * obj_merchant.scale / 2 - cell_width;
 
@@ -44,12 +44,16 @@ if (mouse_check_button_pressed(mb_left) && device_mouse_x_to_gui(0) > surface_ge
 					var _cost = global.rod_data[_item[1], RP.COST_BUY];
 				if (_item[0] == "lure")
 					var _cost = global.lure_data[_item[1], LP.COST_BUY];
+				if (_item[0] == "region")
+					var _cost = global.region_data[_item[1], P.COST];
 					
 				// Have Enough Money
 				if (obj_sidebar_left.money >= _cost) {
 					if (_item[0] == "fish")  {
 						ds_list_replace(obj_player.fish_data, _item[1], true);	
 					}
+					else if (_item[0] == "region")
+						ds_list_add(obj_map.regions, _item[1]);	
 					else
 						ds_list_add(obj_inventory.inventory, _item);
 					obj_sidebar_left.money -= _cost;

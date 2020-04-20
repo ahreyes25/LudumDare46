@@ -12,8 +12,10 @@ if (alarm[0] == -1) {
 		arrow_tick_pos -= meter_speed;	
 	
 		if (arrow_tick_pos <= 0) {
-			if (bounces >= max_bounces)
+			if (bounces >= max_bounces) {
 				instance_destroy();
+				sfx_play(sfx_fish_escape);
+			}
 			else {
 				move_dir = DIR.UP;
 				sfx_play(sfx_meter_bounce);

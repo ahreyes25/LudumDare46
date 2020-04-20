@@ -5,4 +5,4 @@ coin_image_speed	= 0.1;
 
 
 
-money = 1000;
+money = 100000;
