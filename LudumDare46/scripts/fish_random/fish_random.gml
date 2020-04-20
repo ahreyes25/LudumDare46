@@ -1,7 +1,8 @@
 /// @param lure_enum
 
 var _lure		= argument0;
-var _fish_list	= global.region_data[global.region, P.FISH];
+var _region		= global.region;
+var _fish_list	= global.region_data[_region, P.FISH];
 var _n_fish		= array_length_1d(_fish_list);
 var _won		= ds_list_create();
 
@@ -10,9 +11,8 @@ for (var i = 0; i < _n_fish; i++) {
 	var _fish_i			= _fish_list[i];
 	var _catch_chances	= global.lure_data[_lure, LP.CATCH_CHANCE];
 	var _catch_chance	= _catch_chances[_fish_i];
-	var _rand			= random(_catch_chance);	
 	
-	if (percent(_rand))
+	if (percent(_catch_chance))
 		ds_list_add(_won, [_fish_i, _catch_chance]);
 }
 

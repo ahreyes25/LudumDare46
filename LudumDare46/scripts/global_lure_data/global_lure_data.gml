@@ -33,8 +33,8 @@ global.lure_data[LURE.LURE_BASIC_1, LP.COST_BUY]			= 10;
 global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
 	/* FISH.NONE	*/		undefined,
 	/* FISH.FISH	*/		1.0,
-	/* FISH.OCTOPUS */		0.5,
-	/* FISH.CRAB	*/		1.0,
+	/* FISH.OCTOPUS */		0.1,
+	/* FISH.CRAB	*/		0.5,
 ];
 				
 global.lure_data[LURE.LURE_BASIC_2, LP.NAME]				= "Basic Lure 2";		

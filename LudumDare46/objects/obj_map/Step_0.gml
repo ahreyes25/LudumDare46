@@ -35,16 +35,16 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			var _index = clamp(index - (scroll_index div cell_height), 0, 3);
 			if (_index < ds_list_size(regions)) {
 				sfx_play(sfx_memu_select);
-			
+				global.region = regions[| _index];
+				merchant_hide();
+				map_hide();
+				show_mini = false;
 				switch (regions[| _index]) {
 					case 0:	room_goto(rm_forest_0); break;
 					case 1: room_goto(rm_desert_0); break;
 					case 2: room_goto(rm_glacier_0); break;
 					case 3: room_goto(rm_ocean_0); break;
 				}
-				merchant_hide();
-				map_hide();
-				show_mini = false;
 			}
 		}
 	}

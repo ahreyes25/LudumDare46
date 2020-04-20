@@ -9,7 +9,7 @@ enum SWITCH			{ ON, OFF, MID }
 enum SPRITE			{ INDEX, SPEED }
 enum QUAD			{ TOP_LEFT, TOP_RIGHT, BOTTOM_RIGHT, BOTTOM_LEFT }
 enum DIALOGUE		{ MAIN, QUEST, LEVEL }
-enum REGION			{ FOREST, DESERT, OCEAN, GLACIER }
+enum REGION			{ FOREST, DESERT, GLACIER, OCEAN }
 #endregion
 
 global.paused				= false;
