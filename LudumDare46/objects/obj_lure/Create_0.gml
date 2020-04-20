@@ -24,3 +24,5 @@ bob_iter		= 0;
 bob_iter_speed	= 0.1;
 bob_image_index	= 0;
 bob_image_speed	= 0.05;
+
+sfx_play(sfx_reel);

@@ -9,3 +9,5 @@ rod.camera_x	= undefined;
 rod.camera_y	= undefined;
 
 obj_game_controller.need_to_clear_surface = true;
+
+sfx_stop(sfx_reel);

@@ -223,11 +223,27 @@
             }
         },
         {
+            "Key": "0cda6744-ffb2-4c4d-b987-6a99b88455ad",
+            "Value": {
+                "id": "b9297e05-871f-4688-97de-0d0137ec8e0d",
+                "resourcePath": "sounds\\sfx_reel\\sfx_reel.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0ce4d30a-8e45-482f-a652-68449dfdb568",
             "Value": {
                 "id": "87963262-923d-44ec-ae49-7386f96069f9",
                 "resourcePath": "scripts\\_move_input_facing\\_move_input_facing.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "101b82d5-64aa-4077-a94d-c36fad4c8566",
+            "Value": {
+                "id": "bce36c98-5a2f-4e26-94b6-18a60f1c6aaa",
+                "resourcePath": "sounds\\sfx_hooked\\sfx_hooked.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -292,6 +308,14 @@
                 "id": "1266524e-82aa-43aa-aa2e-ac31e53bd253",
                 "resourcePath": "scripts\\global_game_data\\global_game_data.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "156c3a5f-34a0-4f30-a8be-d398fed7ecfb",
+            "Value": {
+                "id": "fdc5a4c0-a001-4852-8185-d20974cca181",
+                "resourcePath": "sounds\\sfx_page_turn\\sfx_page_turn.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -2399,6 +2423,14 @@
             }
         },
         {
+            "Key": "a09350fb-7a84-4ad0-8078-9d9d100727a8",
+            "Value": {
+                "id": "423e473c-cf2b-4a01-8b0b-640fd44e57f6",
+                "resourcePath": "sounds\\sfx_splash\\sfx_splash.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "254baa4d-6680-48aa-8686-48573bee22be",
@@ -2847,6 +2879,14 @@
             }
         },
         {
+            "Key": "bb32b58f-b34f-45c7-a271-b46abd962b54",
+            "Value": {
+                "id": "15ce5bde-58a2-4f27-8ae5-e96ad234f27d",
+                "resourcePath": "scripts\\sfx_play\\sfx_play.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bb6b4e60-ebdc-4894-b3d1-a1274a1e3ea9",
             "Value": {
                 "id": "0ad2d353-3bcf-4e8f-a20e-4d7269ae42a2",
@@ -3291,6 +3331,14 @@
             "Value": {
                 "id": "b8781b08-e331-404b-b18e-9e32c0403fa8",
                 "resourcePath": "scripts\\collision_line_point_enemies\\collision_line_point_enemies.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d9cfd024-32d1-4c5b-9ccf-39b622003ca9",
+            "Value": {
+                "id": "5c7e2f30-1c94-4ea4-8480-41a22716640c",
+                "resourcePath": "scripts\\sfx_stop\\sfx_stop.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4151,7 +4199,9 @@
         "448158d3-620c-4af6-b49c-c24d4f3a37b6",
         "f09c39fa-2732-47b9-9997-69a5fabb324b",
         "d578d855-2ecb-45f9-b0d4-5eb577019efe",
-        "fdd6acf2-89b6-4f21-bb32-2009f47b4957"
+        "fdd6acf2-89b6-4f21-bb32-2009f47b4957",
+        "bb32b58f-b34f-45c7-a271-b46abd962b54",
+        "d9cfd024-32d1-4c5b-9ccf-39b622003ca9"
     ],
     "tutorial": ""
 }
