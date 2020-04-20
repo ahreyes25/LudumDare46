@@ -3,13 +3,13 @@
 - fish need to have unique size and color/weight properties
 - remove starting money
 - make sure that meter_create() has updated rod values
-- draw lure when thrown
 - fish sloshing whiel trying to catch
 - clicking too early causes fish to run away
 - lure moving while trying to fish
-- resize surface for lure wire
 - draw distance and angle on cursor
 - muted music
+- add range to lure
+- fix text formatting off screen
 
 // Polish
 - meter bouncing juice
