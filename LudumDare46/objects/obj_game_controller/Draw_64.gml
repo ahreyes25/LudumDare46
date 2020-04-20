@@ -16,6 +16,8 @@ if (paused) {
 	draw_text(_sw / 2, _sh / 2 - 80, "-- Your Progress Will Not Be Lost! --");
 	draw_text(_sw / 2, _sh / 2 - 40, "Press F To Toggle Fullscreen.");
 	draw_text(_sw / 2, _sh / 2 - 0, "Press M To Toggle Sound.");
+	draw_text(_sw / 2, _sh / 2 + 80, "Press E To Go To Main Menu.");
+	draw_text(_sw / 2, _sh / 2 + 120, "-- Your Progress Will Not Be Lost! --");
 	draw_set_halign(fa_top);
 	draw_set_valign(fa_left);
 }

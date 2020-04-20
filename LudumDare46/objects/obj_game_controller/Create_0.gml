@@ -36,3 +36,11 @@ paused = false;
 
 u_color = shader_get_uniform(shdr_solid_color, "u_color");
 u_alpha = shader_get_uniform(shdr_solid_color, "u_alpha");
+
+// music
+sfx_forest			= sfx_forest_song;
+sfx_forest_inst		= undefined;
+sfx_desert			= sfx_desert_song;
+sfx_desert_inst		= undefined;
+sfx_glacier			= sfx_glacier_song;
+sfx_glacier_inst	= undefined;

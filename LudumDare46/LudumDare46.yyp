@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "22e7b51a-f77d-420c-8f51-e63574cbcc4b",
+            "Value": {
+                "id": "fb55580d-5a02-4d63-877f-5a4aa10ebfdc",
+                "resourcePath": "sounds\\sfx_glacier_song\\sfx_glacier_song.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "22fbdf8e-e021-442c-8d99-40f2751b9f57",
             "Value": {
                 "id": "798dbfe3-0e25-4aa1-a8c7-753c1b2a2537",
@@ -940,6 +948,14 @@
                 "id": "70042a5c-94c2-4186-ad2e-91c1b0b04eb2",
                 "resourcePath": "scripts\\fish_get_lure_best\\fish_get_lure_best.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "45988251-11a9-4230-bf53-99b9f31ee50b",
+            "Value": {
+                "id": "4b98134c-6d15-4c0c-ad6b-9d22ddc0aa6e",
+                "resourcePath": "sounds\\sfx_desert_song\\sfx_desert_song.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1487,6 +1503,14 @@
             }
         },
         {
+            "Key": "65af98c0-ef17-480d-905d-9584cf9e4c4a",
+            "Value": {
+                "id": "1b355f97-ba1f-4182-b961-66e094acf153",
+                "resourcePath": "sounds\\sfx_water_loop\\sfx_water_loop.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "66937c9e-0b8c-4067-944e-6bb1299f245e",
             "Value": {
                 "id": "c1fee55e-2a78-4dd8-b8dd-ed9a0f664919",
@@ -1756,6 +1780,14 @@
                 "id": "cbbad46c-4809-486e-93da-8fefbed57026",
                 "resourcePath": "scripts\\_timer_fall_object0\\_timer_fall_object0.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "775cea56-693d-43ca-b3cd-a2605685403f",
+            "Value": {
+                "id": "93a78c41-b380-4ed2-b92f-fec6a2693226",
+                "resourcePath": "sounds\\sfx_forest_song\\sfx_forest_song.yy",
+                "resourceType": "GMSound"
             }
         },
         {

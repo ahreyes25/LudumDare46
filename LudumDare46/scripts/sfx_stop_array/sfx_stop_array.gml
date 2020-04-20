@@ -1,4 +1,4 @@
-/// @param sfx_stop_array	-- stops any sounds that are playing in a given array
+/// @desc sfx_stop_array	-- stops any sounds that are playing in a given array
 /// @param sound
 
 var _sound = argument0;

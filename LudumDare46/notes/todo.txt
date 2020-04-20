@@ -1,10 +1,12 @@
 // Core	
-- setup other regions -- 1 hour
+
 - sounds & music -- 1 hour
-- fish need to have unique size and color/weight properties -- 30 min
+- setup other regions -- 1 hour
 - be able to change regions -- 1 hour
+
+- sell all equipment
+- fish need to have unique size and color/weight properties -- 30 min
 - add lure and rod to inventory 
-- sell all equipment?
 - fix meter threshold
 - fix throw cooldown 
 - rod durability

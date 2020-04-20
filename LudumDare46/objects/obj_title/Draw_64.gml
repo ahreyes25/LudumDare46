@@ -48,7 +48,7 @@ for (var i = 0; i < array_length_1d(menu_options); i++) {
 draw_set_halign(fa_left);
 
 // Draw title
-draw_sprite_ext(spr_title, 0, _sw / 2, _sh * 0.3, 0.5, 0.5, sin(title_iter) * 10, c_white, 1);
+draw_sprite_ext(spr_title, 0, _sw / 2, _sh * 0.3, 0.5, 0.5, sin(title_iter) * 10, global.tint_color, 1);
 
 
 

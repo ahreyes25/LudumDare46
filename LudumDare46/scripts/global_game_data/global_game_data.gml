@@ -26,11 +26,11 @@ global.font					= -1;
 global.font_size			= 12;
 
 global.region				= REGION.FOREST;
-global.tint_color			= c_white;
 global.color_green			= make_color_rgb(174, 205, 145);
 global.color_tan			= make_color_rgb(240, 210, 180);
 global.color_blue			= make_color_rgb(136, 172, 237);
 global.color_white			= c_white;
+global.tint_color			= global.color_green;
 
 // Audio
 audio_falloff_set_model(audio_falloff_linear_distance);
