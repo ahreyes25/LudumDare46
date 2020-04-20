@@ -3,23 +3,23 @@
 - remove starting money
 
 // Core	
-- fix text formatting off screen
 - modify content
-
-- fish need to have unique size and color/weight properties
 - add menu placeholder items
 - more shopkeeper dialogue
-
-- fish sloshing whiel trying to catch
-- lure moving while trying to fish
-- add range to lure
+- finish clamping shop x mouse click
 
 // Polish
-- meter bouncing juice
 - catch reward juice
+	- flip card around
+	- screen flash
+- screen shake? -- miss catch?
+- meter bouncing juice
 
 // -----------------------------------
 // Extra
+- fish sloshing whiel trying to catch
+- lure moving while trying to fish
+- add range to lure
 - UI feedback when menus open and close
 - better fish behavior
 - fishing zones & "hot spots"
