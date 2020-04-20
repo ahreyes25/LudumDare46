@@ -3703,6 +3703,14 @@
             }
         },
         {
+            "Key": "cf32dca2-d5d4-4490-9997-e3e1d6a3ee23",
+            "Value": {
+                "id": "ee39c9c7-9c64-4281-aa0f-2f4e0016477e",
+                "resourcePath": "sprites\\spr_alligator\\spr_alligator.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cf7053e0-8a7a-46e1-bf6e-ce9a2bbd431f",
             "Value": {
                 "id": "514ff627-0022-4a18-b3ae-acfeb541efc5",
