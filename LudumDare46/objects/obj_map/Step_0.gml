@@ -1,7 +1,7 @@
 if (mouse_wheel_down())
-	scroll_index += cell_height;
-if (mouse_wheel_up())
 	scroll_index -= cell_height;
+if (mouse_wheel_up())
+	scroll_index += cell_height;
 	
 if (!show_mini)
 	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, 3);
@@ -28,6 +28,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 		if (index_mini) {
 			obj_merchant.state = "travel_wait";
 			show_mini = false;
+			sfx_play(sfx_no_purchase);
 		}
 		// Yes
 		else {
@@ -42,6 +43,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 					case 3: room_goto(rm_ocean_0); break;
 				}
 				merchant_hide();
+				map_hide();
 				show_mini = false;
 			}
 		}

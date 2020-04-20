@@ -1,3 +1,5 @@
+xtarget = surface_get_width(application_surface) * 0.75;
+
 switch (state) {
 	#region Inventory
 	case "show_sell":
