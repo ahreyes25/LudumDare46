@@ -32,6 +32,7 @@ if (surface_exists(surface)) {
 		surface, 0, 0, surface_get_width(surface), surface_get_height(surface), 
 		false, false, surface_get_width(surface) / 2, surface_get_height(surface)
 	);
+	ds_list_add(sprites, sprite);
 }
 
 // Draw Surface

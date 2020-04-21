@@ -23,6 +23,7 @@ camera_y		= undefined;
 
 surface			= surface_create(width + 20 + 80, height + 8);
 sprite			= undefined;
+sprites			= ds_list_create();
 rot				= 180;
 rot_target		= 0;
 alpha			= 0;

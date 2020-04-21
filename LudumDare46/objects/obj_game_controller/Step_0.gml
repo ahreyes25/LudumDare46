@@ -23,3 +23,13 @@ if (paused) {
 }
 if (keyboard_check_pressed(vk_escape))
 	paused = !paused;
+	
+var _g = keyboard_check(ord("G"));
+var _e = keyboard_check(ord("E"));
+var _n = keyboard_check(ord("N"));
+var _t = keyboard_check(ord("T"));
+var _o = keyboard_check(ord("O"));
+if (_g && _e && _n && _t && _o) {
+	obj_sidebar_left.money += 1000;
+	sfx_play(sfx_purchase);
+}
