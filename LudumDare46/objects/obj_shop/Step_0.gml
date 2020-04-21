@@ -1,15 +1,17 @@
+#region Update Indexes
 if (mouse_wheel_down())
 	scroll_index -= cell_height;
 if (mouse_wheel_up())
 	scroll_index += cell_height;
-
-start_x	= obj_merchant.xcurr - sprite_get_width(spr_merchant) * obj_merchant.scale / 2 - cell_width;
 
 // Update Index
 if (!show_mini)
 	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(shop) - 1);
 else
 	index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
+#endregion
+
+start_x	= obj_merchant.xcurr - sprite_get_width(spr_merchant) * obj_merchant.scale / 2 - cell_width;
 
 var _mx = device_mouse_x_to_gui(0);
 
@@ -76,17 +78,3 @@ if (mouse_check_button_pressed(mb_left) && show && _mx > surface_get_width(appli
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
