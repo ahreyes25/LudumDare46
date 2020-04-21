@@ -4,7 +4,7 @@ var _fish = argument0;
 
 var _highest_chance = 0;
 var _high_lure = LURE.NONE;
-for (var i = 1; i < global.lure_total; i++) {
+for (var i = global.lure_total - 1; i >= 0; i--) {
 	var _lure_chances = global.lure_data[i, LP.CATCH_CHANCE];
 	if (defined(_lure_chances) && array_length_1d(_lure_chances) > 0) {
 		if (_lure_chances[_fish] >= _highest_chance) {

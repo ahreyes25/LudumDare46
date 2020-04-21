@@ -20,6 +20,7 @@ global.region_data[REGION.FOREST, P.FISH] = [
 	FISH.FISH,
 	FISH.ALLIGATOR,
 	FISH.REAL,
+	FISH.GARY,
 ];
 
 global.region_data[REGION.DESERT, P.NAME] = "Desert";
