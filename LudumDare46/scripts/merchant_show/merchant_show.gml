@@ -38,3 +38,4 @@ if (_item_type == "region") {
 	obj_merchant.item_name		= global.region_data[_item, P.NAME];
 	obj_merchant.item_cost_buy	= global.region_data[_item, P.COST];
 }
+obj_merchant.item_type = _item_type;
