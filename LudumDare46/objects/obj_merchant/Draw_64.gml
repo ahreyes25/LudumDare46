@@ -116,9 +116,9 @@ else if (state == "travel_confirm") {
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, map_text, 2, 2, 0);
 	
 	if (!obj_map.index_mini)
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, ">YES        NO", 2, 2, 0);	
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, ">YES        NO", 2, 2, 0);	
 	else
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, " YES       >NO", 2, 2, 0);		
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, " YES       >NO", 2, 2, 0);		
 }
 
 
