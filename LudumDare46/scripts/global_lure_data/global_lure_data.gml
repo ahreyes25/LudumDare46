@@ -47,8 +47,8 @@ global.lure_data[LURE.LURE_BASIC_1, LP.NAME]				= "Basic Lure";
 global.lure_data[LURE.LURE_BASIC_1, LP.DESC]				= "A hook, nothing more..";		
 global.lure_data[LURE.LURE_BASIC_1, LP.INFO]				= "I once got 3 of these stuck\nin my big toe...\nat the same time! ha";		
 global.lure_data[LURE.LURE_BASIC_1, LP.SPRITE]				= spr_lure_basic_1;	
-global.lure_data[LURE.LURE_BASIC_1, LP.COST_SELL]			= 0;	
-global.lure_data[LURE.LURE_BASIC_1, LP.COST_BUY]			= 10;	
+global.lure_data[LURE.LURE_BASIC_1, LP.COST_SELL]			= 50;	
+global.lure_data[LURE.LURE_BASIC_1, LP.COST_BUY]			= 100;	
 global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
 	/* NONE		*/						undefined,
 	/* CLAM		*/						1.0,
@@ -72,14 +72,14 @@ global.lure_data[LURE.LURE_BASIC_1, LP.CATCH_CHANCE]		= [
 	/* LOBSTER	COINED			*/		0.1,
 	/* OCTO		LOLLIPOP 2		*/		0.1,
 	/* GIRAFFE	TWINED			*/		0.2,
-	/* GARY		LOLLIPOP 3		*/		0.2,
+	/* GARY		LOLLIPOP 3		*/		0.05,
 	/* SHRIMP	*/						1.0,
 	/* STAR		TWINED			*/		0.15,
 	/* SEEKER	FEATHERED		*/		0.0,
 	/* HEART	CHAINED			*/		0.0,
 	/* METROID	FLARED			*/		0.0,
 	/* SKULL	SIMPLE RING		*/		0.0,
-	/* GHOST	FRAZZLE 3		*/		0.1,
+	/* GHOST	FRAZZLE 3		*/		0.2,
 	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
 	/* AERYS					*/		0.0,
 	/* REAL						*/		0.0,
