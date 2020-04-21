@@ -8,9 +8,8 @@ var _my = device_mouse_y_to_gui(0);
 in_left = _mx < _x2 + 10;
 
 if (mouse_check_button_released(mb_left)) {
-	
-	// Inventory
 	if (!obj_game_controller.paused) {
+		#region Inventory
 		if (_mx >= _x1 && _mx <= _x2 && _my >= _y1 && _my <= _y2) {
 			sfx_play(sfx_memu_select);
 			if (!obj_inventory.show && ds_list_size(obj_inventory.inventory) > 0)
@@ -19,8 +18,8 @@ if (mouse_check_button_released(mb_left)) {
 				inventory_hide();
 			music_toggle_mute();
 		}
-	
-		// Shop
+		#endregion
+		#region Shop
 		var _scale = 2;
 		var _x = obj_ui_controller.outer_edge_width + 40;
 		var _y = sprite_get_height(spr_coin_ui) + 100 + sprite_get_height(spr_chest) + 60;
@@ -37,8 +36,8 @@ if (mouse_check_button_released(mb_left)) {
 				shop_show();
 			music_toggle_mute();
 		}
-		
-		// Library 
+		#endregion
+		#region Library 
 		var _ly = _y1 + sprite_get_height(spr_library_ui) + 80;
 		var _y2 = _ly + sprite_get_height(spr_library_ui) * _scale - 20;
 		if (_mx >= _x1 && _mx <= _x2 && _my >= _ly && _my <= _y2) {
@@ -49,8 +48,8 @@ if (mouse_check_button_released(mb_left)) {
 				library_show();
 			music_toggle_mute();
 		}
-		
-		// Map
+		#endregion
+		#region Map
 		var _may = _ly + sprite_get_height(spr_library_ui) + 70;
 		var _y2 = _may + sprite_get_height(spr_map) * _scale - 20;
 		if (_mx >= _x1 && _mx <= _x2 && _my >= _may && _my <= _y2) {
@@ -61,6 +60,7 @@ if (mouse_check_button_released(mb_left)) {
 				map_show();
 			music_toggle_mute();
 		}
+		#endregion
 	}
 	
 	// Pause

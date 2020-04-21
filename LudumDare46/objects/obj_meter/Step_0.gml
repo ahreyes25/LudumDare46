@@ -40,7 +40,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		meter_speed = 0;
 	
 		// Win
-		if (arrow_tick_pos <= goal_ticks + goal_offset + 1 && arrow_tick_pos >= goal_offset - 1) {
+		if (arrow_tick_pos <= goal_ticks + goal_offset + 3 && arrow_tick_pos >= goal_offset - 3) {
 			catch_reward(fish, "fish");
 			scale = 1.3;
 			state = "wait";

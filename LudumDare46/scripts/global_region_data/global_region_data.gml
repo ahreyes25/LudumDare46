@@ -20,6 +20,7 @@ global.region_data[REGION.FOREST, P.FISH] = [
 	FISH.FISH,
 	FISH.ALLIGATOR,
 	FISH.REAL,
+	FISH.GARY,
 ];
 
 global.region_data[REGION.DESERT, P.NAME] = "Desert";
@@ -46,7 +47,7 @@ global.region_data[REGION.DESERT, P.FISH] = [
 ];
 
 global.region_data[REGION.OCEAN, P.NAME] = "Ocean";
-global.region_data[REGION.OCEAN, P.COST] = 5000;
+global.region_data[REGION.OCEAN, P.COST] = 3000;
 global.region_data[REGION.OCEAN, P.FISH] = [
 	FISH.CLAM,
 	FISH.CLOWN,
@@ -85,7 +86,7 @@ global.region_data[REGION.OCEAN, P.FISH] = [
 ];
 
 global.region_data[REGION.GLACIER, P.NAME] = "Glacier";
-global.region_data[REGION.GLACIER, P.COST] = 2000;
+global.region_data[REGION.GLACIER, P.COST] = 1000;
 global.region_data[REGION.GLACIER, P.FISH] = [
 	FISH.CLAM,
 	FISH.CARP,

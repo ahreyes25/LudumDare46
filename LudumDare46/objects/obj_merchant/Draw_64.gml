@@ -78,8 +78,15 @@ else if (state == "shop_wait") {
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, shop_text, 2, 2, 0);
 }
 else if (state == "shop_confirm") {
-	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
-		"Are you sure you want to \nbuy a " + string(item_name) + "?", 2, 2, 0);
+	if (item_type != "fish") {
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
+			"Are you sure you want to \nbuy a " + string(item_name) + "?", 2, 2, 0);
+	}
+	else {
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
+			"Are you sure you want to \nbuy fish info?", 2, 2, 0);
+	}
+	
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 110, 
 		"Only $" + string(item_cost_buy) + ", not a bad price.", 2, 2, 0);
 		
@@ -116,9 +123,9 @@ else if (state == "travel_confirm") {
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, map_text, 2, 2, 0);
 	
 	if (!obj_map.index_mini)
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, ">YES        NO", 2, 2, 0);	
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, ">YES        NO", 2, 2, 0);	
 	else
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 150, " YES       >NO", 2, 2, 0);		
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, " YES       >NO", 2, 2, 0);		
 }
 
 

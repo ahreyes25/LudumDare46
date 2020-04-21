@@ -29,20 +29,51 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			show_mini = true;	
 			obj_merchant.state = "travel_confirm";
 			sfx_play(sfx_memu_select);
-			
-			var _texts = [
-				"You want to go to the\n",
-				"Decided to travel to the\n",
-				"You'd like to go to the\n",
-				"Traveling to the\n",
-			];
-			var _text = _texts[irandom(array_length_1d(_texts) - 1)];
-			
+						
 			switch (regions[| _index]) {
-				case 0:	obj_merchant.map_text = _text + "Forest?";	break;
-				case 1: obj_merchant.map_text = _text + "Desert?";	break;
-				case 2: obj_merchant.map_text = _text + "Glacier?"; break;
-				case 3: obj_merchant.map_text = _text + "Ocean?";	break;
+				// Forest
+				case 0:	
+					var _texts = [
+						"You want to go to the\nForest?",
+						"Oh! Traveling to the Forest?\nI once wrestled 3 alligators\nthere, I'll have you know.",
+						"The great Forest huh?"
+					];
+					var _text = _texts[irandom(array_length_1d(_texts) - 1)];
+					obj_merchant.map_text = _text;	
+					break;
+				
+				// Desert
+				case 1: 
+					var _texts = [
+						"You want to go to the\nDesert?",
+						"Looking for them \nRattlesnakes? Desert's \njust the place to be.",
+						"Only thing there is \ndust and bones.Still \nwanna go to the Desert?"
+					];
+					var _text = _texts[irandom(array_length_1d(_texts) - 1)];
+					obj_merchant.map_text = _text;	
+					break;
+				
+				// Glacier
+				case 2: 
+					var _texts = [
+						"You want to go to the\nGlacier?",
+						"I Always wanted to see a\nPengu up close? Glacier?",
+						"Looking to freeze?\nGlacier's just the place \nto go!"
+					];
+					var _text = _texts[irandom(array_length_1d(_texts) - 1)];
+					obj_merchant.map_text = _text; 
+					break;
+				
+				// Ocean
+				case 3: 
+					var _texts = [
+						"You want to go to the\nOcean?",
+						"Not much out there,\nstill want to go to the\nOcean?",
+						"The deepest and darkest\ncreatures live out in the\nOcean. Brave enough to check?"
+					];
+					var _text = _texts[irandom(array_length_1d(_texts) - 1)];
+					obj_merchant.map_text = _text;	
+					break;
 			}
 		}
 	}
