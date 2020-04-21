@@ -40,8 +40,12 @@ if (show && mouse_check_button_pressed(mb_left)) {
 		}
 	}
 	
+	// Confirming With Merchant
 	if (show_mini && show_mini_mini) {
-		
+		if (_mx < _sw / 2) {
+			merchant_hide();
+			show_mini_mini = false;
+		}
 	}
 	#endregion
 	#region Select Item Action

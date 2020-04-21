@@ -3,15 +3,23 @@ if (!show_mini)
 index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 
 var _mx = device_mouse_x_to_gui(0);
+var _sw = surface_get_width(application_surface);
 
 if (show && mouse_check_button_pressed(mb_left)) {
 	#region Exit Menu If Clicking Out
-	// Confirmed With Merchant
+	// Confirm With Merchant
 	if (show_mini) {
-		
+		if (_mx < _sw * 0.6) {
+			obj_merchant.state = "travel_wait";
+			show_mini = false;
+		}
 	}
 	else {
-		
+		if (mouse_outside_edges() || _mx > _sw * 0.4) {
+			merchant_hide();
+			show_mini = false;
+			show = false;
+		}
 	}
 	#endregion
 	#region Select Region To Travel To
@@ -28,7 +36,7 @@ if (show && mouse_check_button_pressed(mb_left)) {
 				"You'd like to go to the\n",
 				"Traveling to the\n",
 			];
-			var _text = _texts[irandom(array_length_1d(_text) - 1)];
+			var _text = _texts[irandom(array_length_1d(_texts) - 1)];
 			
 			switch (regions[| _index]) {
 				case 0:	obj_merchant.map_text = _text + "Forest?";	break;
