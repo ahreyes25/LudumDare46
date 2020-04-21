@@ -1,6 +1,6 @@
 if (show) {
 	depth		 = obj_ui_controller.depth - 10;
-	var _library = obj_player.fish_data;
+	var _library = obj_game_controller.player_fish_data;
 	var _n_items = ds_list_size(_library) - 1;
 	var _x		 = 0;
 	var _y		 = 0;
@@ -23,14 +23,14 @@ if (show) {
 		for (var i = 1; i <= _n_items; i++) {
 			var _item_sprite = global.fish_data[i, FP.SPRITE];
 			
-			if (obj_player.fish_caught[| i] > 0) {
+			if (obj_game_controller.player_fish_caught[| i] > 0) {
 				var _ys = _y + cell_height / 2;
 				draw_sprite_ext(_item_sprite, 0, 
 					_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
 					scale / 2, scale / 2, 0, global.tint_color, 1);
 			}
 			else {
-				if (obj_player.fish_data[| i]) {
+				if (obj_game_controller.player_fish_data[| i]) {
 					var _ys = _y + cell_height / 2;
 					draw_sprite_ext(spr_exclamation_mark, 0, 
 						_x + cell_width / 2, _ys + cell_height * (i - 1) + scroll_index,
@@ -68,19 +68,19 @@ if (show) {
 			var _mini_y	= index * cell_height + 10;
 			
 			// Have Fish Data
-			if (obj_player.fish_data[| _index]) {
+			if (obj_game_controller.player_fish_data[| _index]) {
 				// Info Panel Frame
 				draw_set_color(c_black);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 2.1, false);
 				draw_set_color(global.tint_color);
 				draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 2.1, true);
 			
-				if (obj_player.fish_caught[| _index] > 0) 
+				if (obj_game_controller.player_fish_caught[| _index] > 0) 
 					draw_text(_mini_x + 10, _mini_y + 10, global.fish_data[_index, FP.NAME]);
 				else
 					draw_text(_mini_x + 10, _mini_y + 10, "???");
 					
-				if (obj_player.fish_caught[| _index] > 0) 
+				if (obj_game_controller.player_fish_caught[| _index] > 0) 
 					draw_text(_mini_x + 10, _mini_y + 30, global.fish_data[_index, FP.DESC]);
 				else
 					draw_text(_mini_x + 10, _mini_y + 30, "???");
@@ -111,7 +111,7 @@ if (show) {
 				var _lure_avg			= fish_get_lure_avg(_index);
 				var _lure_avg_chance	= _lure_avg * 100;
 				
-				draw_text(_mini_x + 10, _mini_y + 50, "Caught: " + string(obj_player.fish_caught[| _index]));
+				draw_text(_mini_x + 10, _mini_y + 50, "Caught: " + string(obj_game_controller.player_fish_caught[| _index]));
 				draw_text(_mini_x + 10, _mini_y + 70, "Rarity: " + string(global.fish_data[_index, FP.RARITY]));
 				draw_text(_mini_x + 10, _mini_y + 90, "Region(s):" + _string);
 				draw_text(_mini_x + 10, _mini_y + 110, "Best Lure: " + string(_lure_best_name));

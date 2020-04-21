@@ -55,7 +55,7 @@ if (mouse_check_button_pressed(mb_left) && show && _mx > surface_get_width(appli
 				// Have Enough Money
 				if (obj_sidebar_left.money >= _cost) {
 					if (_item[0] == "fish")  {
-						ds_list_replace(obj_player.fish_data, _item[1], true);	
+						ds_list_replace(obj_game_controller.player_fish_data, _item[1], true);	
 					}
 					else if (_item[0] == "region")
 						ds_list_add(obj_map.regions, _item[1]);	

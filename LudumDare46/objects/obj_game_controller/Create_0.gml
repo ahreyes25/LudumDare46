@@ -58,7 +58,12 @@ sfx_glacier_inst	= undefined;
 player_rod_type		= ROD.ROD_BASIC_1;
 player_lure_type	= LURE.LURE_BASIC_1;
 
-
+player_fish_caught		= ds_list_create();
+player_fish_data		= ds_list_create();
+for (var i = 0; i < global.fish_total; i++) {
+	ds_list_add(player_fish_caught, false);	
+	ds_list_add(player_fish_data, false);	
+}
 
 
 

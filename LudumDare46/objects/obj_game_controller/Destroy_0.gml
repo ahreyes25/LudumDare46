@@ -12,6 +12,8 @@ instance_destroy(merchant);
 instance_destroy(transitions);
 
 surface_free(lure_surface);
+ds_list_destroy(player_fish_caught);
+ds_list_destroy(player_fish_data);
 
 // Particles
 

@@ -24,9 +24,9 @@ ds_list_add(obj_inventory.inventory, [_item_type, _item]);
 
 // Add To Caught Fish
 if (_item_type == "fish") {
-	var _n_caught = obj_player.fish_caught[| _item] + 1;
-	ds_list_replace(obj_player.fish_caught, _item, _n_caught);
-	ds_list_replace(obj_player.fish_data, _item, true);
+	var _n_caught = obj_game_controller.player_fish_caught[| _item] + 1;
+	ds_list_replace(obj_game_controller.player_fish_caught, _item, _n_caught);
+	ds_list_replace(obj_game_controller.player_fish_data, _item, true);
 }
 
 // Remove From Shop
