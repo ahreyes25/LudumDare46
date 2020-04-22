@@ -72,8 +72,10 @@ if (mouse_check_button_pressed(mb_left) && show) {
 						ds_list_replace(obj_game_controller.player_fish_data, _item[1], true);	
 					else if (_item[0] == "region")
 						ds_list_add(obj_map.regions, _item[1]);	
-					else
+					else {
 						ds_list_add(obj_inventory.inventory, _item);
+						equip_item(_item[1], _item[0]);
+					}
 						
 					obj_sidebar_left.money -= _cost;
 					obj_merchant.state = "shop_done";
