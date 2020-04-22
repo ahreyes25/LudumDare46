@@ -42,7 +42,7 @@ if (!exists(obj_banner)) {
 }
 
 // Draw Mouse Text
-if (obj_game_controller.mouse_text != "") {
+if (obj_game_controller.mouse_text != "" && (room == rm_forest || room == rm_desert || room == rm_glacier || room == rm_ocean)) {
 	draw_set_halign(fa_left);
 	var _mx = device_mouse_x_to_gui(0) + 20;
 	var _my = device_mouse_y_to_gui(0) + 20;
