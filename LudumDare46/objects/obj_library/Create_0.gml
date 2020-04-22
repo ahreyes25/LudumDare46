@@ -7,3 +7,6 @@ start_x			= obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_wi
 start_y			= 10;
 scroll_index	= 0;
 surface			= surface_create(cell_width, 1);
+
+bob_iter		= 0;
+bob_iter_speed	= 0.1;

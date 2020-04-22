@@ -1,12 +1,6 @@
-// Core	
-- more shopkeeper dialogue
-
-// Polish
-- draw actual fishing rod
+- draw fishing rod on guy in world space
+- show speed warnings before minigame
 - phrases when fish gets away?
-
-// -----------------------------------
-// Extra
 - catch junk and items?
 - fish sloshing whiel trying to catch
 - lure moving while trying to fish
@@ -27,13 +21,13 @@
 - achievements
 - save file
 	- regions unlocked
-	- fish caught
-	- fish data
+	- fish caught[x]
+	- fish data[x]
 	- inventory
 	- shop list
 	- secret rod for donating a ton
 	- money
-	- items equipped
+	- items equipped[x]
 	- any achievement data
 		- items sold to shopkeeper, etc
 	- achievements unlocked

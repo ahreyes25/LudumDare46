@@ -56,6 +56,7 @@ if (show) {
 				_x1 + cell_width / 2, _ys + cell_height * i + scroll_index,
 				scale / 2, scale / 2, 0, global.tint_color, 1);
 		}
+		draw_text(_x1 + 5, _ys + cell_height * i + scroll_index - (cell_height / 2) + 5, i + 1);
 	}
 	
 	// Draw Selection Cursor
@@ -68,6 +69,11 @@ if (show) {
 	
 	surface_reset_target();
 	draw_surface(surface, start_x, start_y);
+	
+	// Draw Scroll Prompt
+	var _sh = surface_get_height(application_surface);
+	draw_sprite_ext(spr_arrow_up, 0, start_x + cell_width / 2, 32 + sin(bob_iter), 1, 1, sin(bob_iter), global.tint_color, 1);
+	draw_sprite_ext(spr_arrow_down, 0, start_x + cell_width / 2, (_sh - 32) - sin(bob_iter), 1, 1, sin(bob_iter), global.tint_color, 1);
 	
 	// Draw Scroll Bar
 	var _scroll_y = ((((_n_items * cell_height) - scroll_index) / (_n_items * cell_height)) * surface_get_height(application_surface)) - surface_get_height(application_surface);
@@ -153,19 +159,3 @@ if (show) {
 	}
 	#endregion
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

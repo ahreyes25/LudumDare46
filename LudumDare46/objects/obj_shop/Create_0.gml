@@ -11,6 +11,9 @@ start_x			= obj_merchant.xcurr - sprite_get_width(spr_merchant) * obj_merchant.s
 start_y			= 10;
 surface			= surface_create(cell_width, 1);
 
+bob_iter		= 0;
+bob_iter_speed	= 0.1;
+
 // Add All Regions
 ds_list_add(shop, ["region", REGION.DESERT]);
 ds_list_add(shop, ["region", REGION.GLACIER]);

@@ -6,17 +6,19 @@ if (show) {
 	
 	if (_n_items > 0) {
 	
+		var _sh = surface_get_height(application_surface);
+	
 		if (!surface_exists(surface))
-			surface = surface_create(cell_width + 1, surface_get_height(application_surface) - 10);
-		surface_resize(surface, cell_width + 1, surface_get_height(application_surface) - 10);
+			surface = surface_create(cell_width + 1, _sh - 10);
+		surface_resize(surface, cell_width + 1, _sh - 10);
 		surface_set_target(surface);
 		draw_clear_alpha(c_black, 0);
 	
 		// Draw Background
 		draw_set_color(c_black);
-		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), false);
+		draw_rectangle(_x, _y, _x + cell_width, _sh - 10, false);
 		draw_set_color(global.tint_color);
-		draw_rectangle(_x, _y, _x + cell_width, _y + (cell_height * _n_items), true);
+		draw_rectangle(_x, _y, _x + cell_width, _sh - 10, true);
 	
 		// Draw Items
 		for (var i = 0; i < _n_items; i++) {
@@ -43,6 +45,7 @@ if (show) {
 					_x + cell_width / 2, _ys + cell_height * i + scroll_index,
 					scale / 2, scale / 2, 0, global.tint_color, 1);
 			}
+			draw_text(_x + 5, _ys + cell_height * i + scroll_index - (cell_height / 2) + 5, i + 1);
 		}
 	
 		// Draw Selection Cursor
@@ -59,6 +62,10 @@ if (show) {
 		// Draw Scroll Bar
 		var _scroll_y = ((((_n_items * cell_height) - scroll_index) / (_n_items * cell_height)) * surface_get_height(application_surface)) - surface_get_height(application_surface);
 		draw_sprite_ext(spr_scroll_bar, 0, start_x, clamp(_scroll_y, 0, surface_get_height(application_surface) - cell_height), 1, 1, 0, global.tint_color, 0.75);
+		
+		// Draw Scroll Prompt
+		draw_sprite_ext(spr_arrow_up, 0, start_x + cell_width / 2, 32 + sin(bob_iter), 1, 1, sin(bob_iter), global.tint_color, 1);
+		draw_sprite_ext(spr_arrow_down, 0, start_x + cell_width / 2, (_sh - 32) - sin(bob_iter), 1, 1, sin(bob_iter), global.tint_color, 1);
 		
 		// Draw Info Panel
 		if (!show_mini) {

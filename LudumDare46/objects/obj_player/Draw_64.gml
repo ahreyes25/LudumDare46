@@ -25,7 +25,7 @@ if (defined(rod) && !defined(rod.lure) && !defined(meter)) {
 
 with (obj_ui_controller) {
 	// Edge Arrows
-	if (exists(obj_player) && !defined(obj_player.rod.lure)) {
+	if (exists(obj_player) && !defined(obj_player.rod.lure) && !obj_shop.show && !obj_map.show && !obj_inventory.show && !obj_library.show) {
 		var _ww = surface_get_width(bg_surface);
 		var _wh = surface_get_height(bg_surface);
 		var _aw = sprite_get_width(spr_arrow_down) / 2;
