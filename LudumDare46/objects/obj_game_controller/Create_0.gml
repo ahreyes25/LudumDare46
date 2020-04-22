@@ -70,7 +70,6 @@ did_tutorial = false;
 how_to_play = false;
 choose_difficulty = false;
 new_game = true;
-
-
+mouse_text = "";
 
 
