@@ -65,11 +65,8 @@ for (var i = 0; i < global.fish_total; i++) {
 	ds_list_add(player_fish_data, false);	
 }
 
-
-
-
-
-
+did_tutorial = false;
+how_to_play = false;
 
 
 
