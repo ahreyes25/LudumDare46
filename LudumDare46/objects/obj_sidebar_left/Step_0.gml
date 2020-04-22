@@ -104,6 +104,7 @@ if (_mx >= _x1 && _mx <= _x2 && _my >= _y1 && _my <= _y2) {
 		shop_hide();
 		inventory_hide();
 		map_hide();
+		obj_game_controller.last_region = room_to_region();
 		room_transition(rm_title);
 	}
 	obj_game_controller.mouse_text = "Menu";

@@ -21,8 +21,14 @@ if (paused) {
 	inventory_hide();
 	library_hide();
 }
-if (keyboard_check_pressed(vk_escape))
-	paused = !paused;
+if (keyboard_check_pressed(vk_escape)) {
+	merchant_hide();
+	shop_hide();
+	inventory_hide();
+	library_hide();
+	last_region = room_to_region();
+	room_transition(rm_title);
+}
 	
 var _g = keyboard_check(ord("G"));
 var _e = keyboard_check(ord("E"));

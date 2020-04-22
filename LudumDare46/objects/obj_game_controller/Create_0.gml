@@ -56,20 +56,21 @@ sfx_desert_inst		= undefined;
 sfx_glacier			= sfx_glacier_song;
 sfx_glacier_inst	= undefined;
 
+// Player Save Data
 player_rod_type		= ROD.ROD_BASIC_1;
 player_lure_type	= LURE.LURE_BASIC_1;
-
-player_fish_caught		= ds_list_create();
-player_fish_data		= ds_list_create();
+player_fish_caught	= ds_list_create();
+player_fish_data	= ds_list_create();
 for (var i = 0; i < global.fish_total; i++) {
 	ds_list_add(player_fish_caught, false);	
 	ds_list_add(player_fish_data, false);	
 }
+last_region			= REGION.FOREST;
 
-did_tutorial = false;
-how_to_play = false;
-choose_difficulty = false;
-new_game = true;
-mouse_text = "";
+did_tutorial		= false;
+how_to_play			= false;
+choose_difficulty	= false;
+new_game			= true;
+mouse_text			= "";
 
 

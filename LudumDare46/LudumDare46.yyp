@@ -3015,6 +3015,14 @@
             }
         },
         {
+            "Key": "a437573c-bc0c-449b-ae14-e2afe110381f",
+            "Value": {
+                "id": "0076082a-b148-457e-a251-17dede773291",
+                "resourcePath": "scripts\\region_to_room\\region_to_room.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a506de20-9e7a-4a8e-b833-9841b0720f80",
             "Value": {
                 "id": "e0819ce8-6e62-476b-b1c4-e09a883ffb3f",
@@ -3747,6 +3755,14 @@
             "Value": {
                 "id": "5b5362d5-cfd8-4325-9411-d1e27aec8c7d",
                 "resourcePath": "scripts\/draw_rectangle_bbox\/draw_rectangle_bbox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c815db5e-efc1-4137-9b1f-a654c47e07ae",
+            "Value": {
+                "id": "b0e2547d-97a0-4cc1-99b3-437c7d3cf96e",
+                "resourcePath": "scripts\\room_to_region\\room_to_region.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5102,7 +5118,9 @@
         "b6e5f828-14d1-4c5a-84d1-6a5ea8b40a21",
         "c9e99726-c869-41e2-9380-efb910560b06",
         "67cbaefe-9ad8-475c-90d3-b35672695f48",
-        "567e84f9-eed6-49fb-8e75-8852e2d992c2"
+        "567e84f9-eed6-49fb-8e75-8852e2d992c2",
+        "c815db5e-efc1-4137-9b1f-a654c47e07ae",
+        "a437573c-bc0c-449b-ae14-e2afe110381f"
     ],
     "tutorial": ""
 }

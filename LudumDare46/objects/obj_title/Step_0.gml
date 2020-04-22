@@ -4,7 +4,7 @@ if (mouse_check_button_pressed(mb_left)) {
 	switch (menu_index) {
 		case 0:
 			if (obj_game_controller.did_tutorial)
-				room_transition(rm_forest_0);
+				room_transition(region_to_room(obj_game_controller.last_region));
 			else {
 				obj_game_controller.did_tutorial = true;
 				room_transition(rm_tutorial);
