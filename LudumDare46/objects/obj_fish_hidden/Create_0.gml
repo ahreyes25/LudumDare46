@@ -1,6 +1,6 @@
 image_speed = 0.1;
 image_index = irandom(image_number - 1);
-radius = 64;
+radius = 128;
 
 var _top_left		= collision_point(bbox_left, bbox_top, obj_solid, false, false)
 var _top_right		= collision_point(bbox_right, bbox_top, obj_solid, false, false)
