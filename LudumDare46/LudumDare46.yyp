@@ -3847,6 +3847,14 @@
             }
         },
         {
+            "Key": "cd45588a-7dd9-4d22-b685-04a37daf9943",
+            "Value": {
+                "id": "67e128be-71f9-4286-8c66-718f86eb7dbc",
+                "resourcePath": "rooms\\rm_difficulty\\rm_difficulty.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "ce07baa5-b7c6-4c2a-a50b-2c8fe6f7aa1a",
             "Value": {
                 "id": "a1408e53-b253-4f26-99f4-27b04b3d957b",
@@ -4580,6 +4588,14 @@
                 "id": "ab66d2f7-1aef-4e3e-a8a4-4ac2999a113c",
                 "resourcePath": "sounds\/sfx_meter_bounce\/sfx_meter_bounce.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "f300621d-3b82-4b32-ab93-9029bb017db8",
+            "Value": {
+                "id": "ea7d674c-c888-499e-a834-7b797a4fa6f4",
+                "resourcePath": "objects\\obj_difficulty\\obj_difficulty.yy",
+                "resourceType": "GMObject"
             }
         },
         {

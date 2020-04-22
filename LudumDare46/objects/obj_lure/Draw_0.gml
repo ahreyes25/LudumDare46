@@ -1,9 +1,16 @@
+depth = obj_game_controller.depth - 1;
+
 if (!surface_exists(obj_game_controller.lure_surface))
 	obj_game_controller.lure_surface = surface_create(room_width * 2, room_height * 2);
 
 surface_set_target(obj_game_controller.lure_surface);
 if (path_position < 1 && state == "throw") {
-	draw_circle(x, y, 3, false);
+	if (room == rm_glacier) {
+		draw_circle_color(x, y, 4, c_black, c_black, false);
+		draw_circle(x, y, 2, false);
+	}
+	else
+		draw_circle(x, y, 4, false);
 }
 //draw_sprite(spr_circle, 0, start_x, start_y);
 

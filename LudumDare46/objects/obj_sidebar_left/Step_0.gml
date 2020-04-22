@@ -73,9 +73,10 @@ if (mouse_check_button_released(mb_left)) {
 	var _y2 = _y1 + sprite_get_height(spr_home) * _scale;
 	
 	if (_mx >= _x1 && _mx <= _x2 && _my >= _y1 && _my <= _y2) {
-		obj_game_controller.paused = !obj_game_controller.paused;	
-		sfx_play(sfx_memu_select);
-		music_toggle_mute();
+		//obj_game_controller.paused = !obj_game_controller.paused;	
+		//sfx_play(sfx_memu_select);
+		//music_toggle_mute();
+		room_transition(rm_title);
 	}
 }
 

@@ -98,7 +98,7 @@ if (show) {
 			// Info Text
 			draw_text(_mini_x + 10, _mini_y + 10, _item_name);
 			draw_text(_mini_x + 10, _mini_y + 30, _item_desc);
-			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost));
 			draw_text(_mini_x + 10, _mini_y + 70, "Shake Chance (Per Frame): " + string(global.rod_data[_item_enum, RP.ACCURACY] * 100) + "%");
 			draw_text(_mini_x + 10, _mini_y + 90, "Shake Amount: " + string(global.rod_data[_item_enum, RP.SHAKE]) + " pixels");
 			draw_text(_mini_x + 10, _mini_y + 110, "Shake Duration: " + string(global.rod_data[_item_enum, RP.SHAKE_INTERVAL] / room_speed) + " seconds");
@@ -119,7 +119,7 @@ if (show) {
 			// Info Text
 			draw_text(_mini_x + 10, _mini_y + 10, _item_name);
 			draw_text(_mini_x + 10, _mini_y + 30, _item_desc);
-			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost));
 		}
 		if (_item_type == "fish") {
 			// Info Panel Frame
@@ -133,7 +133,7 @@ if (show) {
 			// Info Text
 			draw_text(_mini_x + 10, _mini_y + 10, "Random Fish Data");
 			draw_text(_mini_x + 10, _mini_y + 30, "Adds Information About 1 Fish To Your Library");
-			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost));
 		}
 		if (_item_type == "region") {
 			// Info Panel Frame
@@ -148,7 +148,7 @@ if (show) {
 			// Info Text
 			draw_text(_mini_x + 10, _mini_y + 10, "New Region Access -- " + string(_item_name));
 			draw_text(_mini_x + 10, _mini_y + 30, "Allow Travel To New Region");
-			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost) + ".00");
+			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost));
 		}
 	}
 	#endregion

@@ -42,7 +42,7 @@ draw_set_halign(fa_center);
 for (var i = 0; i < array_length_1d(menu_options); i++) {
 	menu_y = end_y + 50;
 	if (menu_index == i)
-		draw_text_transformed(boat_x, menu_y + ((string_height("A") * 2) * i) + sin(title_iter) * 10, ">" + string(menu_options[i]), 2, 2, 0);	
+		draw_text_transformed(boat_x, menu_y + ((string_height("A") * 2) * i) + sin(title_iter * 10) * 5, ">" + string(menu_options[i]), 2, 2, 0);	
 	else
 		draw_text_transformed(boat_x, menu_y + ((string_height("A") * 2) * i), " " + string(menu_options[i]), 2, 2, 0);	
 }

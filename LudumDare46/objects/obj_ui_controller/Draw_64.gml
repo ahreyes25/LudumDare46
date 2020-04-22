@@ -1,6 +1,6 @@
 draw_set_font(-1);
 
-if (room != rm_title && room != rm_tutorial) {
+if (room != rm_title && room != rm_tutorial && room != rm_difficulty) {
 	var _sw = surface_get_width(application_surface);
 	var _sh = surface_get_height(application_surface);
 	

@@ -1,3 +1,5 @@
+show_debug_message(multiplier);
+
 if (paused) {
 	if (keyboard_check_pressed(ord("R")))
 		level_restart();

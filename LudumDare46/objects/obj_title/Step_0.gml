@@ -16,13 +16,17 @@ if (mouse_check_button_pressed(mb_left)) {
 			room_transition(rm_tutorial);
 			break;
 		case 2:
-			window_set_fullscreen(!window_get_fullscreen());
+			obj_game_controller.choose_difficulty = true;
+			room_transition(rm_difficulty);
 			break;
 		case 3:
+			window_set_fullscreen(!window_get_fullscreen());
+			break;
+		case 4:
 			global.sound_mult = !global.sound_mult;
 			audio_master_gain(global.sound_mult);
 			break;
-		case 5:
+		case 6:
 			room_transition(rm_outro_0);
 			break;
 	}
