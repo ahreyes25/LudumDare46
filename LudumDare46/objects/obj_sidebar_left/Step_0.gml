@@ -76,6 +76,11 @@ if (mouse_check_button_released(mb_left)) {
 		//obj_game_controller.paused = !obj_game_controller.paused;	
 		//sfx_play(sfx_memu_select);
 		//music_toggle_mute();
+		library_hide();
+		merchant_hide();
+		shop_hide();
+		inventory_hide();
+		map_hide();
 		room_transition(rm_title);
 	}
 }

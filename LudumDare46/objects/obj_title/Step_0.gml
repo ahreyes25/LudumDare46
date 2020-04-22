@@ -9,6 +9,7 @@ if (mouse_check_button_pressed(mb_left)) {
 				obj_game_controller.did_tutorial = true;
 				room_transition(rm_tutorial);
 			}
+			obj_game_controller.new_game = false;
 			break;
 		case 1:
 			obj_game_controller.how_to_play = true;

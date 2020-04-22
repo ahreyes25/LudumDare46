@@ -69,9 +69,7 @@ for (var i = 0; i < global.fish_total; i++) {
 did_tutorial = false;
 how_to_play = false;
 choose_difficulty = false;
-
-
-
+new_game = true;
 
 
 
