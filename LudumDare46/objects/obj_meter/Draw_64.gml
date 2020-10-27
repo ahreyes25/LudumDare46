@@ -18,7 +18,6 @@ var _y = 4;
 
 draw_set_color(c_white);
 draw_sprite_nine_slice(spr_meter_frame, 0, _x, _y, _x + width, _y + height, 1);
-draw_sprite_ext(spr_meter_arrow, 0, _x - 10, _y + height - (arrow_tick_pos * pixel_per_tick), image_xscale, image_yscale, image_angle, c_white, image_alpha);
 draw_sprite_nine_slice(spr_meter_fill, 0, _x + 8, _y + height - (goal_ticks * pixel_per_tick) - 4 - (goal_offset * pixel_per_tick), _x + width - 8, _y + height - (goal_offset * pixel_per_tick), 1);
 draw_set_color(global.tint_color);
 
@@ -27,7 +26,7 @@ draw_set_color(global.tint_color);
 	
 surface_reset_target();
 
-if (surface_exists(surface)) {
+if (surface_exists(surface) && (sprite == undefined || !sprite_exists(sprite))) {
 	sprite = sprite_create_from_surface(
 		surface, 0, 0, surface_get_width(surface), surface_get_height(surface), 
 		false, false, surface_get_width(surface) / 2, surface_get_height(surface)
@@ -36,5 +35,5 @@ if (surface_exists(surface)) {
 }
 
 // Draw Surface
-var _scale	= 1.1;
 draw_sprite_ext(sprite, 0, surf_x, surf_y, scale, scale, rot, global.tint_color, alpha);
+draw_sprite_ext(spr_meter_arrow, 0, surf_x, surf_y - (arrow_tick_pos * (pixel_per_tick + 0.5)) - 4, image_xscale, image_yscale, image_angle, global.tint_color, image_alpha);

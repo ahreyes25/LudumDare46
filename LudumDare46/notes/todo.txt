@@ -1,5 +1,3 @@
-- fix infinite fish bug
-- fix memory leak with catching meter surface
 - add save load system
 - add in new artwork from monsters spritesheet
 
