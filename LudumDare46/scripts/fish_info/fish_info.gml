@@ -1,5 +1,5 @@
 var _index = index - (scroll_index div cell_height);
-var _item  = inventory[| _index];
+var _item  = obj_game_controller.inventory_data[| _index];
 
 if (_item[0] == "fish")
 	obj_merchant.item_info = global.fish_data[_item[1], FP.INFO];

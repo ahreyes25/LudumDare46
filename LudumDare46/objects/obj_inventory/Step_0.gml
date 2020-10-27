@@ -122,7 +122,44 @@ if (show && mouse_check_button_pressed(mb_left)) {
 							fish_release();
 							show_mini_mini = false;
 							show_mini = false;
-							sfx_play(sfx_no_purchase);
+							
+							// Random Chance To Unlock Item
+							if (percent(0.05)) {
+								var _index = irandom(ds_list_size(obj_game_controller.shop_data) - 1);
+								var _item  = obj_game_controller.shop_data[| _index];
+								var _unlocked_item = "";
+								
+								if (_item[0] == "fish") {
+									ds_list_replace(obj_game_controller.player_fish_data, _item[1], true);	
+									_unlocked_item = "piece of fish data";
+								}
+								else if (_item[0] == "regn") {
+									ds_list_add(obj_game_controller.map_data, _item[1]);	
+									_unlocked_item = "region";
+								}
+								else {
+									ds_list_add(obj_game_controller.inventory_data, _item);
+									
+									if (_item[0] == "rodd")
+										_unlocked_item = "rod";
+									else if (_item[0] == "lure")
+										_unlocked_item = "lure";
+								}
+								ds_list_delete(obj_game_controller.shop_data, _index);
+								sfx_play(sfx_purchase);
+								obj_merchant.dono_text = "Congrats! Unlocked a new \n" + _unlocked_item + "!";
+							}
+							// No Unlock
+							else {
+								sfx_play(sfx_no_purchase);
+								var _text = [
+									"Ohhh bad luck!",
+									"Better luck next time!",
+									"Wanna try your luck again?",
+									"Hehe, I win this time!"
+								];
+								obj_merchant.dono_text = _text[irandom(array_length_1d(_text) - 1)];
+							}
 							break;	// release
 					
 						case 2: 

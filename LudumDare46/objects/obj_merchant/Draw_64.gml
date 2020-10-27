@@ -40,23 +40,16 @@ else if (state == "sell_done") {
 #region Release Wait
 else if (state == "release_wait") {	
 	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, 
-		"Are you sure you want to \ndonate your " + string(item_name) + "? \nYou cannot get it back.", 2, 2, 0);
+		"Are you sure you want to \ndonate your " + string(item_name) + "? \nGet a chance to unlock a \nrandom item?", 2, 2, 0);
 		
 	if (!obj_inventory.index_mini_mini)
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, ">YES        NO", 2, 2, 0);	
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 220, ">YES        NO", 2, 2, 0);	
 	else
-		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 190, " YES       >NO", 2, 2, 0);		
+		draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 220, " YES       >NO", 2, 2, 0);		
 }
 #endregion
 else if (state == "release_done") {
-	var _text = [
-		"Uhh... thanks, I guess?",
-		"I'd like to say this is \ngoing to a good cause...",
-		"I'll see what I can do \nwith this...",
-	];
-	if (!defined(phrase))
-		phrase = irandom(array_length_1d(_text) - 1);
-	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, _text[phrase], 2, 2, 0);
+	draw_text_transformed(xcurr - sprite_get_width(sprite_index) * scale / 2 + _x, ycurr + 30, dono_text, 2, 2, 0);
 }
 #region Info Wait
 if (state == "info_wait") {	
