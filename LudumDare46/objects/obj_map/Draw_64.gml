@@ -20,8 +20,8 @@ if (show) {
 	
 		// Draw Region
 		for (var i = 0; i < _n_items; i++) {
-			if (i < ds_list_size(regions)) {
-				switch (regions[| i]) {
+			if (i < ds_list_size(obj_game_controller.map_data)) {
+				switch (obj_game_controller.map_data[| i]) {
 					case 0: var _item_sprite = spr_forest_region; break;	
 					case 1: var _item_sprite = spr_desert_region; break;	
 					case 2: var _item_sprite = spr_glacier_region; break;	

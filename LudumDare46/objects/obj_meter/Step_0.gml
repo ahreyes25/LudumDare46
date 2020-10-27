@@ -35,7 +35,7 @@ if (alarm[0] == -1) {
 }
 
 // Click!
-if (mouse_check_button_pressed(mb_left)) {
+if (alarm[3] == -1 && mouse_check_button_pressed(mb_left)) {
 	if (alarm[0] == -1) {
 		meter_speed = 0;
 	
@@ -63,6 +63,7 @@ if (mouse_check_button_pressed(mb_left)) {
 		obj_player.alarm[0] = 120;
 		camera_set_screen_shake();
 	}
+	alarm[3] = 60 * 5;
 }
 
 if (state == "leave") {

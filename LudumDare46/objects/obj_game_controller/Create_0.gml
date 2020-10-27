@@ -2,7 +2,7 @@ randomize();
 
 multiplier = 1;
 
-// Data Files
+#region Data Files
 global_game_data();
 global_rod_data();
 global_lure_data();
@@ -10,6 +10,43 @@ global_fish_data();
 global_region_data();
 global_movement_data();
 global_player_data();
+#endregion
+#region Player Save Data
+player_rod_type		= ROD.ROD_BASIC_1;
+player_lure_type	= LURE.LURE_BASIC_1;
+last_region			= REGION.FOREST;
+player_fish_caught	= ds_list_create();
+player_fish_data	= ds_list_create();
+for (var i = 0; i < global.fish_total; i++) {
+	ds_list_add(player_fish_caught, false);	
+	ds_list_add(player_fish_data, false);	
+}
+shop_data					= ds_list_create();
+library_data				= ds_list_create();
+map_data					= ds_list_create();
+inventory_data				= ds_list_create();
+achievements				= ds_map_create();
+fish_caught					= 0;
+fish_escaped				= 0;
+fish_sold					= 0;
+fish_donated				= 0;
+lures_bought				= 0;
+lures_sold					= 0;
+rods_bought					= 0;
+rods_sold					= 0;
+regions_bought				= 0;
+regions_visited				= 0;
+furthest_rod_throw			= 0;
+closest_rod_throw			= 0;
+caught_real_fish			= false;
+furthest_distance_travled	= 0;
+#endregion
+
+did_tutorial		= false;
+how_to_play			= false;
+choose_difficulty	= false;
+new_game			= true;
+mouse_text			= "";
 
 #region Controllers
 particle_controller	= instance_create_layer(0, 0, "Controllers", obj_particle_controller);
@@ -35,42 +72,20 @@ library			= instance_create_layer(0, 0, "Controllers", obj_library);
 map				= instance_create_layer(0, 0, "Controllers", obj_map);
 transitions		= instance_create_layer(0, 0, "Controllers", obj_transitions);
 #endregion
-
-#region Sound & Music
-#endregion
-
-room_goto_next();
-
-need_to_clear_surface = false;
-lure_surface = surface_create(room_width * 2, room_height * 2);
-paused = false;
-
-u_color = shader_get_uniform(shdr_solid_color, "u_color");
-u_alpha = shader_get_uniform(shdr_solid_color, "u_alpha");
-
-// music
+#region Music & Sfx
 sfx_forest			= sfx_forest_song;
 sfx_forest_inst		= undefined;
 sfx_desert			= sfx_desert_song;
 sfx_desert_inst		= undefined;
 sfx_glacier			= sfx_glacier_song;
 sfx_glacier_inst	= undefined;
+#endregion
+#region Other
+need_to_clear_surface	= false;
+lure_surface			= surface_create(room_width * 2, room_height * 2);
+paused					= false;
 
-// Player Save Data
-player_rod_type		= ROD.ROD_BASIC_1;
-player_lure_type	= LURE.LURE_BASIC_1;
-player_fish_caught	= ds_list_create();
-player_fish_data	= ds_list_create();
-for (var i = 0; i < global.fish_total; i++) {
-	ds_list_add(player_fish_caught, false);	
-	ds_list_add(player_fish_data, false);	
-}
-last_region			= REGION.FOREST;
-
-did_tutorial		= false;
-how_to_play			= false;
-choose_difficulty	= false;
-new_game			= true;
-mouse_text			= "";
-
-
+u_color = shader_get_uniform(shdr_solid_color, "u_color");
+u_alpha = shader_get_uniform(shdr_solid_color, "u_alpha");
+#endregion
+room_goto_next();

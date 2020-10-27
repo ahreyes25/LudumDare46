@@ -5,12 +5,12 @@ if (!show_mini) {
 		scroll_index -= cell_height;
 	if (mouse_wheel_up())
 		scroll_index += cell_height;
-	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(inventory) - 1);
+	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(obj_game_controller.inventory_data) - 1);
 }
 else if (!show_mini_mini) {
 	var _start_y = index * cell_height;
-	var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
-	var _item = inventory[| _index];
+	var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(obj_game_controller.inventory_data) - 1);
+	var _item = obj_game_controller.inventory_data[| _index];
 	if (defined(_item)) {
 		if (_item[0] == "fish")	
 			index_mini = clamp(((device_mouse_y_to_gui(0) - _start_y) div 64), 0, 3);
@@ -51,8 +51,8 @@ if (show && mouse_check_button_pressed(mb_left)) {
 	#region Select Item Action
 	if (show_mini && !show_mini_mini && _mx >= start_x + cell_width && _mx <= start_x + cell_width * 2) {
 		
-		var _index	= clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
-		var _item	= inventory[| _index];
+		var _index	= clamp(index - (scroll_index div cell_height), 0, ds_list_size(obj_game_controller.inventory_data) - 1);
+		var _item	= obj_game_controller.inventory_data[| _index];
 		
 		if (defined(_item) && array_length_1d(_item) > 0) {
 			show_mini_mini = true;
@@ -105,8 +105,8 @@ if (show && mouse_check_button_pressed(mb_left)) {
 			#region Confirm With Merchant
 			else {
 				sfx_play(sfx_memu_select);
-				var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
-				var _item = inventory[| _index];
+				var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(obj_game_controller.inventory_data) - 1);
+				var _item = obj_game_controller.inventory_data[| _index];
 				
 				#region Fish Actions
 				if (_item[0] == "fish") {

@@ -6,7 +6,7 @@ if (mouse_wheel_up())
 
 // Update Index
 if (!show_mini)
-	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(shop) - 1);
+	index = clamp(((device_mouse_y_to_gui(0) - start_y) div cell_height), 0, ds_list_size(obj_game_controller.shop_data) - 1);
 else
 	index_mini = device_mouse_x_to_gui(0) >= obj_merchant.xcurr;
 #endregion
@@ -35,11 +35,11 @@ if (mouse_check_button_pressed(mb_left) && show) {
 	#endregion
 	
 	var _index	= index - (scroll_index div cell_height);
-	if (_index >= 0 && _index < ds_list_size(shop)) {	
+	if (_index >= 0 && _index < ds_list_size(obj_game_controller.shop_data)) {	
 		#region Select Item For Sale
 		if (!show_mini && _mx >= start_x && _mx <= start_x + cell_width) {
 			sfx_play(sfx_memu_select);
-			var _item	= shop[| _index];
+			var _item	= obj_game_controller.shop_data[| _index];
 			show_mini	= true;
 			merchant_show(_item[1], _item[0], "shop_confirm");
 		}
@@ -58,7 +58,7 @@ if (mouse_check_button_pressed(mb_left) && show) {
 			#region Try To Purchase
 			else {
 				sfx_play(sfx_memu_select);
-				var _item = shop[| _index];
+				var _item = obj_game_controller.shop_data[| _index];
 				
 				// Check For Enough Money
 				if (_item[0] == "fish")		var _cost = global.fish_data	[_item[1], FP.COST_BUY];
@@ -71,15 +71,15 @@ if (mouse_check_button_pressed(mb_left) && show) {
 					if (_item[0] == "fish")
 						ds_list_replace(obj_game_controller.player_fish_data, _item[1], true);	
 					else if (_item[0] == "region")
-						ds_list_add(obj_map.regions, _item[1]);	
+						ds_list_add(obj_game_controller.map_data, _item[1]);	
 					else {
-						ds_list_add(obj_inventory.inventory, _item);
+						ds_list_add(obj_game_controller.inventory_data, _item);
 						equip_item(_item[1], _item[0]);
 					}
 						
 					obj_sidebar_left.money -= _cost;
 					obj_merchant.state = "shop_done";
-					ds_list_delete(shop, _index);
+					ds_list_delete(obj_game_controller.shop_data, _index);
 					show_mini = false;
 					sfx_play(sfx_purchase);
 				}

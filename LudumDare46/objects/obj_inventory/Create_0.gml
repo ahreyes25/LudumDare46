@@ -1,4 +1,3 @@
-inventory		= ds_list_create();
 show			= false;
 show_mini		= false;
 show_mini_mini	= false;
@@ -17,8 +16,8 @@ scroll_index	= 0;
 
 surface			= surface_create(cell_width, 1);
 
-ds_list_add(inventory, ["rod", ROD.ROD_BASIC_1]);
-ds_list_add(inventory, ["lure", LURE.LURE_BASIC_1]);
+ds_list_add(obj_game_controller.inventory_data, ["rod", ROD.ROD_BASIC_1]);
+ds_list_add(obj_game_controller.inventory_data, ["lure", LURE.LURE_BASIC_1]);
 
 bob_iter		= 0;
 bob_iter_speed	= 0.1;

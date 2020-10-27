@@ -1,4 +1,4 @@
-if (mouse_check_button_pressed(mb_left) && state != "leave")
+if (alarm[1] == -1 && mouse_check_button_pressed(mb_left) && state != "leave")
 	state = "leave";
 	
 xscale = lerp(xscale, xscale_target, 0.2);

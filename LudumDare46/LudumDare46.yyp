@@ -3263,6 +3263,14 @@
             }
         },
         {
+            "Key": "b0ebd87b-4cb4-4210-a18e-849348c9bd50",
+            "Value": {
+                "id": "1784439c-a8d9-468c-b35f-84e9667d577f",
+                "resourcePath": "scripts\\save_game\\save_game.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b160d67d-49b6-459d-bd04-1b8909fbc93a",
             "Value": {
                 "id": "14fc79b3-4405-4851-8016-634f8e4e6665",
@@ -5120,7 +5128,8 @@
         "67cbaefe-9ad8-475c-90d3-b35672695f48",
         "567e84f9-eed6-49fb-8e75-8852e2d992c2",
         "c815db5e-efc1-4137-9b1f-a654c47e07ae",
-        "a437573c-bc0c-449b-ae14-e2afe110381f"
+        "a437573c-bc0c-449b-ae14-e2afe110381f",
+        "b0ebd87b-4cb4-4210-a18e-849348c9bd50"
     ],
     "tutorial": ""
 }

@@ -25,12 +25,12 @@ if (show && mouse_check_button_pressed(mb_left)) {
 	#region Select Region To Travel To
 	if (!show_mini && _mx >= start_x && _mx <= start_x + cell_width) {
 		var _index = clamp(index - (scroll_index div cell_height), 0, 3);
-		if (_index < ds_list_size(regions)) {
+		if (_index < ds_list_size(obj_game_controller.map_data)) {
 			show_mini = true;	
 			obj_merchant.state = "travel_confirm";
 			sfx_play(sfx_memu_select);
 						
-			switch (regions[| _index]) {
+			switch (obj_game_controller.map_data[| _index]) {
 				// Forest
 				case 0:	
 					var _texts = [
@@ -89,13 +89,13 @@ if (show && mouse_check_button_pressed(mb_left)) {
 		// Yes
 		else {
 			var _index = clamp(index - (scroll_index div cell_height), 0, 3);
-			if (_index < ds_list_size(regions)) {
+			if (_index < ds_list_size(obj_game_controller.map_data)) {
 				sfx_play(sfx_memu_select);
-				global.region = regions[| _index];
+				global.region = obj_game_controller.map_data[| _index];
 				merchant_hide();
 				map_hide();
 				show_mini = false;
-				switch (regions[| _index]) {
+				switch (obj_game_controller.map_data[| _index]) {
 					case 0:	room_transition(rm_forest_0); break;
 					case 1: room_transition(rm_desert_0); break;
 					case 2: room_transition(rm_glacier_0); break;

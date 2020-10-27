@@ -9,6 +9,5 @@ start_x			= obj_ui_controller.outer_edge_width + obj_ui_controller.inner_edge_wi
 start_y			= 10;
 scroll_index	= 0;
 surface			= surface_create(cell_width, 1);
-regions			= ds_list_create();
 
-ds_list_add(regions, REGION.FOREST);
+ds_list_add(obj_game_controller.map_data, REGION.FOREST);

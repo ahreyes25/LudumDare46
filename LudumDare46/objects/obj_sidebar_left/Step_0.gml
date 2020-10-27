@@ -19,7 +19,7 @@ if (!obj_game_controller.paused) {
 	if (_mx >= _x1 && _mx <= _x2 && _my >= _y1 && _my <= _y2) {
 		if (mouse_check_button_released(mb_left)) {
 			sfx_play(sfx_memu_select);
-			if (!obj_inventory.show && ds_list_size(obj_inventory.inventory) > 0)
+			if (!obj_inventory.show && ds_list_size(obj_game_controller.inventory_data) > 0)
 				inventory_show();
 			else if (obj_inventory.show)
 				inventory_hide();

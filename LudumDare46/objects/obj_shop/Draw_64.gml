@@ -2,7 +2,7 @@ if (show) {
 	depth			= obj_ui_controller.depth - 100;
 	var _x1			= 0;
 	var _y1			= 0;
-	var _n_items	= ds_list_size(shop);
+	var _n_items	= ds_list_size(obj_game_controller.shop_data);
 
 	#region Main Inventory
 	if (!surface_exists(surface))
@@ -19,7 +19,7 @@ if (show) {
 	
 	/// Draw Icons
 	for (var i = 0; i < _n_items; i++) {
-		var _item_data = shop[| i];
+		var _item_data = obj_game_controller.shop_data[| i];
 		var _item_type = _item_data[0];
 		var _item_enum = _item_data[1];
 		
@@ -84,7 +84,7 @@ if (show) {
 	// Draw Info Panel
 	var _index = index - (scroll_index div cell_height);
 	if (_index >= 0 && _index < _n_items) {
-		var _item_data	= shop[| _index];
+		var _item_data	= obj_game_controller.shop_data[| _index];
 		var _item_type	= _item_data[0];
 		var _item_enum	= _item_data[1];
 		var _mini_x		= start_x - cell_width * 4;

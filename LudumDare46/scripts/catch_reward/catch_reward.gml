@@ -20,7 +20,7 @@ else {
 }
 
 // Add To Inventory
-ds_list_add(obj_inventory.inventory, [_item_type, _item]);
+ds_list_add(obj_game_controller.inventory_data, [_item_type, _item]);
 
 // Add To Caught Fish
 if (_item_type == "fish") {
@@ -30,13 +30,13 @@ if (_item_type == "fish") {
 }
 
 // Remove From Shop
-for (var i = 0; i < ds_list_size(obj_shop.shop); i++) {
-	var _shop_item = obj_shop.shop[| i];	
+for (var i = 0; i < ds_list_size(obj_game_controller.shop_data); i++) {
+	var _shop_item = obj_game_controller.shop_data[| i];	
 	var _shop_type = _shop_item[0];
 	var _shop_enum = _shop_item[1];
 	
 	if (_shop_type == _item_type && _shop_enum == _item) 
-		ds_list_delete(obj_shop.shop, i);
+		ds_list_delete(obj_game_controller.shop_data, i);
 }
 
 sfx_play(sfx_fish_caught);

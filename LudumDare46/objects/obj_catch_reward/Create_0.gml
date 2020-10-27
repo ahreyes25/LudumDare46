@@ -18,3 +18,5 @@ surf_x			= _sw / 2;
 surf_y			= _sh / 2;
 
 camera_set_zoom_factor(5);
+
+alarm[1] = 60 * 2;

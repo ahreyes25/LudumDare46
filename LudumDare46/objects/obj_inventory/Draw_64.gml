@@ -1,6 +1,6 @@
 if (show) {
 	depth		 = obj_ui_controller.depth - 10;
-	var _n_items = ds_list_size(inventory);
+	var _n_items = ds_list_size(obj_game_controller.inventory_data);
 	var _x		 = 0;
 	var _y		 = 0;
 	
@@ -22,7 +22,7 @@ if (show) {
 	
 		// Draw Items
 		for (var i = 0; i < _n_items; i++) {
-			var _item_data = inventory[| i];
+			var _item_data = obj_game_controller.inventory_data[| i];
 			var _item_type = _item_data[0];
 			var _item_enum = _item_data[1];
 		
@@ -71,7 +71,7 @@ if (show) {
 		if (!show_mini) {
 			var _index = index - (scroll_index div cell_height);
 			if (_index >= 0 && _index < _n_items) {
-				var _item_data	= inventory[| _index];
+				var _item_data	= obj_game_controller.inventory_data[| _index];
 				var _item_type	= _item_data[0];
 				var _item_enum	= _item_data[1];
 				var _mini_x		= start_x + cell_width;
@@ -135,8 +135,8 @@ if (show) {
 		
 		// Draw Mini Menu
 		if (show_mini) {
-			var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(inventory) - 1);
-			var _item = inventory[| _index];
+			var _index = clamp(index - (scroll_index div cell_height), 0, ds_list_size(obj_game_controller.inventory_data) - 1);
+			var _item = obj_game_controller.inventory_data[| _index];
 			if (_item[0] == "fish")
 				var _text	= ["Sell", "Donate", "Info", "Cancel"];
 			else
