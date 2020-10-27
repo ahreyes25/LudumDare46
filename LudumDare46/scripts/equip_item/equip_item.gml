@@ -4,7 +4,7 @@
 var _item_enum	 = argument0;
 var _item_string = argument1;
 
-if (_item_string == "rod") {
+if (_item_string == "rodd") {
 	obj_player.rod_type = _item_enum;
 	obj_game_controller.player_rod_type = _item_enum;
 }
@@ -14,4 +14,4 @@ else if (_item_string == "lure") {
 }
 	
 obj_inventory.show_mini_mini = false;
-obj_inventory.show_mini = false;
+obj_inventory.show_mini		 = false;

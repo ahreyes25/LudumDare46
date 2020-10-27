@@ -25,11 +25,11 @@ if (show) {
 		
 		if (_item_type == "fish")
 			var _item_sprite = global.fish_data[_item_enum, FP.SPRITE];
-		if (_item_type == "rod")
+		if (_item_type == "rodd")
 			var _item_sprite = global.rod_data[_item_enum, RP.SPRITE];
 		if (_item_type == "lure")
 			var _item_sprite = global.lure_data[_item_enum, LP.SPRITE];
-		if (_item_type == "region") {
+		if (_item_type == "regn") {
 			switch (_item_enum) {
 				case 0: var _item_sprite = spr_forest_region;	break;	
 				case 1: var _item_sprite = spr_desert_region;	break;	
@@ -90,7 +90,7 @@ if (show) {
 		var _mini_x		= start_x - cell_width * 4;
 		var _mini_y		= index * cell_height + 10;
 		
-		if (_item_type == "rod") {
+		if (_item_type == "rodd") {
 			// Info Panel Frame
 			draw_set_color(c_black);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 1.5, false);
@@ -141,7 +141,7 @@ if (show) {
 			draw_text(_mini_x + 10, _mini_y + 30, "Adds Information About 1 Fish To Your Library");
 			draw_text(_mini_x + 10, _mini_y + 50, "Cost: $" + string(_item_cost));
 		}
-		if (_item_type == "region") {
+		if (_item_type == "regn") {
 			// Info Panel Frame
 			draw_set_color(c_black);
 			draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height, false);

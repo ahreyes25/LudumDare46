@@ -1,5 +1,6 @@
-- add save load system
-- add in new artwork from monsters spritesheet
+- better way to save game
+- import new monsters art?
+- remove donating fish
 
 
 

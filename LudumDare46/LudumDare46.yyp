@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "051319df-791a-4045-b041-28c2995421d0",
+            "Value": {
+                "id": "b63e5679-d29d-4960-a4d7-79020fc821bb",
+                "resourcePath": "scripts\\buffer_file_to_map\\buffer_file_to_map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0557cf8f-1ef1-4319-8a5d-bae13490c690",
             "Value": {
                 "id": "251fe463-3c30-4672-8dde-0d5a4a23dfb8",
@@ -1499,6 +1507,14 @@
             "Value": {
                 "id": "e06fb44b-5182-4b47-8496-947e04d38887",
                 "resourcePath": "scripts\/_just_friction\/_just_friction.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53c27488-8bd4-4926-b3cf-f604e05a9517",
+            "Value": {
+                "id": "952c7390-b56a-49d3-8f10-f09fb3aa7dcd",
+                "resourcePath": "scripts\\load_game\\load_game.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2903,6 +2919,14 @@
             }
         },
         {
+            "Key": "9e5ad9be-21fb-4b68-8c45-54ac458dafa2",
+            "Value": {
+                "id": "0f695051-cde1-4343-8e33-375396a64d90",
+                "resourcePath": "scripts\\reset_save_file\\reset_save_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e8f576d-93c2-41b3-ad25-a1303a25f4ec",
             "Value": {
                 "id": "540f79a9-0384-4d33-b03d-73e9946ce051",
@@ -4087,6 +4111,14 @@
             }
         },
         {
+            "Key": "d807a115-5237-4b45-8e9d-b2d3a40f7c1b",
+            "Value": {
+                "id": "f508ebbc-ca46-427f-ab50-a46d4817bb36",
+                "resourcePath": "scripts\\map_to_buffer_save\\map_to_buffer_save.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d8738c0d-7feb-4bbd-817c-bf84a715d824",
             "Value": {
                 "id": "e1fcf455-eab1-4257-8962-61c29e61a699",
@@ -5129,7 +5161,11 @@
         "567e84f9-eed6-49fb-8e75-8852e2d992c2",
         "c815db5e-efc1-4137-9b1f-a654c47e07ae",
         "a437573c-bc0c-449b-ae14-e2afe110381f",
-        "b0ebd87b-4cb4-4210-a18e-849348c9bd50"
+        "b0ebd87b-4cb4-4210-a18e-849348c9bd50",
+        "53c27488-8bd4-4926-b3cf-f604e05a9517",
+        "d807a115-5237-4b45-8e9d-b2d3a40f7c1b",
+        "051319df-791a-4045-b041-28c2995421d0",
+        "9e5ad9be-21fb-4b68-8c45-54ac458dafa2"
     ],
     "tutorial": ""
 }

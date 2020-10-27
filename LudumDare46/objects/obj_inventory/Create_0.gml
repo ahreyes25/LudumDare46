@@ -16,7 +16,7 @@ scroll_index	= 0;
 
 surface			= surface_create(cell_width, 1);
 
-ds_list_add(obj_game_controller.inventory_data, ["rod", ROD.ROD_BASIC_1]);
+ds_list_add(obj_game_controller.inventory_data, ["rodd", ROD.ROD_BASIC_1]);
 ds_list_add(obj_game_controller.inventory_data, ["lure", LURE.LURE_BASIC_1]);
 
 bob_iter		= 0;

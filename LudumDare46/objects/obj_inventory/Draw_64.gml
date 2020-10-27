@@ -28,7 +28,7 @@ if (show) {
 		
 			if (_item_type == "fish")
 				var _item_sprite = global.fish_data[_item_enum, FP.SPRITE];
-			if (_item_type == "rod")
+			if (_item_type == "rodd")
 				var _item_sprite = global.rod_data[_item_enum, RP.SPRITE];
 			if (_item_type == "lure")
 				var _item_sprite = global.lure_data[_item_enum, LP.SPRITE];
@@ -77,7 +77,7 @@ if (show) {
 				var _mini_x		= start_x + cell_width;
 				var _mini_y		= index * cell_height + 10;
 		
-				if (_item_type == "rod") {
+				if (_item_type == "rodd") {
 					// Info Panel Frame
 					draw_set_color(c_black);
 					draw_rectangle(_mini_x, _mini_y, _mini_x + cell_width * 4, _mini_y + cell_height * 2, false);

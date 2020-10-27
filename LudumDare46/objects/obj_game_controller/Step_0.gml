@@ -1,3 +1,13 @@
+new_game = !file_exists(global.save_filename);
+
+// SAVE GAME
+if (!loading) {
+	if (room == rm_forest || room == rm_desert || room == rm_glacier || room == rm_ocean) {
+		if (CURRENT_TIME_FRAME != 0 && CURRENT_TIME_FRAME mod 60 * 10)
+			save_game();
+	}
+}
+
 if (paused) {
 	if (keyboard_check_pressed(ord("R")))
 		level_restart();
@@ -39,3 +49,9 @@ if (_g && _e && _n && _t && _o) {
 	obj_sidebar_left.money += 1000;
 	sfx_play(sfx_purchase);
 }
+
+
+
+
+
+

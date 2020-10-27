@@ -4,8 +4,10 @@ switch (state) {
 	case "fade_in":
 		if (fade < 1)
 			fade += fade_speed;
-		else
+		else {
 			room_goto(next_room);
+			obj_game_controller.loading = false;
+		}
 		break;
 	
 	case "fade_out":

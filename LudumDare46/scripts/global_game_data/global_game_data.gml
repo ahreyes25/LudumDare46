@@ -14,6 +14,7 @@ enum REGION			{ FOREST, DESERT, GLACIER, OCEAN }
 
 global.paused				= false;
 global.slow_factor			= 1;
+global.save_filename		= "save_data_1.buf";
 
 // User Settings
 global.screen_shake_mult	= 1.0;

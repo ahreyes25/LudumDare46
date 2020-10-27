@@ -3,7 +3,7 @@ var _item  = inventory[| _index];
 
 if (_item[0] == "fish")
 	obj_merchant.item_info = global.fish_data[_item[1], FP.INFO];
-if (_item[0] == "rod")
+if (_item[0] == "rodd")
 	obj_merchant.item_info = global.rod_data[_item[1], RP.INFO];
 if (_item[0] == "lure")
 	obj_merchant.item_info = global.lure_data[_item[1], LP.INFO];

@@ -8,6 +8,15 @@ wave_surface	= undefined;
 wave_sprite		= undefined;
 
 var _text = obj_game_controller.new_game ? "New Game" : "Continue Game";
-menu_options	= [_text, "How To Play", "Choose Difficulty", "Toggle Fullscreen", "Toggle Sound", "Load Game (Coming Soon!)", "Exit Game"];
+menu_options	= [
+	_text, 
+	"How To Play", 
+	"Choose Difficulty", 
+	"Toggle Fullscreen", 
+	"Toggle Sound", 
+	"Reset Save File", 
+	"Exit Game"
+];
 menu_index		= 0;
 menu_y			= 0;
+erasing_save	= false;

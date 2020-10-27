@@ -26,4 +26,3 @@ ds_list_destroy(global.audio_emitters);
 
 ds_map_destroy(global.player_data[PID.P1, PP.KEY_NAMES]);
 ds_map_destroy(global.player_data[PID.P1, PP.GP_NAMES]);
-ds_map_destroy(achievements);

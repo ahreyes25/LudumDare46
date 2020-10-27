@@ -14,13 +14,13 @@ bob_iter		= 0;
 bob_iter_speed	= 0.1;
 
 // Add All Regions
-ds_list_add(obj_game_controller.shop_data, ["region", REGION.DESERT]);
-ds_list_add(obj_game_controller.shop_data, ["region", REGION.GLACIER]);
-ds_list_add(obj_game_controller.shop_data, ["region", REGION.OCEAN]);
+ds_list_add(obj_game_controller.shop_data, ["regn", REGION.DESERT]);
+ds_list_add(obj_game_controller.shop_data, ["regn", REGION.GLACIER]);
+ds_list_add(obj_game_controller.shop_data, ["regn", REGION.OCEAN]);
 
 // Add All Rods
 for (var i = 2; i < global.rod_total; i++)
-	ds_list_add(obj_game_controller.shop_data, ["rod", i]);
+	ds_list_add(obj_game_controller.shop_data, ["rodd", i]);
 
 // Add All Lures
 for (var i = 2; i < global.lure_total; i++)

@@ -25,7 +25,6 @@ shop_data					= ds_list_create();
 library_data				= ds_list_create();
 map_data					= ds_list_create();
 inventory_data				= ds_list_create();
-achievements				= ds_map_create();
 fish_caught					= 0;
 fish_escaped				= 0;
 fish_sold					= 0;
@@ -45,8 +44,9 @@ furthest_distance_travled	= 0;
 did_tutorial		= false;
 how_to_play			= false;
 choose_difficulty	= false;
-new_game			= true;
+new_game			= !file_exists(global.save_filename);
 mouse_text			= "";
+loading				= false;
 
 #region Controllers
 particle_controller	= instance_create_layer(0, 0, "Controllers", obj_particle_controller);
@@ -88,4 +88,5 @@ paused					= false;
 u_color = shader_get_uniform(shdr_solid_color, "u_color");
 u_alpha = shader_get_uniform(shdr_solid_color, "u_alpha");
 #endregion
-room_goto_next();
+
+room_goto(rm_title);

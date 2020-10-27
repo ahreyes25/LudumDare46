@@ -61,16 +61,16 @@ if (mouse_check_button_pressed(mb_left) && show) {
 				var _item = obj_game_controller.shop_data[| _index];
 				
 				// Check For Enough Money
-				if (_item[0] == "fish")		var _cost = global.fish_data	[_item[1], FP.COST_BUY];
-				if (_item[0] == "rod")		var _cost = global.rod_data		[_item[1], RP.COST_BUY];
-				if (_item[0] == "lure")		var _cost = global.lure_data	[_item[1], LP.COST_BUY];
-				if (_item[0] == "region")	var _cost = global.region_data	[_item[1], P.COST];
+				if (_item[0] == "fish")	var _cost = global.fish_data	[_item[1], FP.COST_BUY];
+				if (_item[0] == "rodd")	var _cost = global.rod_data		[_item[1], RP.COST_BUY];
+				if (_item[0] == "lure")	var _cost = global.lure_data	[_item[1], LP.COST_BUY];
+				if (_item[0] == "regn")	var _cost = global.region_data	[_item[1], P.COST];
 					
 				// Have Enough Money
 				if (obj_sidebar_left.money >= _cost) {
 					if (_item[0] == "fish")
 						ds_list_replace(obj_game_controller.player_fish_data, _item[1], true);	
-					else if (_item[0] == "region")
+					else if (_item[0] == "regn")
 						ds_list_add(obj_game_controller.map_data, _item[1]);	
 					else {
 						ds_list_add(obj_game_controller.inventory_data, _item);
