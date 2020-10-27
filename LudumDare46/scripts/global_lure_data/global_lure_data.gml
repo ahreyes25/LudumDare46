@@ -1024,7 +1024,7 @@ global.lure_data[LURE.HOOK, LP.CATCH_CHANCE]				= [
 	/* RIGOR	DOUBLE-ANGLED	*/		0.0,
 	/* AERYS					*/		0.2,
 	/* REAL						*/		0.2,
-	/* FISH						*/		1.0,
+	/* FISH						*/		0.0,
 	/* OCTOPUS					*/		1.0,
 	/* CRAB						*/		0.0,
 	/* ALLIGATOR				*/		0.0,
